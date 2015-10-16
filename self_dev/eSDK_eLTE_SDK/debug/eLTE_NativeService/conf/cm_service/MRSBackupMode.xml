@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="MRSBackupMode" MOC_NAME_C="备份模式" Module="MRS" ACCESS_CONTROL="modify,read" DEST_SVC="custom:ubp_mrs_moc:CreateModule:before" Relation="">
+		<Parameter name="ID" desc="ID" type="int" range="" constrain="PRI" />
+		<Parameter name="Mode" desc="模式" type="enum" range="0,1" vlist="0:正常模式,1:MDC备份模式" constrain="NOT NULL" mode="update" default="0" />
+	</MOC>
+</Moc-Config>

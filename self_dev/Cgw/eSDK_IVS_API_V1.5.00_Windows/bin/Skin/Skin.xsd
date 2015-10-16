@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2013 (http://www.altova.com) by  () -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Skins">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Skin" minOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ToolBar">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="BackGround">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Picture" minOccurs="1" maxOccurs="1"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Button" minOccurs="18" maxOccurs="50">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Picture" minOccurs="3" maxOccurs="4">
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="xs:string">
+																	<xs:attribute name="Status" use="required">
+																		<xs:simpleType>
+																			<xs:restriction base="xs:string">
+																				<xs:enumeration value="Hover"/>
+																				<xs:enumeration value="Gray"/>
+																				<xs:enumeration value="Normal"/>
+																				<xs:enumeration value="Clicked"/>
+																			</xs:restriction>
+																		</xs:simpleType>
+																	</xs:attribute>
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute name="Type" default="PNG">
+													<xs:simpleType>
+														<xs:restriction base="xs:string">
+															<xs:enumeration value="PNG"/>
+															<xs:enumeration value="BMP"/>
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+												<xs:attribute name="Name">
+													<xs:simpleType>
+														<xs:restriction base="xs:string">
+															<xs:enumeration value="SnapShot"/>
+															<xs:enumeration value="LocalRecord"/>
+															<xs:enumeration value="BookMark"/>
+															<xs:enumeration value="Zoom"/>
+															<xs:enumeration value="PlayRecord"/>
+															<xs:enumeration value="PlaySound"/>
+															<xs:enumeration value="TalkBack"/>
+															<xs:enumeration value="PlayNoSound"/>
+															<xs:enumeration value="NoTalkBack"/>
+															<xs:enumeration value="VideoTVW"/>
+															<xs:enumeration value="AlarmWin"/>
+															<xs:enumeration value="PTZ"/>
+															<xs:enumeration value="IA"/>
+															<xs:enumeration value="OpenMap"/>
+															<xs:enumeration value="WindowMain"/>
+															<xs:enumeration value="PlayQuality"/>
+															<xs:enumeration value="PlayNet"/>
+															<xs:enumeration value="Extend"/>
+															<xs:enumeration value="Retracted"/>
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Menu">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="MenuHead">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="Picture" minOccurs="1" maxOccurs="1"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="MenuTail">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="Picture" minOccurs="1" maxOccurs="1"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="MenuMidl">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="Picture" minOccurs="1" maxOccurs="1"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="MenuHover">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="Picture" minOccurs="1" maxOccurs="1"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="TitleBar">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="BackGround">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Picture" minOccurs="1" maxOccurs="1"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Button" minOccurs="2" maxOccurs="14">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Picture" minOccurs="3" maxOccurs="4">
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="xs:string">
+																	<xs:attribute name="Status" use="required">
+																		<xs:simpleType>
+																			<xs:restriction base="xs:string">
+																				<xs:enumeration value="Hover"/>
+																				<xs:enumeration value="Gray"/>
+																				<xs:enumeration value="Normal"/>
+																				<xs:enumeration value="Clicked"/>
+																			</xs:restriction>
+																		</xs:simpleType>
+																	</xs:attribute>
+																</xs:extension>
+															</xs:simpleContent>
+															<!--<xs:attribute name="PictureType" use="required">
+																<xs:simpleType>
+																	<xs:restriction base="xs:string">
+																		<xs:enumeration value="PNG"/>
+																		<xs:enumeration value="BMP"/>
+																	</xs:restriction>
+																</xs:simpleType>
+															</xs:attribute>-->
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute name="Type" default="PNG">
+													<xs:simpleType>
+														<xs:restriction base="xs:string">
+															<xs:enumeration value="PNG"/>
+															<xs:enumeration value="BMP"/>
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+												<xs:attribute name="Name">
+													<xs:simpleType>
+														<xs:restriction base="xs:string">
+															<xs:enumeration value="Info"/>
+															<xs:enumeration value="Off"/>
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="SoundCtrl">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="BackGround"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="VideoPane">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="VideoPaneBackGround">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Picture" minOccurs="1" maxOccurs="1"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="AlarmBackGround">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Picture" minOccurs="1" maxOccurs="1"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="ID" type="xs:integer"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

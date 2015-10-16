@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svcmgr:CpuPolicy xmlns:svcmgr="http://www.td-tech.com/ubp/platform/svcmgr/xml"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://www.td-tech.com/ubp/platform/svcmgr/xml cpu_alloc_policy.xsd">
+
+  <CpuMode>
+    <Core core_count="12">
+      <CorePolicy type="free_process"
+                  cpu_id="0-2" />
+      <CorePolicy type="media_process"
+                  cpu_id="3-8" />
+      <CorePolicy type="om_process"
+                  cpu_id="9-11" />
+    </Core>
+    <Core core_count="24">
+      <CorePolicy type="free_process"
+                  cpu_id="0-4" />
+      <CorePolicy type="media_process"
+                  cpu_id="5-16" />
+      <CorePolicy type="om_process"
+                  cpu_id="17-23" />
+    </Core>
+    <Core core_count="32">
+      <CorePolicy type="free_process"
+                  cpu_id="0-5" />
+      <CorePolicy type="media_process"
+                  cpu_id="6-21" />
+      <CorePolicy type="om_process"
+                  cpu_id="22-31" />
+    </Core>
+    <Core core_count="48">
+      <CorePolicy type="free_process"
+                  cpu_id="0-7" />
+      <CorePolicy type="media_process"
+                  cpu_id="8-31" />
+      <CorePolicy type="om_process"
+                  cpu_id="32-47" />
+    </Core>
+    <Core core_count="64">
+      <CorePolicy type="free_process"
+                  cpu_id="0-9" />
+      <CorePolicy type="media_process"
+                  cpu_id="10-41" />
+      <CorePolicy type="om_process"
+                  cpu_id="42-63" />
+    </Core>
+  </CpuMode>
+</svcmgr:CpuPolicy>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://127.0.0.1:5699/CgwMonitorManageService?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CgwMonitorManage.SmcError" />
+  <xs:import schemaLocation="http://127.0.0.1:5699/CgwMonitorManageService?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CgwMonitorManage.Common" />
+  <xs:element name="Connect">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConnectResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CgwMonitorManage.SmcError" minOccurs="0" name="ConnectResult" nillable="true" type="q1:SmcErr" />
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Disconnect">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DisconnectResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CgwMonitorManage.SmcError" minOccurs="0" name="DisconnectResult" nillable="true" type="q2:SmcErr" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllCameras">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CgwMonitorManage.Common" minOccurs="0" name="platformType" type="q3:PlatformType" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/CgwMonitorManage.Common" minOccurs="0" name="pageParam" nillable="true" type="q4:PagesParam" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/CgwMonitorManage.Common" minOccurs="0" name="licenseInfo" nillable="true" type="q5:PlatformLicenseInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllCamerasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/CgwMonitorManage.SmcError" minOccurs="0" name="GetAllCamerasResult" nillable="true" type="q6:SmcErr" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/CgwMonitorManage.Common" minOccurs="0" name="cameraList" nillable="true" type="q7:ArrayOfCamera" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/CgwMonitorManage.Common" minOccurs="0" name="groupList" nillable="true" type="q8:ArrayOfCameraGroup" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/CgwMonitorManage.Common" minOccurs="0" name="nodeRelationList" nillable="true" type="q9:ArrayOfNodeRelation" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/CgwMonitorManage.Common" minOccurs="0" name="pagesInfo" nillable="true" type="q10:PageInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RefreshMonitorCamera">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RefreshMonitorCameraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/CgwMonitorManage.SmcError" minOccurs="0" name="RefreshMonitorCameraResult" nillable="true" type="q11:SmcErr" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRefreshStatus">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRefreshStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/CgwMonitorManage.SmcError" minOccurs="0" name="GetRefreshStatusResult" nillable="true" type="q12:SmcErr" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/CgwMonitorManage.SmcError" minOccurs="0" name="refreshStatus" nillable="true" type="q13:SmcErr" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartReceiveVideoByPipe">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cameraNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartReceiveVideoByPipeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/CgwMonitorManage.SmcError" minOccurs="0" name="StartReceiveVideoByPipeResult" nillable="true" type="q14:SmcErr" />
+        <xs:element minOccurs="0" name="pipeName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StopReceiveVideoByPipe">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cameraNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StopReceiveVideoByPipeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/CgwMonitorManage.SmcError" minOccurs="0" name="StopReceiveVideoByPipeResult" nillable="true" type="q15:SmcErr" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartControlPtz">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cameraNo" nillable="true" type="xs:string" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/CgwMonitorManage.Common" minOccurs="0" name="ptzCommand" type="q16:PtzCommandType" />
+        <xs:element minOccurs="0" name="param" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartControlPtzResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/CgwMonitorManage.SmcError" minOccurs="0" name="StartControlPtzResult" nillable="true" type="q17:SmcErr" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StopControlPtz">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cameraNo" nillable="true" type="xs:string" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/CgwMonitorManage.Common" minOccurs="0" name="ptzCommandType" type="q18:PtzCommandType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StopControlPtzResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/CgwMonitorManage.SmcError" minOccurs="0" name="StopControlPtzResult" nillable="true" type="q19:SmcErr" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetMic">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cameraNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isOn" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetMicResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/CgwMonitorManage.SmcError" minOccurs="0" name="SetMicResult" nillable="true" type="q20:SmcErr" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetSpeaker">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cameraNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isOn" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetSpeakerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/CgwMonitorManage.SmcError" minOccurs="0" name="SetSpeakerResult" nillable="true" type="q21:SmcErr" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MakeIFrame">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cameraNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MakeIFrameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/CgwMonitorManage.SmcError" minOccurs="0" name="MakeIFrameResult" nillable="true" type="q22:SmcErr" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="KeepAliver">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="KeepAliverResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/CgwMonitorManage.SmcError" minOccurs="0" name="KeepAliverResult" nillable="true" type="q23:SmcErr" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

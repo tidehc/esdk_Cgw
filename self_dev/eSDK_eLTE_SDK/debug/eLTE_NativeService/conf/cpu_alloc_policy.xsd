@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+install   : \install\conf\cpu_alloc_policy.xsd
+author    : WuGang
+created   : 2013/09/29 10:30
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:svcmgr="http://www.td-tech.com/ubp/platform/svcmgr/xml"
+            targetNamespace="http://www.td-tech.com/ubp/platform/svcmgr/xml">
+
+  <xsd:complexType name="CorePolicy">
+    <xsd:attribute name="type" type="xsd:string" use="required"/>
+    <xsd:attribute name="cpu_id" type="xsd:string" use="required"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="Core">
+    <xsd:sequence>
+      <xsd:element name="CorePolicy" type="svcmgr:CorePolicy" maxOccurs="unbounded"/>
+    </xsd:sequence>   
+    <xsd:attribute name="core_count" type="xsd:string" use="required"/>
+  </xsd:complexType>
+    
+  <xsd:complexType name="CpuMode">
+    <xsd:sequence>
+      <xsd:element name="Core" type="svcmgr:Core" maxOccurs="unbounded"/>
+    </xsd:sequence> 
+  </xsd:complexType>
+  
+  <xsd:complexType name="CpuPolicy">
+  	   <xsd:sequence>
+          <xsd:element name="CpuMode" type="svcmgr:CpuMode" />
+       </xsd:sequence>
+  </xsd:complexType>
+  
+  <xsd:element name="CpuPolicy" type="svcmgr:CpuPolicy"/>
+  
+</xsd:schema>
+

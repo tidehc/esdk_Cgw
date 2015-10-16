@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="QosVOIPTemplet" MOC_NAME_C="VOIP Qos模板" Module="BCC" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="custom:ubp_qosTemplate:CreateModule:before" Relation="">
+		<Parameter name="QosFormat" desc="Qos format" type="enum" range="0,1,2" vlist="0:AMR(12.2K),1:AMR(4.75K),2:G.711," constrain="PRI" mode="display" />
+		<Parameter name="AudioDirection" desc="Audio flow direction" type="enum" range="0,1" vlist="0:UP,1:DOWN" constrain="PRI" mode="display" />
+		<Parameter name="ULGBR" desc="up min bandwidth(kbps)" type="int" range="[0,65535]" constrain="NOT NULL" mode="update" />
+		<Parameter name="ULMBR" desc="up max bandwidth(kbps)" type="int" range="[0,65535]" constrain="NOT NULL" mode="update" />
+		<Parameter name="DLGBR" desc="down min bandwidth(kbps)" type="int" range="[0,65535]" constrain="NOT NULL" mode="update" />
+		<Parameter name="DLMBR" desc="down max bandwidth(kbps)" type="int" range="[0,65535]" constrain="NOT NULL" mode="update" />
+	</MOC>
+</Moc-Config>

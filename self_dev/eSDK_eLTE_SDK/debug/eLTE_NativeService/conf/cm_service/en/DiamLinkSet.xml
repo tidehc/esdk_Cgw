@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="DiamLinkSet" MOC_NAME_C="Diam链路集" Module="BCC" ACCESS_CONTROL="add,delete,read" DEST_SVC="" Relation="">
+		<Parameter name="LinkSetIndex" desc="Link set name" type="int" range="[0,255]" default="0" />
+		<Parameter name="LinkSetName" desc="Link set name" type="string" range="[1,127]" default="0" />
+		<Parameter name="LocalHostIndex" desc="Local index" type="int" range="[0,255]" default="0" />
+		<Parameter name="PeerHostIndex" desc="Peer host index" type="int" range="[0,255]" constrain="PRI" mode="update" FK="FK:DRUR:DiamPeerHost:PeerHostIndex" />
+		<Parameter name="ManagerIpRange" desc="Manager Ip Net Address" type="string" range="[0,15]" constrain="PRI" c_type="ipv4" mode="update" />
+		<Parameter name="ManagerIpMask" desc="Manager Ip Net Mask" type="string" range="[0,15]" constrain="PRI" c_type="mask" mode="update" />
+	</MOC>
+</Moc-Config>

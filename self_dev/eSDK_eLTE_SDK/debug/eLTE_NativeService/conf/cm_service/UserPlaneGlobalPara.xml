@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="UserPlaneGlobalPara" MOC_NAME_C="用户面全局参数" Module="BDC" ACCESS_CONTROL="modify,read" DEST_SVC="" Relation="">
+		<Parameter name="RecordId" desc="记录编号" type="int" range="" constrain="PRI" />
+		<Parameter name="UserInactiveThd" desc="用户不活跃时长(秒)" type="int" range="[15,300]" mode="update" default="30" />
+		<Parameter name="DecJitterBuffer" desc="解码器抖动缓冲区长度(毫秒)" type="int" range="[0,5000]" mode="update" default="100" />
+		<Parameter name="RingtoneLanguage" desc="回铃音语种" type="enum" range="0,1" vlist="0:Local,1:English" default="0" />
+		<Parameter name="RTCPInterval" desc="RTCP发送间隔(秒)" type="int" range="[1,12]" mode="update" default="3" />
+	</MOC>
+</Moc-Config>

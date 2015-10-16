@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="DiamLink" MOC_NAME_C="Diam链路" Module="BCC" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="custom:ubp_diamLink:CreateModule:before" Relation="">
+		<Parameter name="LinkIndex" desc="Link index" type="int" range="[0,255]" constrain="PRI" mode="display" />
+		<Parameter name="LinkSetIndex" desc="Link Set index" type="int" range="[0,255]" constrain="NOT NULL" mode="display" FK="FK:DRUR:DiamPeerHost:PeerHostIndex" />
+		<Parameter name="PeerDiamIpv4" desc="Peer diameter IP" type="string" range="[0,15]" constrain="NOT NULL" c_type="ipv4" mode="update" />
+		<Parameter name="PeerDiamPort" desc="Peer diameter port" type="int" range="[1024,65535]" constrain="NOT NULL" mode="update" default="3868" />
+	</MOC>
+</Moc-Config>

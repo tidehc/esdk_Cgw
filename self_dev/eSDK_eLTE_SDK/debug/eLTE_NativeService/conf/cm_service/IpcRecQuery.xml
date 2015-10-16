@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="IpcRecQuery" MOC_NAME_C="" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="" Relation="">
+		<Parameter name="SessionId" desc="任务号" type="string" range="[1,64]" mode="display" />
+		<Parameter name="FileId" desc="文件号" type="int" range="[0,65535]" mode="display" />
+		<Parameter name="FilePath" desc="文件路径" type="string" range="[1,250]" mode="display" />
+		<Parameter name="FileBeginTime" desc="开始时间" type="datetime" range="[1,64]" mode="display" />
+		<Parameter name="FileEndTime" desc="结束时间" type="datetime" range="[1,64]" mode="display" />
+		<Parameter name="FileDuration" desc="文件时长或叫录像时长" type="int" range="" mode="display" />
+		<Parameter name="PlayUrl" desc="播放地址" type="string" range="[1,512]" mode="display" />
+		<Parameter name="DownloadUrl" desc="下载地址" type="string" range="[1,512]" mode="display" />
+		<Parameter name="NodeID" desc="节点ID" type="int" range="[0,65535]" mode="display" />
+		<Parameter name="NodeName" desc="节点名" type="string" range="[0,128]" mode="display" />
+		<Parameter name="NodeType" desc="节点类型" type="enum" range="0,1" vlist="0:MRS_C（控制节点）,1:MRS_D（数据节点)" mode="display" />
+		<Parameter name="NodeAddrIPV4" desc="IPV4地址" type="string" range="[4,15]" c_type="ipv4" mode="display" />
+		<Parameter name="IpcDevIndex" desc="设备ID" type="int" range="[0,65535]" mode="display" />
+		<Parameter name="VPNID" desc="设备VPN" type="int" range="" mode="display" />
+		<Parameter name="ISDN" desc="设备用户号码" type="string" range="[1,8]" mode="display" />
+		<Parameter name="Remark" desc="备注" type="string" range="[0,1024]" mode="display" />
+		<Parameter name="fullFileBeginTime" desc="完整开始时间（微秒）" type="double" range="" />
+		<Parameter name="fullFileEndTime" desc="完整结束时间（微秒）" type="double" range="" />
+	</MOC>
+</Moc-Config>

@@ -1,0 +1,6 @@
+D:\Github\esdk_Cgw\source\Cgw\Cgw\Build\x86\Release\MonitorManageService\NLog.config
+D:\Github\esdk_Cgw\source\Cgw\Cgw\Build\x86\Release\MonitorManageService\CgwMonitorManage.Common.dll
+D:\Github\esdk_Cgw\source\Cgw\Cgw\Build\x86\Release\MonitorManageService\CgwMonitorManage.Common.pdb
+D:\Github\esdk_Cgw\source\Cgw\CgwMonitorManageService\Cgw.Common\obj\x86\Release\Cgw.Common.csprojResolveAssemblyReference.cache
+D:\Github\esdk_Cgw\source\Cgw\CgwMonitorManageService\Cgw.Common\obj\x86\Release\CgwMonitorManage.Common.dll
+D:\Github\esdk_Cgw\source\Cgw\CgwMonitorManageService\Cgw.Common\obj\x86\Release\CgwMonitorManage.Common.pdb

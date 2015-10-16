@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+///////////////////////////////////////////////////////////////////////
+//  UBP全局错误码定义范围如下：
+// Common  : 0     ~ -999
+// Platform:-1000  ~ -9999   
+// OM      :-10000 ~ -19999   
+// BCC     :-20000 ~ -29999
+// BDC     :-30000 ~ -39999
+// DC      :-40000 ~ -49999
+// MRS     :-50000 ~ -59999
+// VGW     :-60000 ~ -69999
+///////////////////////////////////////////////////////////////////////
+-->
+
+<Errors xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
+       xsd:noNamespaceSchemaLocation="error_number.xsd">
+
+        <Error>
+		<code>101</code>
+		<detail message="用户名不存在或未锁定。" suggestion=""/>
+	</Error>
+        <Error>
+		<code>000</code>
+		<detail message="解锁成功。" suggestion=""/>
+	</Error>
+        <Error>
+		<code>001</code>
+		<detail message="内部错误。" suggestion=""/>
+	</Error>
+	
+	<!--
+//MQ:-1000 ~-1099
+-->
+	<Error>
+		<code>-1000</code>
+		<detail message="初始化ZMQ失败。" suggestion="请检查环境。"/>
+	</Error>
+
+	<Error>
+		<code>-1001</code>
+		<detail message="链路连接出错。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1004</code>
+		<detail message="初始化异步请求链路出错。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1005</code>
+		<detail message="消息连接出错。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1006</code>
+		<detail message="消息订阅出错。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1007</code>
+		<detail message="初始化本地服务出错。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1008</code>
+		<detail message="Reponse服务初始化出错。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1009</code>
+		<detail message="Dealer服务初始化出错。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1010</code>
+		<detail message="Publisher服务初始化出错。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1011</code>
+		<detail message="获取目标服务信息出错。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1012</code>
+		<detail message="初始化Consumer出错。" suggestion=""/>
+	</Error>
+
+	<!--
+//CM:-1100 ~-1199
+-->
+	<Error>
+		<code>-1100</code>
+		<detail message="消息体为空。" suggestion="请检查消息格式。"/>
+	</Error>
+	<Error>
+		<code>-1101</code>
+		<detail message="消息体类型无效。" suggestion="请检查消息格式。"/>
+	</Error>
+	<Error>
+		<code>-1102</code>
+		<detail message="XML文件导入失败。" suggestion="请检查ubp_cm.log日志文件获取更多详细信息。"/>
+	</Error>
+	<Error>
+		<code>-1103</code>
+		<detail message="CSV文件导入失败。" suggestion="请检查ubp_cm.log日志文件获取更多详细信息。"/>
+	</Error>
+	<Error>
+		<code>-1104</code>
+		<detail message="未知对象类型。" suggestion="请检查ubp_cm.log日志文件获取更多详细信息。"/>
+	</Error>
+	<Error>
+		<code>-1105</code>
+		<detail message="未知操作类型。" suggestion="请检查ubp_cm.log日志文件获取更多详细信息。"/>
+	</Error>
+	<Error>
+		<code>-1106</code>
+		<detail message="对象修改失败。" suggestion="请检查ubp_cm.log日志文件获取更多详细信息。"/>
+	</Error>
+	<Error>
+		<code>-1107</code>
+		<detail message="BCC节点超过最大值。" suggestion="请检查UBPNode表。"/>
+	</Error>
+	<Error>
+		<code>-1108</code>
+		<detail message="相同IP地址的BDC节点已经存在。" suggestion="请检查UBPNode配置。"/>
+	</Error>
+	<Error>
+		<code>-1109</code>
+		<detail message="数据库错误。" suggestion="请检查数据库状态。"/>
+	</Error>
+	<Error>
+		<code>-1110</code>
+		<detail message="XML格式错误。" suggestion="请检查ubp_cm.log日志文件获取更多详细信息。"/>
+	</Error>
+	<Error>
+		<code>-1111</code>
+		<detail message="校验出错：编码格式错误。" suggestion="请检查ubp_cm.log日志文件获取更多详细信息。"/>
+	</Error>
+	<Error>
+		<code>-1112</code>
+		<detail message="校验出错：大小无效。" suggestion="请检查ubp_cm.log日志文件获取更多详细信息。"/>
+	</Error>
+	<Error>
+		<code>-1113</code>
+		<detail message="校验出错：起始值无效。" suggestion="请检查ubp_cm.log日志文件获取更多详细信息。"/>
+	</Error>
+	<Error>
+		<code>-1114</code>
+		<detail message="校验出错：非IP地址。" suggestion="请检查ubp_cm.log日志文件获取更多详细信息。"/>
+	</Error>
+	<Error>
+		<code>-1115</code>
+		<detail message="校验出错：存在多个%符号。" suggestion="请检查ubp_cm.log日志文件获取更多详细信息。"/>
+	</Error>
+	<Error>
+		<code>-1116</code>
+		<detail message="校验出错：存在多个空格。" suggestion="请检查ubp_cm.log日志文件获取更多详细信息。"/>
+	</Error>
+	<Error>
+		<code>-1117</code>
+		<detail message="校验出错：非全数字。" suggestion="请检查ubp_cm.log日志文件获取更多详细信息。"/>
+	</Error>
+	<Error>
+		<code>-1118</code>
+		<detail message="校验出错：号段中的部分号码已存在。" suggestion="请检查ubp_cm.log日志文件获取更多详细信息。"/>
+	</Error>
+	<Error>
+	<code>-1119</code>
+		<detail message="配置项表不存在，机型可能不匹配。 " suggestion="请检查ubp_cm.log日志文件获取更多详细信息。"/>
+	</Error>
+
+	<!--
+//MONITOR:-1200 ~-1249
+-->
+	<Error>
+		<code>-1200</code>
+		<detail message="告警代码服务模块不存在。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1201</code>
+		<detail message="获取硬盘状态信息出错。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1202</code>
+		<detail message="创建消息出错。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1203</code>
+		<detail message="获取内存状态信息出错。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1204</code>
+		<detail message="获取CPU状态信息出错。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1205</code>
+		<detail message="获取数据库状态信息出错。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1206</code>
+		<detail message="获取Daem服务状态信息超时。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1207</code>
+		<detail message="未知消息类型，非SCA消息。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1208</code>
+		<detail message="Daem服务状态不正常。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1209</code>
+		<detail message="执行脚本出错。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1210</code>
+		<detail message="该脚本只能在 linux / unix 环境上执行。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1211</code>
+		<detail message="获取环境变量出错。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1212</code>
+		<detail message="找不到getdbspace.sh脚本文件。" suggestion=""/>
+	</Error>
+
+	<!--
+//LICENSE:-1250 ~-1299
+-->
+
+	<Error>
+		<code>-1250</code>
+		<detail message="License文件路径错误。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1251</code>
+		<detail message="读Licnese文件出错。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1252</code>
+		<detail message="解密License文件出错。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1253</code>
+		<detail message="解析License文件出错!" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1254</code>
+		<detail message="MAC地址错误。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-1255</code>
+		<detail message="License已过期。" suggestion=""/>
+	</Error>
+	
+	<Error>
+		<code>-1256</code>
+		<detail message="License网元版本不匹配。请检查产品版本信息。" suggestion=""/>
+	</Error>
+
+  <Error>
+    <code>-1259</code>
+    <detail message="ESN 错误. " suggestion=""/>
+  </Error>
+
+	<!--
+//DAO:-1400 ~ -2999
+-->
+
+	<Error>
+		<code>-2737</code>
+		<detail message="记录重复。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-2583</code>
+		<detail message="添加或更新子节点失败：外键约束。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-2582</code>
+		<detail message="删除或更新父节点失败：外键约束。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-2653</code>
+		<detail message="表不存在。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-2745</code>
+		<detail message="未知列。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-2348</code>
+		<detail message="删除或更新父节点失败：外键约束。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-2347</code>
+		<detail message="添加或更新子节点失败：外键约束。" suggestion=""/>
+	</Error>
+
+	<!--
+//QUERY:-3000 ~ -3099
+-->
+
+	<Error>
+		<code>-3000</code>
+		<detail message="更新失败，对象无主键。" suggestion=""/>
+	</Error>
+
+	<Error>
+		<code>-3001</code>
+		<detail message="未知字段类型。" suggestion=""/>
+	</Error>
+	<Error>
+		<code>-3002</code>
+		<detail message="未知字段。" suggestion=""/>
+	</Error>
+
+</Errors>

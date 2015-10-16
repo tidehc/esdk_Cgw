@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="MrsServicePort" MOC_NAME_C="MRS端口" Module="MRS" ACCESS_CONTROL="modify,read" DEST_SVC="custom:ubp_mrs_moc:CreateModule:before" Relation="">
+		<Parameter name="ID" desc="ID" type="int" range="" constrain="PRI" default="0" />
+		<Parameter name="RECSipPort" desc="录音录像服务使用的SIP端口" type="int" range="[1024,65535]" mode="update" default="5061" />
+		<Parameter name="VGWSipPort" desc="摄像头网关使用的SIP端口" type="int" range="[1024,65535]" mode="update" default="5062" />
+		<Parameter name="IVSSipPort" desc="IVS网关使用的SIP端口" type="int" range="[1024,65535]" mode="update" default="5063" />
+	</MOC>
+</Moc-Config>

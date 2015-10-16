@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="CallRecTaskInfo" MOC_NAME_C="录像任务信息" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="only" Relation="">
+		<Parameter name="task_id" desc="Task ID" type="string" range="[1,64]" constrain="PRI" mode="display" />
+		<Parameter name="node_id" desc="Node ID" type="int" range="[1,1024]" mode="display" />
+		<Parameter name="task_status" desc="Task status" type="enum" range="0,1,2,3" vlist="0: being initialized,1: being stored,2: failure,3: success" mode="display" />
+		<Parameter name="task_type" desc="Task type" type="enum" range="1,2,3" vlist="1: audio recording,2: video recording,3: audio and video recording" mode="display" />
+		<Parameter name="call_type" desc="Call type" type="enum" range="0,1,2,3,4" vlist="0: PTP voice call,1: PTP video call,2: video upload,3: group call,4: unknown type" mode="display" />
+		<Parameter name="caller" desc="Caller" type="int" range="" mode="display" />
+		<Parameter name="caller_vpn" desc="Caller VPN" type="int" range="" mode="display" />
+		<Parameter name="callee" desc="Callee" type="int" range="" mode="display" />
+		<Parameter name="callee_vpn" desc="Callee VPN" type="int" range="" mode="display" />
+		<Parameter name="work_dir" desc="Storage directory" type="string" range="[1,200]" mode="display" />
+		<Parameter name="invite_time_sec" desc="Begin time (s)" type="int" range="" mode="display" />
+		<Parameter name="invite_time_usec" desc="End time (ns)" type="int" range="" mode="display" />
+		<Parameter name="end_time_sec" desc="End time (s)" type="int" range="" mode="display" />
+		<Parameter name="end_time_usec" desc="End time (ns)" type="int" range="" mode="display" />
+		<Parameter name="is_emergency" desc="Emergency flag" type="enum" range="0,1" vlist="0: no,1: yes" mode="display" />
+		<Parameter name="is_prempted" desc="Barge-in flag" type="enum" range="0,1" vlist="0: no,1: yes" mode="display" />
+		<Parameter name="opt_status" desc="Operation status" type="int" range="[0,65536]" mode="display" />
+		<Parameter name="err_type" desc="Failure type" type="int" range="[0,65536]" mode="display" />
+		<Parameter name="call_flag" desc="call properties" type="int" range="" mode="display" />
+		<Parameter name="callerstr" desc="CallerStr" type="string" range="[1,80]" mode="display" />
+		<Parameter name="calleestr" desc="CalleeStr" type="string" range="[1,80]" mode="display" />
+		<Parameter name="invite_time_full" desc="full begin time(ms)" type="double" range="" />
+		<Parameter name="end_time_full" desc="full end time(ms)" type="double" range="" />
+		<Parameter name="node_ip" desc="node IP" type="string" range="[0,15]" mode="display" />
+	</MOC>
+</Moc-Config>

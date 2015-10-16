@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="SDSCFG" MOC_NAME_C="短信配置" Module="SDS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="" Relation="">
+		<Parameter name="OffSaveTime" desc="服务器离线短信保存时间（小时）" type="int" range="" mode="update" default="48" />
+	</MOC>
+</Moc-Config>

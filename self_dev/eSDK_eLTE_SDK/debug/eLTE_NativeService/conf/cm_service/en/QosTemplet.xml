@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="QosTemplet" MOC_NAME_C="视频Qos模板" Module="BCC" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="custom:ubp_qosTemplate:CreateModule:before" Relation="">
+		<Parameter name="QosFormat" desc="Qos format" type="enum" range="0,1,2,3,4" vlist="0:QCIF,1:CIF,2:D1,3:720P,4:1080P" constrain="PRI" mode="display" />
+		<Parameter name="VideoDirection" desc="Video flow direction" type="enum" range="0,1" vlist="0:UP,1:DOWN" constrain="PRI" mode="display" />
+		<Parameter name="ULGBR" desc="up min bandwidth(kbps)" type="int" range="[0,65535]" constrain="NOT NULL" mode="update" />
+		<Parameter name="ULMBR" desc="up max bandwidth(kbps)" type="int" range="[0,65535]" constrain="NOT NULL" mode="update" />
+		<Parameter name="DLGBR" desc="down min bandwidth(kbps)" type="int" range="[0,65535]" constrain="NOT NULL" mode="update" />
+		<Parameter name="DLMBR" desc="down max bandwidth(kbps)" type="int" range="[0,65535]" constrain="NOT NULL" mode="update" />
+	</MOC>
+</Moc-Config>

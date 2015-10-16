@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="GISSubRecord" Module="GIS" ACCESS_CONTROL="read" DEST_SVC="" FILTER="">
+		<Parameter name="DcUserName" desc="调度台用户号码" type="string" range="[0,64]" constrain="PRI" mode="display" />
+		<Parameter name="TeUserName" desc="终端用户号码" type="string" range="[0,64]" mode="display" />
+	</MOC>
+</Moc-Config>

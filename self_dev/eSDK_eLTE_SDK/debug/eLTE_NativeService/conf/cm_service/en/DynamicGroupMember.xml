@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="DynamicGroupMember" MOC_NAME_C="动态群组成员" Module="BCC" ACCESS_CONTROL="read" DEST_SVC="" Relation="">
+		<Parameter name="GroupNumber" desc="Dynamic group number" type="string" range="[1,8]" constrain="PRI" not_begin_with="0" all_num="" mode="display" FK="FK:DRUR:DynamicGroup:GroupNumber" />
+		<Parameter name="DMGMemberType" desc="Member type" type="enum" range="0,1" vlist="0: group,1: user" constrain="PRI" mode="update" />
+		<Parameter name="MemberId" desc="Member ID" type="string" range="[1,8]" constrain="PRI" not_begin_with="0" all_num="" mode="update" />
+		<Parameter name="PhotoGroupId" desc="Photo group ID" type="string" range="[1,8]" constrain="PRI" not_begin_with="0" all_num="" mode="update" />
+	</MOC>
+</Moc-Config>

@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="dcgsdk">
+      <UniqueIdentifier>{37341c40-ea87-45d0-b6b0-cb360f9ae97b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dcgsdk\depend">
+      <UniqueIdentifier>{6f335186-6182-4ce1-b1f1-1eb7b0cac10e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dcgsdk\sipstack">
+      <UniqueIdentifier>{5b78db8d-c73b-4656-af03-6e5128ee2c2b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sipsdk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\CConnMgr.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\CLockGuard.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\CNVSTimer.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\CSynchronized.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\CSyncQueue.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\MiniSip.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\rand.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\randutil.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\sip_namespace.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\vos.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\vos_basetype.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\vos_common.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\vos_cond.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\vos_config.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\vos_errno.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\vos_mem.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\vos_mutex.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\vos_sema.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\vos_thread.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\vos_time.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\sipstack\CDcgStack.hpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\sipstack\CSipStack.hpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_client.hpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_client_impl.hpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_header.hpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_mgr.hpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_mgr_impl.hpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_msg.hpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_msg_handler.hpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_msg_impl.hpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_msg_type.hpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_server.hpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_server_impl.hpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\sipstack\sipstack_config.hpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\sipstack\sipstack_defs.h">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\sipstack\sipstack_exception.hpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\sipstack\sipstack_import.hpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\sipstack\sipstack_msg_ctrl.h">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\sipstack\sipstack_msg_wrap.hpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\sipstack\sipstack_sync_agent_msg_handler_impl.hpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\sipstack\sipstack_task.h">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClInclude>
+    <ClInclude Include="eSDKTool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\digcalc.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="dcg\inc\depend\md5.h">
+      <Filter>dcgsdk\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="minidmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UnhandledExceptionFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sipsdk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\depend\CConnMgr.cpp">
+      <Filter>dcgsdk\depend</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\depend\CLockGuard.cpp">
+      <Filter>dcgsdk\depend</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\depend\CNVSTimer.cpp">
+      <Filter>dcgsdk\depend</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\depend\CSynchronized.cpp">
+      <Filter>dcgsdk\depend</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\depend\MiniSip.cpp">
+      <Filter>dcgsdk\depend</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\depend\rand.cpp">
+      <Filter>dcgsdk\depend</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\depend\randutil.cpp">
+      <Filter>dcgsdk\depend</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\depend\vos_adaptor.cpp">
+      <Filter>dcgsdk\depend</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\depend\vos_cond.cpp">
+      <Filter>dcgsdk\depend</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\depend\vos_mem.cpp">
+      <Filter>dcgsdk\depend</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\depend\vos_mutex.cpp">
+      <Filter>dcgsdk\depend</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\depend\vos_sema.cpp">
+      <Filter>dcgsdk\depend</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\depend\vos_thread.cpp">
+      <Filter>dcgsdk\depend</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\depend\vos_time.cpp">
+      <Filter>dcgsdk\depend</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\sipstack\CDcgStack.cpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\sipstack\CSipStack.cpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\sipstack\sipstack_agent_client_impl.cpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\sipstack\sipstack_agent_mgr_impl.cpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\sipstack\sipstack_agent_msg_impl.cpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\sipstack\sipstack_agent_server_impl.cpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\sipstack\sipstack_config.cpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\sipstack\sipstack_exception.cpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\sipstack\sipstack_msg_ctrl.cpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\sipstack\sipstack_msg_wrap.cpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\sipstack\sipstack_sync_agent_msg_handler_impl.cpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\sipstack\sipstack_task.cpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClCompile>
+    <ClCompile Include="eSDKTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\depend\digcalc.cpp">
+      <Filter>dcgsdk\depend</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\depend\md5.cpp">
+      <Filter>dcgsdk\depend</Filter>
+    </ClCompile>
+    <ClCompile Include="dcg\src\sipstack\sipstack_log.cpp">
+      <Filter>dcgsdk\sipstack</Filter>
+    </ClCompile>
+    <ClCompile Include="minidmp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnhandledExceptionFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

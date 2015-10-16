@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="HOTLINECFG" MOC_NAME_C="热线号码" Module="DC" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="" Relation="">
+		<Parameter name="ISDN" desc="DC用户号码" type="string" range="[1,8]" constrain="PRI" mode="display" FK="FK:DCUC:DCAttribute:ISDN" />
+		<Parameter name="Hotindex" desc="调度员热线编号" type="int" range="[1,3]" constrain="PRI" mode="display" />
+		<Parameter name="HotName" desc="热线名称" type="string" range="[1,20]" mode="update" />
+		<Parameter name="HotNum" desc="热线号码" type="string" range="[1,8]" not_begin_with="0" all_num="" mode="update" />
+	</MOC>
+</Moc-Config>

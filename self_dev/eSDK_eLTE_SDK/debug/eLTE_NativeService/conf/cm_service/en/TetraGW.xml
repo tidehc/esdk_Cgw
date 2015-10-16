@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="TetraGW" MOC_NAME_C="Tetra网关" Module="BCC" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="" Relation="">
+		<Parameter name="TetraGWID" desc="Tetra Gateway ID" type="int" range="[4000,5999]" constrain="PRI" mode="display" />
+		<Parameter name="NodeName" desc="Node name" type="string" range="[1,31]" constrain="NOT NULL" mode="update" />
+		<Parameter name="AddrIPV4" desc="Ipv4 address" type="string" range="[7,15]" constrain="NOT NULL" c_type="ipv4" mode="update" />
+		<Parameter name="SipPort" desc="SIP port" type="int" range="[1024,65535]" constrain="NOT NULL" mode="update" default="5060" />
+	</MOC>
+</Moc-Config>

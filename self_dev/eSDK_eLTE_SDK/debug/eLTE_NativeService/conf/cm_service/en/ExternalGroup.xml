@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="ExternalGroup" MOC_NAME_C="外部组" Module="OMC,MDC" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="" Relation="">
+		<Parameter name="GroupNumber" desc="Group number" type="string" range="[1,5]" constrain="PRI" not_begin_with="0" all_num="" mode="display" />
+		<Parameter name="GroupName" desc="Group name" type="string" range="[0,12]" mode="display" />
+		<Parameter name="VPNID" desc="VPN ID" type="int" range="[0,200]" constrain="NOT NULL" mode="display" default="0" />
+	</MOC>
+</Moc-Config>

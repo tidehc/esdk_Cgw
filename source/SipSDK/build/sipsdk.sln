@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sipsdk", "..\sipsdk\sipsdk.vcxproj", "{1E38A79A-BB83-4CB2-8C5F-BC8448258428}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rtpconvertsdk", "..\eSDK_RtpPacket\eSDK_RtpPacket.vcxproj", "{707F1F01-4F8A-4374-A09C-FB8CE8D73E12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E38A79A-BB83-4CB2-8C5F-BC8448258428}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1E38A79A-BB83-4CB2-8C5F-BC8448258428}.Debug|Win32.Build.0 = Debug|Win32
+		{1E38A79A-BB83-4CB2-8C5F-BC8448258428}.Release|Win32.ActiveCfg = Release|Win32
+		{1E38A79A-BB83-4CB2-8C5F-BC8448258428}.Release|Win32.Build.0 = Release|Win32
+		{707F1F01-4F8A-4374-A09C-FB8CE8D73E12}.Debug|Win32.ActiveCfg = Debug|Win32
+		{707F1F01-4F8A-4374-A09C-FB8CE8D73E12}.Debug|Win32.Build.0 = Debug|Win32
+		{707F1F01-4F8A-4374-A09C-FB8CE8D73E12}.Release|Win32.ActiveCfg = Release|Win32
+		{707F1F01-4F8A-4374-A09C-FB8CE8D73E12}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="RecFileInfo" MOC_NAME_C="录音录像文件" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="only" Relation="">
+		<Parameter name="file_id_info_task_id" desc="任务号" type="int" range="" constrain="PRI" mode="display" />
+		<Parameter name="file_id_info_file_id" desc="文件号" type="int" range="" constrain="PRI" mode="display" />
+		<Parameter name="file_name" desc="文件路径" type="string" range="[1,250]" mode="display" />
+		<Parameter name="file_status" desc="文件状态" type="enum" range="0,1,2,3,4,5" vlist="0:创建成功,1:存储失败,2:正在存储,3:成功,4:等待删除,5:已删除" mode="display" />
+		<Parameter name="file_ref_num" desc="文件引用个数" type="int" range="[0,65535]" mode="display" />
+	</MOC>
+</Moc-Config>

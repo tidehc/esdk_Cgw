@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="DCDec" MOC_NAME_C="调度员解码器关联" Module="DC" ACCESS_CONTROL="add,delete,read" DEST_SVC="" Relation="">
+		<Parameter name="ISDN" desc="DC用户号码" type="string" range="[1,8]" constrain="PRI" not_begin_with="0" all_num="" mode="display" FK="FK:DCUC:DCAttribute:ISDN" />
+		<Parameter name="DevIndex" desc="大屏ID" type="int" range="[1,128]" constrain="PRI" mode="display" FK="FK:DRUR:VgwDec:DevIndex" />
+	</MOC>
+</Moc-Config>

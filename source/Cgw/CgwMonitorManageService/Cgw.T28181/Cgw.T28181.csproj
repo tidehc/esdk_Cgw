@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{51E30D92-731A-449D-BCF9-C4D3CF7E0B72}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CgwMonitorManage.T28181</RootNamespace>
+    <AssemblyName>CgwMonitorManage.T28181</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\..\..\Huawei Technologies Co., Ltd\Converge Gateway\bin\MonitorManageService\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Cgw\Build\x86\Release\MonitorManageService\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NLog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\open_src\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\DeviceItem.cs" />
+    <Compile Include="Common\SipSDKInterface.cs" />
+    <Compile Include="SipStackAdapter.cs" />
+    <Compile Include="Common\T28181PTZCmd.cs" />
+    <Compile Include="T28181VideoMonitor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\XmlUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cgw.Common\Cgw.Common.csproj">
+      <Project>{1E2CE08D-588F-4E3B-8AE5-E287D0631EDB}</Project>
+      <Name>Cgw.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgw.NlogEx\Cgw.NlogEx.csproj">
+      <Project>{62A6739A-EFC8-46C3-8BC7-7949F562A69A}</Project>
+      <Name>Cgw.NlogEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgw.SmcErr\Cgw.SmcError.csproj">
+      <Project>{5A61564F-3C6E-4F74-B8CB-C7F28D4D26EB}</Project>
+      <Name>Cgw.SmcError</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SipStack\config\sipstack_config.xml" />
+    <Content Include="SipStack\rtpconvertsdk.dll" />
+    <Content Include="SipStack\rtpconvertsdk.lib" />
+    <Content Include="SipStack\rtpconvertsdk.pdb" />
+    <Content Include="SipStack\sipsdk.dll">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="SipStack\sipsdk.lib">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="SipStack\sipsdk.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SipStack\config\LogConfig.ini" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

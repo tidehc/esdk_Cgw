@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="GISIPC" MOC_NAME_C="摄像头位置" Module="OMC,MDC,MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="" Relation="">
+		<Parameter name="ISDN" desc="User number of the fixed camera" type="string" range="[1,8]" constrain="PRI" mode="display" FK="FK:DCUC:FixedUser:ISDN" />
+		<Parameter name="latitude" desc="Latitude of the fixed camera(°)" type="double" range="[-90,90]" constrain="NOT NULL" mode="update" />
+		<Parameter name="longitude" desc="Longitude of the fixed camera(°)" type="double" range="[-180,180]" constrain="NOT NULL" mode="update" />
+		<Parameter name="altitude" desc="Altitude of the fixed camera(m)" type="double" range="[-32767,32767]" constrain="NOT NULL" mode="update" />
+		<Parameter name="address" desc="Installation location of the fixed camera" type="string" range="[0,100]" mode="update" />
+	</MOC>
+</Moc-Config>

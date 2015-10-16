@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="TerminalLinkageCFG" MOC_NAME_C="终端联动配置" Module="DC" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="" Relation="">
+		<Parameter name="ISDN" desc="DC User number" type="string" range="[1,8]" constrain="PRI" mode="update" />
+		<Parameter name="CallNum" desc="Call number" type="int" range="" constrain="PRI" mode="update" />
+		<Parameter name="LinkageNum" desc="Linkage  number" type="int" range="" constrain="NOT NULL" mode="update" />
+		<Parameter name="DstObjId" desc="Viodeo on wall ID" type="int" range="" constrain="NOT NULL" mode="update" FK="FK:DRUR:VgwDec:DevIndex" />
+		<Parameter name="ChnNo" desc="No. of the split screen" type="int" range="[1,16]" constrain="NOT NULL" mode="update" />
+	</MOC>
+</Moc-Config>

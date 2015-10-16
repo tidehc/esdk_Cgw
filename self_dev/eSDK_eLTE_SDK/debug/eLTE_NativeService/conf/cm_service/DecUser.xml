@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="DecUser" MOC_NAME_C="解码器用户" Module="DC/BDC" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="" Relation="">
+		<Parameter name="DevIndex" desc="大屏ID" type="int" range="[1,128]" constrain="PRI" />
+		<Parameter name="ChnNo" desc="分屏号" type="int" range="[1,16]" constrain="PRI" />
+		<Parameter name="ChnNum" desc="分屏数" type="int" range="[1,16]" constrain="NOT NULL" />
+		<Parameter name="ISDN" desc="用户号码" type="string" range="[1,8]" constrain="NOT NULL" />
+		<Parameter name="UserName" desc="用户名称" type="string" range="[1,31]" constrain="NOT NULL" />
+		<Parameter name="UserPriority" desc="优先级" type="int" range="[1,15]" constrain="NOT NULL" />
+		<Parameter name="SipPass" desc="SIP密码" type="string" range="[1,18]" constrain="NOT NULL" c_type="password" />
+	</MOC>
+</Moc-Config>

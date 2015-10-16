@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="GISCFG" MOC_NAME_C="GIS参数" Module="SDS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="" Relation="">
+		<Parameter name="ISDN" desc="用户号码" type="string" range="[1,8]" constrain="PRI" mode="display" />
+		<Parameter name="GISRptSwt" desc="GIS上报开关" type="enum" range="0,1" vlist="0:ON,1:OFF" default="1" />
+		<Parameter name="GISRptPrd" desc="GIS上报周期" type="enum" range="1,2,5,10,15,30,60" vlist="1:1秒,2:2秒,5:5秒,10:10秒,15:15秒,30:30秒,60:60秒" mode="update" default="30" />
+		<Parameter name="GISEvt" desc="支持GIS上报的特殊事件" type="bitset" range="" vlist="1:紧急呼叫" default="1" />
+		<Parameter name="GISRptDis" desc="GIS上报距离" type="int" range="[0,10000]" mode="update" default="0" />
+	</MOC>
+</Moc-Config>

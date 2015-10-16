@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="MrsServicePort" MOC_NAME_C="MRS端口" Module="MRS" ACCESS_CONTROL="modify,read" DEST_SVC="custom:ubp_mrs_moc:CreateModule:before" Relation="">
+		<Parameter name="ID" desc="ID" type="int" range="" constrain="PRI" default="0" />
+		<Parameter name="RECSipPort" desc="sip port of recording server" type="int" range="[1024,65535]" mode="update" default="5061" />
+		<Parameter name="VGWSipPort" desc="sip port of vgw" type="int" range="[1024,65535]" mode="update" default="5062" />
+		<Parameter name="IVSSipPort" desc="sip port of ivs" type="int" range="[1024,65535]" mode="update" default="5063" />
+	</MOC>
+</Moc-Config>

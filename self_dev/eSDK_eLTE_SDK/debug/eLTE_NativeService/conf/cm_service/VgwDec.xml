@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="VgwDec" MOC_NAME_C="解码器" Module="VGW" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="before" Relation="">
+		<Parameter name="DevIndex" desc="大屏ID" type="int" range="[1,128]" constrain="PRI" mode="update" />
+		<Parameter name="NodeId" desc="VGW节点ID" type="int" range="" constrain="NOT NULL" FK="FK:DRUR:UBPNode:NodeID" />
+		<Parameter name="ChnNum" desc="分屏数" type="enum" range="0,1,2,3,4" vlist="0:1,1:2,2:4,3:9,4:16" constrain="NOT NULL" mode="update" default="0" />
+		<Parameter name="DevAlias" desc="大屏描述" type="string" range="[0,31]" mode="update" />
+		<Parameter name="DecUserName" desc="解码器管理用户名" type="string" range="[1,15]" constrain="NOT NULL" mode="update" />
+		<Parameter name="DecPassword" desc="解码器管理密码" type="string" range="[1,15]" constrain="NOT NULL" c_type="password" mode="update" />
+		<Parameter name="DecIp" desc="解码器IP地址" type="string" range="[4,15]" constrain="NOT NULL" c_type="ipv4" mode="update" default="192.0.0.64" />
+		<Parameter name="DecPort" desc="解码器管理端口" type="int" range="[1,65535]" constrain="NOT NULL" mode="update" default="8000" />
+		<Parameter name="DecType" desc="厂商类型" type="enum" range="0,1" vlist="0:海康,1:华为" constrain="NOT NULL" mode="update" default="0" />
+		<Parameter name="DevStatus" desc="设备状态" type="enum" range="0,1" vlist="0:空闲,1:激活" constrain="NOT NULL" mode="update" default="0" />
+		<Parameter name="InterfaceType" desc="输出接口类型" type="enum" range="0,1,2,3" vlist="0:VGA,1:BNC,2:HDMI,3:DVI" constrain="NOT NULL" mode="update" default="0" />
+		<Parameter name="InterfaceIndex" desc="输出接口索引" type="enum" range="0,1,2,3,4,5,6,7" vlist="0:INDEX1,1:INDEX2,2:INDEX3,3:INDEX4,4:INDEX5,5:INDEX6,6:INDEX7,7:INDEX8" constrain="NOT NULL" mode="update" default="0" />
+		<Parameter name="DevLinkMode" desc="设备连接模式" type="enum" range="0" vlist="0:TCP" constrain="NOT NULL" mode="update" default="0" />
+	</MOC>
+</Moc-Config>

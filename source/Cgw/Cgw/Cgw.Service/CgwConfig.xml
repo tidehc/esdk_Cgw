@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+
+  <servicesSettings>
+	  <!--Session timeout duration.-->
+    <sessionOverTime>1</sessionOverTime>
+
+    <!--Monitor Platform Camera Group Name.-->
+    <monitorPlatformCameraGroupName>MonitorPlatform</monitorPlatformCameraGroupName>
+
+    <!--eLTE Platform Camera Group Name.-->
+    <eLTEPlatformCameraGroupName>eLTEPlatform</eLTEPlatformCameraGroupName>
+	
+	  <!-- CGW service IP address.-->
+    <cgwServiceIp>127.0.0.1</cgwServiceIp>
+    
+    <!--RTP start port for the CGW monitoring channel.The default value is 12000.-->
+    <cgwChannelRTPStartPort>12000</cgwChannelRTPStartPort>
+    
+    <!--Number of RTP ports for the CGW monitoring channel. The default value is 520.-->
+    <cgwChannelRTPPortCount>520</cgwChannelRTPPortCount>
+    
+    <!--CGW audio protocol. Available values are G711A and G711U. The default value is G711A.-->
+    <cgwAudioProtocol>G711A</cgwAudioProtocol>
+
+    <!--CGW SoftTerminal Sip Port.-->
+    <cgwChanelCallPort>5062</cgwChanelCallPort>
+
+    <!-- Times of CGW Channel NotHave any Data.-->
+    <cgwChanelNoDataCount>10</cgwChanelNoDataCount>
+    
+  </servicesSettings>
+
+</configuration>

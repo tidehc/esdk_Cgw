@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="AASCfg" MOC_NAME_C="AA server 配置表" Module="BCC" ACCESS_CONTROL="modify,read" DEST_SVC="" Relation="">
+		<Parameter name="ID" desc="ID" type="int" range="[1,2147483647]" constrain="PRI" mode="update" default="0" />
+		<Parameter name="PUSHSERVERIPV4" desc="Push Server IP" type="string" range="[7,15]" constrain="NOT NULL" mode="update" default="127.0.0.1" />
+		<Parameter name="UDCSERVERIPV4" desc="UDC Server IP" type="string" range="[7,15]" constrain="NOT NULL" mode="update" default="127.0.0.1" />
+		<Parameter name="UDCUSERNAME" desc="UDC USERNAME" type="string" range="[1,128]" constrain="NOT NULL" mode="update" />
+		<Parameter name="UDCPASSWD" desc="UDC PASSWD" type="string" range="[1,128]" constrain="NOT NULL" c_type="password" mode="update" />
+		<Parameter name="PUSHSERVERUSERNAME" desc="PUSHSERVER USERNAME" type="string" range="[1,128]" constrain="NOT NULL" mode="update" />
+		<Parameter name="PUSHSERVERPASSWD" desc="PUSHSERVER PASSWD" type="string" range="[1,128]" constrain="NOT NULL" c_type="password" mode="update" />
+	</MOC>
+</Moc-Config>

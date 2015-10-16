@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+///////////////////////////////////////////////////////////////////////
+//  UBP全局错误码定义范围如下：
+// Common  : 0     ~ -999
+// Platform:-1000  ~ -9999   
+// OM      :-10000 ~ -19999   
+// BCC     :-20000 ~ -29999
+// BDC     :-30000 ~ -39999
+// DC      :-40000 ~ -49999
+// MRS     :-50000 ~ -59999
+// VGW     :-60000 ~ -69999
+///////////////////////////////////////////////////////////////////////
+-->
+
+<Errors xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
+       xsd:noNamespaceSchemaLocation="error_number.xsd">
+
+        <Error>
+		<code>101</code>
+		<detail message="Username not exsit or unlock. " suggestion=""/>
+	</Error>
+        <Error>
+		<code>000</code>
+		<detail message="OK. " suggestion=""/>
+	</Error>
+        <Error>
+		<code>001</code>
+		<detail message="Internal error. " suggestion=""/>
+	</Error>
+
+    
+<!--
+//MQ:-1000 ~-1099
+-->    
+  <Error>
+    <code>-1000</code>
+		<detail message="Initialize ZMQ context error. " suggestion="Check environment. "/>
+	</Error>
+  
+	<Error>
+	  <code>-1001</code>
+		<detail message="Socket connect error. " suggestion=""/>
+	</Error>
+
+  <Error>
+      <code>-1004</code>
+      <detail message="Initialize asyn request socket error. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1005</code>
+    <detail message="Message consumer connect error. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1006</code>
+    <detail message="Message consumer subscribe error. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1007</code>
+    <detail message="Initialize local service error. " suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-1008</code>
+    <detail message="Initialize reponse server error. " suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-1009</code>
+    <detail message="Initialize dealer server error. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1010</code>
+    <detail message="Initialize publisher server error. " suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-1011</code>
+    <detail message="Get dest svc info error. " suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-1012</code>
+    <detail message="Initialize consumer error. " suggestion=""/>
+  </Error>
+
+<!--
+//CM:-1100 ~-1199
+-->
+	<Error>
+    <code>-1100</code>
+		<detail message="Message body is empty. " suggestion="Please check message format. "/>
+	</Error>
+	<Error>
+	<code>-1101</code>
+		<detail message="Message body's type is not vallid. " suggestion="Please check message format. "/>
+	</Error>
+	<Error>
+	<code>-1102</code>
+		<detail message="Import XML file failed. " suggestion="Please check log ubp_cm.log for more details. "/>
+	</Error>
+	<Error>
+	<code>-1103</code>
+		<detail message="Import CSV file failed. " suggestion="Please check log ubp_cm.log for more details. "/>
+	</Error>
+	<Error>
+	<code>-1104</code>
+		<detail message="Unkown MOC type. " suggestion="Please check log ubp_cm.log for more details. "/>
+	</Error>
+	<Error>
+	<code>-1105</code>
+		<detail message="Unkown operator type. " suggestion="Please check log ubp_cm.log for more details. "/>
+	</Error>
+	<Error>
+	<code>-1106</code>
+		<detail message="MOC modification failed. " suggestion="Please check log ubp_cm.log for more details. "/>
+	</Error>
+	<Error>
+	<code>-1107</code>
+		<detail message="BCC Node exceed max. " suggestion="Please check UBPNode table. "/>
+	</Error>
+	<Error>
+	<code>-1108</code>
+		<detail message="BDC node with the same IP address has already existed. " suggestion="Please check UBPNode configuration "/>
+	</Error>
+	<Error>
+	<code>-1109</code>
+		<detail message="Database error. " suggestion="Please check db status. "/>
+	</Error>
+	<Error>
+	<code>-1110</code>
+		<detail message="XML format error. " suggestion="Please check log ubp_cm.log for more details. "/>
+	</Error>
+	<Error>
+	<code>-1111</code>
+		<detail message="Validate error: Not all ansi or utf8. " suggestion="Please check log ubp_cm.log for more details. "/>
+	</Error>
+	<Error>
+	<code>-1112</code>
+		<detail message="Validate error: Size is invalid." suggestion="Please check log ubp_cm.log for more details. "/>
+	</Error>
+	<Error>
+	<code>-1113</code>
+		<detail message="Validate error: Start with invalid value. " suggestion="Please check log ubp_cm.log for more details. "/>
+	</Error>
+	<Error>
+	<code>-1114</code>
+		<detail message="Validate error: Not IP address. " suggestion="Please check log ubp_cm.log for more details. "/>
+	</Error>
+	<Error>
+	<code>-1115</code>
+		<detail message="Validate error: Double percent signs exist. " suggestion="Please check log ubp_cm.log for more details. "/>
+	</Error>
+	<Error>
+	<code>-1116</code>
+		<detail message="Validate error: Double spaces exist. " suggestion="Please check log ubp_cm.log for more details. "/>
+	</Error>
+	<Error>
+	<code>-1117</code>
+		<detail message="Validate error: Not all number. " suggestion="Please check log ubp_cm.log for more details. "/>
+	</Error>
+	<Error>
+	<code>-1118</code>
+		<detail message="Validate error: Some of ISDN exist. " suggestion="Please check log ubp_cm.log for more details. "/>
+	</Error>
+	<Error>
+	<code>-1119</code>
+		<detail message="Moc table not exists, Service mode probably not matched. " suggestion="Please check log ubp_cm.log for more details. "/>
+	</Error>
+  
+<!--
+//MONITOR:-1200 ~-1249
+-->
+  <Error>
+    <code>-1200</code>
+    <detail message="FmProxy module is not exist. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1201</code>
+    <detail message="Get disk state infos error. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1202</code>
+    <detail message="Create message error. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1203</code>
+    <detail message="Get memory state infos error. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1204</code>
+    <detail message="Get cpu state infos error. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1205</code>
+    <detail message="Get db state infos error. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1206</code>
+    <detail message="Get service ubp_daem state timeout. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1207</code>
+    <detail message="Receive an unknow message type, expect ScaMessage. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1208</code>
+    <detail message="Daem service is not running. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1209</code>
+    <detail message="Execute script failed. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1210</code>
+    <detail message="Execute script only can be supported in unix system. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1211</code>
+    <detail message="GetDbStatus EASY_INSTALL is empty. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1212</code>
+    <detail message="Cannot find getdbspace.sh. " suggestion=""/>
+  </Error>
+  
+<!--
+//LICENSE:-1250 ~-1299
+-->
+
+  <Error>
+    <code>-1250</code>
+    <detail message="License file path error. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1251</code>
+    <detail message="Read content from license file error. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1252</code>
+    <detail message="Decrypt license file error. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1253</code>
+    <detail message="Parse license file error. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1254</code>
+    <detail message="MAC address error. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1255</code>
+    <detail message="License expired. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-1256</code>
+    <detail message="License type or version not matched. " suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-1259</code>
+    <detail message="ESN error. " suggestion=""/>
+  </Error>
+
+<!--
+//DAO:-1400 ~ -2999
+-->
+
+  <Error>
+    <code>-2737</code>
+    <detail message="Duplicate Record. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-2583</code>
+    <detail message="Cannot add or update a child row: a foreign key constraint fails. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-2582</code>
+    <detail message="Cannot delete or update a parent row: a foreign key constraint fails. " suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-2653</code>
+    <detail message="Table doesn't exist. " suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-2745</code>
+    <detail message="Unknown column in table. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-2348</code>
+    <detail message="Cann't delete or update a parent row: a foreign key constraint fails. " suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-2347</code>
+    <detail message="Cann't add or update a child row: a foreign key constraint fails. " suggestion=""/>
+  </Error>
+    
+<!--
+//QUERY:-3000 ~ -3099
+-->
+  
+  <Error>
+    <code>-3000</code>
+    <detail message="Update failed, moc has no primary key. " suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-3001</code>
+    <detail message="Unknown field type. " suggestion=""/>
+  </Error>
+  <Error>
+    <code>-3002</code>
+    <detail message="Unknown field. " suggestion=""/>
+  </Error>
+  
+</Errors>
+

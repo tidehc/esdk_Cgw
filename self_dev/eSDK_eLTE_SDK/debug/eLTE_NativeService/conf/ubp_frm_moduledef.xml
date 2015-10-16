@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frm:Modules xmlns:frm="http://www.td-tech.com/ubp/platform/frame/xml"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	     xsi:schemaLocation="http://www.td-tech.com/ubp/platform/frame/xml module_def.xsd">
+
+  <Module lib="ubp_sca" entry="CreateCfgMgr"/>
+  <Module lib="ubp_svcmgr"/>
+  <Module lib="ubp_error"/>
+  <Module lib="ubp_threadpool"/>
+  <Module lib="ubp_timer"/>
+  <Module lib="ubp_dao"/>
+  <Module lib="ubp_mq"/>
+  <!--Module lib="ubp_meta"/-->
+</frm:Modules>

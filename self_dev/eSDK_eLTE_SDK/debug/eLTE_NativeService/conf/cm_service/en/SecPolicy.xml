@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="SecPolicy" MOC_NAME_C="安全策略表" Module="PLT" ACCESS_CONTROL="modify,read" DEST_SVC="" Relation="">
+		<Parameter name="ID" desc="ID" type="int" range="[1,2147483647]" constrain="PRI" mode="update" default="1" />
+		<Parameter name="Lockpolicy" desc="lock policy" type="enum" range="0,1" vlist="0:NO,1:YES" constrain="NOT NULL" mode="update" default="1" />
+		<Parameter name="maxloginretrynum" desc="Max Login Retry Num" type="int" range="[1,99]" constrain="NOT NULL" mode="update" default="5" />
+		<Parameter name="Resetinterval" desc="Reset interval" type="int" range="[0,60]" constrain="NOT NULL" mode="update" default="10" />
+		<Parameter name="autounlocktime" desc="Auto Unlock Time" type="int" range="[0,65535]" constrain="NOT NULL" mode="update" default="30" />
+		<Parameter name="Cmdchangepwd" desc="Cmd Change Pwd" type="enum" range="0,1" vlist="0:NO,1:YES" constrain="NOT NULL" mode="update" default="0" />
+	</MOC>
+</Moc-Config>

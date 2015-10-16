@@ -1,0 +1,6 @@
+D:\Huawei Technologies Co., Ltd\Converge Gateway\bin\NLog.config
+D:\Huawei Technologies Co., Ltd\Converge Gateway\bin\NlogEx.dll
+D:\Huawei Technologies Co., Ltd\Converge Gateway\bin\NlogEx.pdb
+D:\Github\esdk_Cgw\source\Cgw\Cgw\Cgw.NlogEx\obj\x86\Debug\Cgw.NlogEx.csprojResolveAssemblyReference.cache
+D:\Github\esdk_Cgw\source\Cgw\Cgw\Cgw.NlogEx\obj\x86\Debug\NlogEx.dll
+D:\Github\esdk_Cgw\source\Cgw\Cgw\Cgw.NlogEx\obj\x86\Debug\NlogEx.pdb

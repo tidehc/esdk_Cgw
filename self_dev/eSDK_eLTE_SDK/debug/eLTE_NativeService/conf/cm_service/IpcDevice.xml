@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="IpcDevice" MOC_NAME_C="摄像头" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="custom:ubp_mrs_moc:CreateModule:before" Relation="">
+		<Parameter name="DevIndex" desc="设备ID" type="int" range="[1,65535]" constrain="PRI" mode="display" />
+		<Parameter name="NodeId" desc="节点ID" type="int" range="[1,65535]" constrain="NOT NULL" FK="FK:DCUC:MRSNode:NodeID" mode="update" />
+		<Parameter name="ISDN" desc="用户号码" type="string" range="[1,8]" constrain="NOT NULL" mode="update" />
+		<Parameter name="SipUserName" desc="网络注册用户名" type="string" range="[1,15]" constrain="NOT NULL" mode="update" />
+		<Parameter name="SipPassword" desc="网络注册密码" type="string" range="[1,15]" constrain="NOT NULL" c_type="password" mode="update" />
+		<Parameter name="SdkUserName" desc="摄像头管理用户名" type="string" range="[1,15]" constrain="NOT NULL" mode="update" />
+		<Parameter name="SdkPassword" desc="摄像头管理密码" type="string" range="[1,15]" constrain="NOT NULL" c_type="password" mode="update" />
+		<Parameter name="SdkIp" desc="摄像头IP地址" type="string" range="[4,15]" constrain="NOT NULL" c_type="ipv4" mode="update" />
+		<Parameter name="SdkPort" desc="摄像头管理端口" type="int" range="[1,65535]" constrain="NOT NULL" mode="update" />
+		<Parameter name="SdkType" desc="厂商类型" type="enum" range="0,1,2,3" vlist="0:海康,1:华为,2:亚安,3:Onvif" constrain="NOT NULL" mode="update" />
+		<Parameter name="DevType" desc="设备类型" type="enum" range="0" vlist="0:IPC" constrain="NOT NULL" mode="update" />
+		<Parameter name="DevStatus" desc="设备状态" type="enum" range="0,1" vlist="0:空闲,1:激活" constrain="NOT NULL" mode="update" />
+		<Parameter name="DevLinkMode" desc="设备连接模式" type="enum" range="0,1" vlist="0:TCP,1:UDP" constrain="NOT NULL" mode="update" default="0" />
+		<Parameter name="DevStreamType" desc="码流类型" type="enum" range="0,1" vlist="0:子码流,1:主码流" constrain="NOT NULL" mode="update" default="0" />
+	</MOC>
+</Moc-Config>

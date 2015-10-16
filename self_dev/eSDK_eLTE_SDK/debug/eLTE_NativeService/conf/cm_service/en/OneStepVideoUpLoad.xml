@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="OneStepVideoUpLoad" MOC_NAME_C="一键视频上传" Module="BCC" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="custom:ubp_isdnrange:CreateModule:before" Relation="">
+		<Parameter name="StartISDN" desc="Begin ISDN" type="string" range="[1,8]" constrain="PRI" not_begin_with="0" all_num="" mode="display" />
+		<Parameter name="EndISDN" desc="End ISDN" type="string" range="[1,8]" constrain="PRI" not_begin_with="0" all_num="" ge="EndISDN,StartISDN" mode="display" />
+		<Parameter name="TargetISDN" desc="Target ISDN" type="string" range="[1,8]" constrain="NOT NULL" not_begin_with="0" all_num="" mode="update" FK="FK:DCUC:DCAttribute:ISDN" />
+	</MOC>
+</Moc-Config>

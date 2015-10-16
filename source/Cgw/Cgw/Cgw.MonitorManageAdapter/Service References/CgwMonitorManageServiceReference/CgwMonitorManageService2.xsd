@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CgwMonitorManage.SmcError" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CgwMonitorManage.SmcError" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="SmcErr">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrNo" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="ErrorInfoParam" nillable="true" type="tns:ErrorInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SmcErr" nillable="true" type="tns:SmcErr" />
+  <xs:complexType name="ErrorInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ExternErrs" nillable="true" type="tns:ArrayOfSmcErr" />
+      <xs:element minOccurs="0" name="MultipleErrs" nillable="true" type="tns:ArrayOfSmcErr" />
+      <xs:element minOccurs="0" name="ParametersDictionary" nillable="true" type="tns:ArrayOfArrayOfValueDictionary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ErrorInfo" nillable="true" type="tns:ErrorInfo" />
+  <xs:complexType name="ArrayOfSmcErr">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SmcErr" nillable="true" type="tns:SmcErr" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSmcErr" nillable="true" type="tns:ArrayOfSmcErr" />
+  <xs:complexType name="ArrayOfArrayOfValueDictionary">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ArrayOfValueDictionary" nillable="true" type="tns:ArrayOfValueDictionary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfArrayOfValueDictionary" nillable="true" type="tns:ArrayOfArrayOfValueDictionary" />
+  <xs:complexType name="ArrayOfValueDictionary">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ValueDictionary" nillable="true" type="tns:ValueDictionary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfValueDictionary" nillable="true" type="tns:ArrayOfValueDictionary" />
+  <xs:complexType name="ValueDictionary">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ValueDictionary" nillable="true" type="tns:ValueDictionary" />
+  <xs:complexType name="RangeErrorInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ErrorInfo">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RangeErrorInfo" nillable="true" type="tns:RangeErrorInfo" />
+  <xs:complexType name="RmAdapterErrorInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ErrorInfo">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RmAdapterErrorInfo" nillable="true" type="tns:RmAdapterErrorInfo" />
+  <xs:complexType name="EmailErrorInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ErrorInfo">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmailErrorInfo" nillable="true" type="tns:EmailErrorInfo" />
+  <xs:complexType name="McuHttpError">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SmcErr">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="McuHttpError" nillable="true" type="tns:McuHttpError" />
+  <xs:complexType name="VctError">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SmcErr">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="VctError" nillable="true" type="tns:VctError" />
+  <xs:complexType name="Tex0Error">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SmcErr">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Tex0Error" nillable="true" type="tns:Tex0Error" />
+  <xs:complexType name="Mcu8650Error">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SmcErr">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Mcu8650Error" nillable="true" type="tns:Mcu8650Error" />
+  <xs:complexType name="Mcu9660Error">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SmcErr">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Mcu9660Error" nillable="true" type="tns:Mcu9660Error" />
+  <xs:complexType name="EConfError">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SmcErr">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EConfError" nillable="true" type="tns:EConfError" />
+  <xs:complexType name="UpgradeError">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SmcErr">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpgradeError" nillable="true" type="tns:UpgradeError" />
+  <xs:complexType name="LicenseError">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SmcErr">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LicenseError" nillable="true" type="tns:LicenseError" />
+  <xs:complexType name="NrsError">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SmcErr">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="NrsError" nillable="true" type="tns:NrsError" />
+  <xs:complexType name="SmcAlarm">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SmcErr">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SmcAlarm" nillable="true" type="tns:SmcAlarm" />
+  <xs:complexType name="SmcAlarmOri">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SmcErr">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SmcAlarmOri" nillable="true" type="tns:SmcAlarmOri" />
+  <xs:complexType name="SmcAlarmOrientation">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SmcErr">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SmcAlarmOrientation" nillable="true" type="tns:SmcAlarmOrientation" />
+  <xs:complexType name="TP3206Error">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SmcErr">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TP3206Error" nillable="true" type="tns:TP3206Error" />
+  <xs:complexType name="DataConfError">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SmcErr">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DataConfError" nillable="true" type="tns:DataConfError" />
+  <xs:complexType name="CgwError">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SmcErr">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CgwError" nillable="true" type="tns:CgwError" />
+  <xs:complexType name="GkErr">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SmcErr">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GkErr" nillable="true" type="tns:GkErr" />
+  <xs:complexType name="Mcu9610Error">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SmcErr">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Mcu9610Error" nillable="true" type="tns:Mcu9610Error" />
+</xs:schema>

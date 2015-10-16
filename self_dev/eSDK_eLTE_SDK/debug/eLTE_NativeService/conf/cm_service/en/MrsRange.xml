@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="MrsRange" MOC_NAME_C="Mrs号段" Module="BCC" ACCESS_CONTROL="add,delete,read" DEST_SVC="" Relation="">
+		<Parameter name="NodeID" desc="MRS node ID" type="int" range="[0,99999999]" constrain="NOT NULL" mode="display" FK="FK:DRUR:UBPNode:NodeID" />
+		<Parameter name="RangeId" desc="Range ID" type="int" range="[0,2147483647]" constrain="PRI" mode="display" FK="FK:DRUC:RecRangeList:RangeID" />
+	</MOC>
+</Moc-Config>

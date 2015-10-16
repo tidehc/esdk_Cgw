@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+///////////////////////////////////////////////////////////////////////
+//For example : 
+//static const ACE_INT32 ERR_UBP_MQ_XXX1 = -20000;
+///////////////////////////////////////////////////////////////////////
+-->
+<Errors xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
+        xsd:noNamespaceSchemaLocation="error_number.xsd">
+  <!--
+//ZMQ:-20000 ~ -24999 for zmq /dc
+//WEB:-25000 ~ -29999 for web config
+-->
+  <Error>
+    <code>-20000</code>
+    <detail message="License is not enough"
+            suggestion="Check license" />
+  </Error>
+  <Error>
+    <code>-20001</code>
+    <detail message="Emergency calls reject dc break off or break in"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-20002</code>
+    <detail message="Single dialog has existed "
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-20012</code>
+    <detail message="Videodispatch user account not found"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-20013</code>
+    <detail message="Videodispatch user not registered"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-20014</code>
+    <detail message="Videodispatch single dialog has existed"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-20015</code>
+    <detail message="Source and dispath user's vpn not allowed"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-20016</code>
+    <detail message="Videodispatch is reached max number"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-20024</code>
+    <detail message="Rec type not match session type"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-20025</code>
+    <detail message="Rec session no existed"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-20026</code>
+    <detail message="Rec task has existed"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-20027</code>
+    <detail message="Rec object no existed or others"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-20038</code>
+    <detail message="Number of dynamicgroup users beyond max"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-20039</code>
+    <detail message="Wrong dynamic group num"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-20040</code>
+    <detail message="unspecified reasons(DC no existed or dmg existed or others)"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-20041</code>
+    <detail message="Number of dynamic group beyond max"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-20042</code>
+    <detail message="Timer out"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-20043</code>
+    <detail message="DynamicGroup member joind beyond limited max groups"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-20044</code>
+    <detail message="DynamicGroup member not registered"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-20062</code>
+    <detail message="Ambiencelistening calls reject dc break in"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-20063</code>
+    <detail message="Conflicted with the existing record"
+            suggestion="Check" />
+  </Error>
+  <!--
+  WEB:-25000 ~ -29999 for web config
+-->
+  <Error>
+    <code>-25000</code>
+    <detail message="This ISDN is already be configed in ubpnode, please change one"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-25001</code>
+    <detail message="The upnode bcc has already existed, please check configuration"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-25002</code>
+    <detail message="Negibor bccnodeID can not be equal with the bccnodeID, please check configuration"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-25003</code>
+    <detail message="Forward ISDN can not be equal with the ISDN, please check configuration"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-25004</code>
+    <detail message="This ISDN is already be configed in PSTN, please change one"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-25005</code>
+    <detail message="This ISDN is already be configed in PLMN, please change one"
+            suggestion="Check" />
+  </Error>
+  <Error>
+    <code>-25006</code>
+    <detail message="This ISDN is already be configed in SDK, please change one"
+            suggestion="Check" />
+  </Error>  
+  <Error>
+    <code>-25007</code>
+    <detail message="the start istn must be smaller than the end isdn,please change"
+            suggestion="Check" />
+  </Error>  
+  <Error>
+    <code>-25008</code>
+    <detail message="intersect with pstn gateway range,please change"
+            suggestion="Check" />
+  </Error>   
+  <Error>
+    <code>-25009</code>
+    <detail message="intersect with sipserver gateway range,please change"
+            suggestion="Check" />
+  </Error>  
+    <Error>
+    <code>-25010</code>
+    <detail message="intersect with sdk gateway range,please change"
+            suggestion="Check" />
+  </Error>     
+    <Error>
+    <code>-25011</code>
+    <detail message="non pstn/plmn/sdk table input,check moc"
+            suggestion="Check" />
+  </Error>     
+    <Error>
+    <code>-25012</code>
+    <detail message="no bcc node found,check bcc node"
+            suggestion="Check" />
+  </Error>     
+    <Error>
+    <code>-25013</code>
+    <detail message="bcc neighbor node ip same with bcc,check neighbor node"
+            suggestion="Check" />
+  </Error> 
+   <Error>
+    <code>-25015</code>
+    <detail message="the minmum number is greater than the maxmum number"
+            suggestion="Check" />
+  </Error>       
+</Errors>

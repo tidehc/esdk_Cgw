@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="RecFile" MOC_NAME_C="录音录像文件" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="only" Relation="">
+		<Parameter name="SessionId" desc="Task ID" type="string" range="[1,64]" constrain="PRI" mode="display" />
+		<Parameter name="FileId" desc="File ID" type="int" range="" constrain="PRI" mode="display" />
+	</MOC>
+</Moc-Config>

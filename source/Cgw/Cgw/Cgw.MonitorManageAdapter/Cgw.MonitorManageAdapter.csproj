@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3CA9EFB3-2BB8-4072-A74F-C1084A6FAFB6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cgw.MonitorManageAdapter</RootNamespace>
+    <AssemblyName>Cgw.MonitorManageAdapter</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\..\..\Huawei Technologies Co., Ltd\Converge Gateway\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Build\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NLog">
+      <HintPath>..\..\..\..\open_src\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Public, Version=1.2.1.16, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\platform\CGW\ExternalRef\Public.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cgw.MonitorManageAdapter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\CgwMonitorManageServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CgwMonitorManageServiceReference\Cgw.MonitorManageAdapter.CgwMonitorManageServiceReference.Camera.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CgwMonitorManageServiceReference\Cgw.MonitorManageAdapter.CgwMonitorManageServiceReference.CameraGroup.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CgwMonitorManageServiceReference\Cgw.MonitorManageAdapter.CgwMonitorManageServiceReference.NodeRelation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CgwMonitorManageServiceReference\Cgw.MonitorManageAdapter.CgwMonitorManageServiceReference.PageInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CgwMonitorManageServiceReference\Cgw.MonitorManageAdapter.CgwMonitorManageServiceReference.SmcErr.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CgwMonitorManageServiceReference\CgwMonitorManageService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CgwMonitorManageServiceReference\CgwMonitorManageService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CgwMonitorManageServiceReference\CgwMonitorManageService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CgwMonitorManageServiceReference\CgwMonitorManageService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CgwMonitorManageServiceReference\CgwMonitorManageService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CgwMonitorManageServiceReference\MonitorManageService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CgwMonitorManageServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CgwMonitorManageServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CgwMonitorManageServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CgwMonitorManageServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cgw.Common\Cgw.Common.csproj">
+      <Project>{1E2CE08D-588F-4E3B-8AE5-E287D0631EDB}</Project>
+      <Name>Cgw.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgw.NlogEx\Cgw.NlogEx.csproj">
+      <Project>{62A6739A-EFC8-46C3-8BC7-7949F562A69A}</Project>
+      <Name>Cgw.NlogEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cgw.SmcErr\Cgw.SmcError.csproj">
+      <Project>{5A61564F-3C6E-4F74-B8CB-C7F28D4D26EB}</Project>
+      <Name>Cgw.SmcError</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

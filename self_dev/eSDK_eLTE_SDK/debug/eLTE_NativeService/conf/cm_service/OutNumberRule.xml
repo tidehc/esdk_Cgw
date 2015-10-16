@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="OutNumberRule" MOC_NAME_C="出局号码规则" Module="OMC,MDC" ACCESS_CONTROL="read" DEST_SVC="" Relation="">
+		<Parameter name="PrefixNum" desc="前缀字符串" type="string" range="[1,16]" constrain="PRI" mode="display" />
+		<Parameter name="LengthLimit" desc="号码匹配的长度" type="bitset" range="" vlist="1:长度1,2:长度2,4:长度3,8:长度4,16:长度5,32:长度6,64:长度7,128:长度8,256:长度9,512:长度10,1024:长度11,2048:长度12,4096:长度13,8192:长度14,16384:长度15,32768:长度16,65536:长度17,131072:长度18,262144:长度19,524288:长度20,1048576:长度21,2097152:长度22,4194304:长度23,8388608:长度24,16777216:长度25,33554432:长度26,67108864:长度27,134217728:长度28,268435456:长度29,536870912:长度30,1073741824:长度31,2147483648:长度32" mode="display" default="0" />
+	</MOC>
+</Moc-Config>

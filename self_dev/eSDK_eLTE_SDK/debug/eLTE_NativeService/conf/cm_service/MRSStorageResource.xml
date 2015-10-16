@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="MRSStorageResource" MOC_NAME_C="存储资源" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="custom:ubp_mrs_moc:CreateModule:before" Relation="">
+		<Parameter name="NodeID" desc="节点ID" type="int" range="[1,65535]" constrain="PRI" FK="FK:DCUC:MRSNode:NodeID" mode="display" />
+		<Parameter name="ResType" desc="资源类型" type="enum" range="0,1" vlist="0:内置分区,1:扩展分区" constrain="NOT NULL" mode="display" default="1" />
+		<Parameter name="ResDirPath" desc="资源路径" type="string" range="[1,1024]" constrain="PRI" mode="display" />
+		<Parameter name="ActiveFlag" desc="管理状态" type="enum" range="0,1" vlist="0:去激活,1:激活" mode="update" default="0" />
+		<Parameter name="ResID" desc="资源ID" type="string" range="[0,128]" />
+		<Parameter name="Remark" desc="描述" type="string" range="[0,1024]" mode="update" />
+	</MOC>
+</Moc-Config>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="UEGISCFG" MOC_NAME_C="终端GIS参数" Module="SDS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="" Relation="">
+		<Parameter name="ISDN" desc="用户号码" type="string" range="[1,8]" constrain="PRI" mode="display" />
+		<Parameter name="GISRptPrd" desc="GIS上报周期" type="enum" range="1,2,5,10,15,30,60" vlist="1:1秒,2:2秒,5:5秒,10:10秒,15:15秒,30:30秒,60:60秒" mode="update" default="30" />
+		<Parameter name="GISRptDis" desc="GIS上报距离间隔(m)" type="int" range="[0,10000]" mode="update" default="0" />
+	</MOC>
+</Moc-Config>

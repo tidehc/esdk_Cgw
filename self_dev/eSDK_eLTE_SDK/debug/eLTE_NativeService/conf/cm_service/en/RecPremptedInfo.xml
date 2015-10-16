@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="RecPremptedInfo" MOC_NAME_C="抢权信息" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="only" Relation="">
+		<Parameter name="task_id" desc="Task ID" type="string" range="[1,64]" constrain="PRI" mode="display" />
+		<Parameter name="event_idx" desc="Event index" type="int" range="" constrain="PRI" mode="display" />
+		<Parameter name="inserter" desc="Barge-in initiator" type="string" range="[1,64]" mode="display" />
+		<Parameter name="inserter_vpn" desc="vpn of  Barge-in initiator" type="int" range="[0,65535]" mode="display" />
+		<Parameter name="targeter" desc="Barge-in targeter" type="int" range="[0,65535]" mode="display" />
+		<Parameter name="time_sec" desc="Barge-in duration (s)" type="int" range="" mode="display" />
+		<Parameter name="time_usec" desc="Barge-in duration (ns)" type="int" range="" mode="display" />
+		<Parameter name="event_type" desc="event type" type="enum" range="0,1" vlist="0:PREMPT,1:TRANSFER" mode="display" />
+	</MOC>
+</Moc-Config>

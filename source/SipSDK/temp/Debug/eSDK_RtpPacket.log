@@ -1,0 +1,65 @@
+﻿Build started 2015/10/16 20:03:54.
+     1>Project "D:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\eSDK_RtpPacket.vcxproj" on node 3 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "..\temp\Debug\rtpconvertsdk.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "..\temp\Debug\rtpconvertsdk.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\..\..\platform\IVS\IVS_BP\release\new\inc\bp_base /ID:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\..\..\platform\IVS\IVS_COMMON\inc /ID:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\..\..\platform\IVS\IVS_COMMON\CBB\release\new\inc\ACE_wrappers /ID:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\include /ID:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\..\..\self_dev\eSDKClientLogAPI\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D ESDK_RTPPACKET_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"..\temp\Debug\rtpconvertsdk.pch" /Fo"..\temp\Debug\\" /Fd"..\temp\Debug\vc100.pdb" /Gd /TP /wd4996 /wd4355 /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\..\..\platform\IVS\IVS_BP\release\new\inc\bp_base /ID:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\..\..\platform\IVS\IVS_COMMON\inc /ID:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\..\..\platform\IVS\IVS_COMMON\CBB\release\new\inc\ACE_wrappers /ID:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\include /ID:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\..\..\self_dev\eSDKClientLogAPI\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D ESDK_RTPPACKET_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"..\temp\Debug\\" /Fd"..\temp\Debug\vc100.pdb" /Gd /TP /wd4996 /wd4355 /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\..\..\platform\IVS\IVS_BP\release\new\inc\bp_base /ID:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\..\..\platform\IVS\IVS_COMMON\inc /ID:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\..\..\platform\IVS\IVS_COMMON\CBB\release\new\inc\ACE_wrappers /ID:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\include /ID:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\..\..\self_dev\eSDKClientLogAPI\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D ESDK_RTPPACKET_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"..\temp\Debug\rtpconvertsdk.pch" /Fo"..\temp\Debug\\" /Fd"..\temp\Debug\vc100.pdb" /Gd /TP /wd4996 /wd4355 /analyze- /errorReport:prompt Es2PsProcessor.cpp eSDKTool.cpp eSDK_RtpPacket.cpp HstPESParse.cpp MediaBlockBuffer.cpp MediaDataQueue.cpp PacketProcessMgr.cpp Ps2EsProcessor.cpp RtpFrameOrganizer.cpp RtpPacket.cpp
+         RtpPacket.cpp
+         RtpFrameOrganizer.cpp
+         Ps2EsProcessor.cpp
+         PacketProcessMgr.cpp
+         MediaDataQueue.cpp
+         MediaBlockBuffer.cpp
+         HstPESParse.cpp
+         eSDK_RtpPacket.cpp
+         eSDKTool.cpp
+         Es2PsProcessor.cpp
+         Generating Code...
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\..\..\platform\IVS\IVS_BP\release\new\inc\bp_base /ID:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\..\..\platform\IVS\IVS_COMMON\inc /ID:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\..\..\platform\IVS\IVS_COMMON\CBB\release\new\inc\ACE_wrappers /ID:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\include /ID:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\..\..\self_dev\eSDKClientLogAPI\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D ESDK_RTPPACKET_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"..\temp\Debug\\" /Fd"..\temp\Debug\vc100.pdb" /Gd /TP /wd4996 /wd4355 /analyze- /errorReport:prompt eSDKMem.cpp
+         eSDKMem.cpp
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\output\debug\rtpconvertsdk.dll" /NOLOGO /LIBPATH:D:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\\..\..\..\platform\IVS\IVS_COMMON\CBB\release\new\windows\debug /LIBPATH:D:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\\..\..\..\platform\IVS\IVS_BP\release\new\windows\release /LIBPATH:D:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\\..\..\..\self_dev\eSDKClientLogAPI\debug /LTCG:NOSTATUS eSDKLogAPI.lib ACEd.lib bp_base.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"..\temp\Debug\rtpconvertsdk.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Github\esdk_Cgw\source\SipSDK\output\debug\rtpconvertsdk.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\output\debug\rtpconvertsdk.lib" /MACHINE:X86 /DLL ..\temp\Debug\dllmain.obj
+         ..\temp\Debug\Es2PsProcessor.obj
+         ..\temp\Debug\eSDKMem.obj
+         ..\temp\Debug\eSDKTool.obj
+         ..\temp\Debug\eSDK_RtpPacket.obj
+         ..\temp\Debug\HstPESParse.obj
+         ..\temp\Debug\MediaBlockBuffer.obj
+         ..\temp\Debug\MediaDataQueue.obj
+         ..\temp\Debug\PacketProcessMgr.obj
+         ..\temp\Debug\Ps2EsProcessor.obj
+         ..\temp\Debug\RtpFrameOrganizer.obj
+         ..\temp\Debug\RtpPacket.obj
+         ..\temp\Debug\stdafx.obj
+            Creating library ..\output\debug\rtpconvertsdk.lib and object ..\output\debug\rtpconvertsdk.exp
+         LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+     1>stdafx.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'stdafx.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\debug\vc100.pdb'; linking object as if no debug info
+     1>RtpPacket.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'RtpPacket.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\debug\vc100.pdb'; linking object as if no debug info
+     1>RtpFrameOrganizer.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'RtpFrameOrganizer.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\debug\vc100.pdb'; linking object as if no debug info
+     1>Ps2EsProcessor.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'Ps2EsProcessor.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\debug\vc100.pdb'; linking object as if no debug info
+     1>PacketProcessMgr.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'PacketProcessMgr.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\debug\vc100.pdb'; linking object as if no debug info
+     1>MediaDataQueue.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'MediaDataQueue.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\debug\vc100.pdb'; linking object as if no debug info
+     1>MediaBlockBuffer.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'MediaBlockBuffer.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\debug\vc100.pdb'; linking object as if no debug info
+     1>HstPESParse.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'HstPESParse.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\debug\vc100.pdb'; linking object as if no debug info
+     1>eSDK_RtpPacket.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'eSDK_RtpPacket.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\debug\vc100.pdb'; linking object as if no debug info
+     1>eSDKTool.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'eSDKTool.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\debug\vc100.pdb'; linking object as if no debug info
+     1>eSDKMem.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'eSDKMem.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\debug\vc100.pdb'; linking object as if no debug info
+     1>Es2PsProcessor.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'Es2PsProcessor.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\debug\vc100.pdb'; linking object as if no debug info
+     1>dllmain.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'dllmain.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\debug\vc100.pdb'; linking object as if no debug info
+         eSDK_RtpPacket.vcxproj -> D:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\output\debug\rtpconvertsdk.dll
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\output\debug\rtpconvertsdk.dll;#2" /manifest ..\temp\Debug\rtpconvertsdk.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "..\temp\Debug\rtpconvertsdk.unsuccessfulbuild".
+         Touching "..\temp\Debug\rtpconvertsdk.lastbuildstate".
+     1>Done Building Project "D:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\eSDK_RtpPacket.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:19.65

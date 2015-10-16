@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="IpcRecTaskInfo" MOC_NAME_C="录音录像任务信息" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="" Relation="">
+		<Parameter name="SessionId" desc="任务号" type="string" range="[1,64]" constrain="PRI" mode="display" />
+		<Parameter name="TaskStatus" desc="任务状态" type="enum" range="0,1,2,3,4,5" vlist="0:初始化,1:正在存储,2:失败,3:成功,4:等待删除,5:已删除" constrain="NOT NULL" mode="update" />
+		<Parameter name="IpcIndex" desc="设备ID" type="int" range="[1,65535]" constrain="NOT NULL" mode="update" />
+		<Parameter name="IpcVpn" desc="设备VPN" type="int" range="" constrain="NOT NULL" />
+		<Parameter name="OptStatus" desc="操作状态" type="int" range="[1,65535]" constrain="NOT NULL" mode="update" />
+		<Parameter name="ErrType" desc="错误类型" type="int" range="[1,65535]" constrain="NOT NULL" mode="update" />
+		<Parameter name="StartTime" desc="开始时间" type="datetime" range="[1,64]" constrain="NOT NULL" mode="update" />
+		<Parameter name="EndTime" desc="结束时间" type="datetime" range="[1,64]" constrain="NOT NULL" ge="EndTime,BeginTime" mode="update" />
+		<Parameter name="ISDN" desc="用户号码" type="string" range="[1,8]" mode="update" />
+		<Parameter name="NodeId" desc="节点ID" type="int" range="[0,65535]" mode="update" />
+		<Parameter name="NodeIp" desc="节点IP" type="string" range="[0,15]" mode="display" />
+	</MOC>
+</Moc-Config>

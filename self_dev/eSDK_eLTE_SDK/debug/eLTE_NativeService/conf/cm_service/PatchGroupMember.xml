@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="PatchGroupMember" MOC_NAME_C="派接组成员" Module="BCC" ACCESS_CONTROL="read" DEST_SVC="" Relation="">
+		<Parameter name="GroupNumber" desc="派接群组号码" type="string" range="[1,8]" constrain="PRI" not_begin_with="0" all_num="" mode="display" FK="FK:DRUR:PatchGroup:GroupNumber" />
+		<Parameter name="MemberGroupId" desc="成员组ID" type="string" range="[1,8]" constrain="PRI" not_begin_with="0" all_num="" mode="display" />
+	</MOC>
+</Moc-Config>

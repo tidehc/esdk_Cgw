@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{d0b82d3c-d017-430b-b8bd-9f9aae8beb2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IvsSdkClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="memset_s.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\hwsdk.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ivs_error.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\IVS_SDK.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\IVS_SDKNetKeyBoard.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\IVS_SDKTVWall.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\IVSSDKNetKeyBoardDef.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Resource.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="IvsSdkClient.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="securec.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="securectype.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="securecutil.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Lib\ACE.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\AnalyzeData.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\bp_base.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\bp_frame.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\bp_log.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\bp_net.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\eSDKClientLogCfg.ini">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\eSDKLogAPI.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\ivs_base.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\ivs_compression.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\IVS_IADraw.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\IVS_NetSource.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\IVS_OCXPlayer.ocx">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\IVS_Player.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\IVS_SDK.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\IVS_SDKNetKeyBoard.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\IVS_SDKTVWall.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\ivs_security.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\ivs_sftp.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\libeay32.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\libmpg123.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\libssh2.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\log4cpp.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\mp_log.conf">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\mp4DLL.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\nss.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\regsvrOCX.bat">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\rtsp_client.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\ssleay32.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\zlib.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\mfc100u.dll">
+      <Filter>Lib</Filter>
+    </None>
+    <None Include="Lib\msvcr100.dll">
+      <Filter>Lib</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Lib\IVS_SDK.lib">
+      <Filter>Lib</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

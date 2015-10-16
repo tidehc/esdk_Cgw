@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Content>
+	<Rect>Rectangle</Rect>
+	<Polygon>Polygon</Polygon>
+	<Delete>Delete</Delete>
+	<DisplayMode>Adjust Layout</DisplayMode>
+	<Play>Play</Play>
+	<Stop>Stop</Stop>
+	<SnapShot>Snapshot</SnapShot>
+	<LocalRecord>Local Recording</LocalRecord>
+	<PlayRecord>Instant Playback</PlayRecord>
+	<BookMark>Bookmark</BookMark>
+	<Zoom>Zoom In</Zoom>
+	<PTZ>PTZ Control</PTZ>
+	<PlaySound>Volume</PlaySound>
+	<PlayNoSound>Volume</PlayNoSound>
+	<TalkBack>Voice Intercom</TalkBack>
+	<NoTalkBack>Voice Intercom</NoTalkBack>
+	<VideoTVW>Display Videos on Video Wall</VideoTVW>
+	<AlarmWin>Set as Alarm Video Pane</AlarmWin>
+	<OpenMap>Open eMap</OpenMap>
+	<WindowMain>Set as Main Video Pane</WindowMain>
+	<IA>Display Intelligent Analysis Results</IA>
+	<PlayQuality>Image Quality Priority</PlayQuality>
+	<PlayNet>Speed Priority</PlayNet>
+	<Extend>Expand</Extend>
+	<Retracted>Collapse</Retracted>
+	<PTZ3D>3D Positioning</PTZ3D>
+	<ReConnecting>Reconnecting…</ReConnecting>
+	<Off>Close</Off>
+	<Info>Video Information</Info>
+	<ZoomIn>Zoom In</ZoomIn>
+	<ZoomOut>Zoom Out</ZoomOut>
+	<ZoomOver>Disable</ZoomOver>
+	<TVWallVideoBroken>Video streams interrupted</TVWallVideoBroken>
+	<TVWallDecDisconn>The decoder is disconnected from the platform and is reconnecting to the platform</TVWallDecDisconn>
+	<TVWallHandling>Playing videos on the video wall</TVWallHandling>
+	<TVWallOK>Videos played on the video wall</TVWallOK>
+	<WatermarkGary>No watermark information</WatermarkGary>
+	<WatermarkNomal>Watermark information</WatermarkNomal>
+	<TrunCuise>Sequencing</TrunCuise>
+	<SingleFrameStatus>Playing videos frame by frame</SingleFrameStatus>
+	<AlarmStatus>Reporting an alarm</AlarmStatus>
+	<RecordStatus>Manual recording</RecordStatus>
+	<CruiseTrackStatus>Touring</CruiseTrackStatus>
+	<TvWalling>Pushing video to the video wall</TvWalling>
+	<TVWallReConnect>Reconnecting…</TVWallReConnect>
+</Content>

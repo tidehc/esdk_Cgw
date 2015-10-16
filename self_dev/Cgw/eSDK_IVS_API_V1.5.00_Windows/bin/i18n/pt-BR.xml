@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Content>
+	<Rect>Retângulo</Rect>
+	<Polygon>Polígono</Polygon>
+	<Delete>Excluir</Delete>
+	<DisplayMode>Ajustar layout</DisplayMode>
+	<Play>Reproduzir</Play>
+	<Stop>Parar</Stop>
+	<SnapShot>Instantâneo</SnapShot>
+	<LocalRecord>Gravação local</LocalRecord>
+	<PlayRecord>Playback instantâneo</PlayRecord>
+	<BookMark>Favorito</BookMark>
+	<Zoom>Ampliar zoom</Zoom>
+	<PTZ>Controle PTZ</PTZ>
+	<PlaySound>Volume</PlaySound>
+	<PlayNoSound>Volume</PlayNoSound>
+	<TalkBack>Intercomunicação por voz</TalkBack>
+	<NoTalkBack>Intercomunicação por voz</NoTalkBack>
+	<VideoTVW>Exibir vídeos na Parede de vídeos</VideoTVW>
+	<AlarmWin>Definir como Painel de vídeo do alarme</AlarmWin>
+	<OpenMap>Abrir eMap</OpenMap>
+	<WindowMain>Definir como Painel de vídeo principal</WindowMain>
+	<IA>Exibir resultados da análise inteligente</IA>
+	<PlayQuality>Prioridade de qualidade de imagem</PlayQuality>
+	<PlayNet>Prioridade de velocidade</PlayNet>
+	<Extend>Expandir</Extend>
+	<Retracted>Recolher</Retracted>
+	<PTZ3D>Posicionamento 3D</PTZ3D>
+	<ReConnecting>Reconectando...</ReConnecting>
+	<Off>Fechar</Off>
+	<Info>Informações do vídeo</Info>
+	<ZoomIn>Ampliar zoom</ZoomIn>
+	<ZoomOut>Reduzir zoom</ZoomOut>
+	<ZoomOver>Desativar</ZoomOver>
+	<TVWallVideoBroken>Fluxos de vídeo interrompidos</TVWallVideoBroken>
+	<TVWallDecDisconn>O decodificador está desconectado da plataforma e está se reconectando a ela.</TVWallDecDisconn>
+	<TVWallHandling>Reproduzindo vídeos na parede de vídeos</TVWallHandling>
+	<TVWallOK>Vídeos reproduzidos na parede de vídeos</TVWallOK>
+	<WatermarkGary>Sem informações de marca d'água</WatermarkGary>
+	<WatermarkNomal>Informações de marca d'água.</WatermarkNomal>
+	<TrunCuise>Sequenciamento</TrunCuise>
+	<SingleFrameStatus>Reproduzindo vídeos quadro a quadro</SingleFrameStatus>
+	<AlarmStatus>Reportando um alarme</AlarmStatus>
+	<RecordStatus>Gravação manual</RecordStatus>
+	<CruiseTrackStatus>Visualização</CruiseTrackStatus>
+	<TvWalling>正在上墙</TvWalling>
+	<TVWallReConnect>Reconectando...</TVWallReConnect>
+</Content>

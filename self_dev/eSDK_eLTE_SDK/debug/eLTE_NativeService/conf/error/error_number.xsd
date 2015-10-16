@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+file      : \code\src\platform\modules\errorcode\error_number.xsd
+install   : \install\conf\error_number.xsd
+author    : XiaoLongguang
+created   : 2012/08/02 20:38
+-->
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="Errors">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Error" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="code" type="xsd:integer"/>
+							<xsd:element name="detail">
+								<xsd:complexType>
+									<xsd:attribute name="message" type="xsd:string"/>
+									<xsd:attribute name="suggestion" type="xsd:string"/>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

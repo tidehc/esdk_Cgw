@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="BccNode" MOC_NAME_C="BCC节点" Module="BCC" ACCESS_CONTROL="modify,read" DEST_SVC="custom:ubp_bccnode:CreateModule:before" Relation="">
+		<Parameter name="BccNodeIndex" desc="Config index" type="int" range="[0,2147483647]" constrain="PRI" mode="display" />
+		<Parameter name="BccNodeID" desc="BCC node ID" type="int" range="[0,2147483647]" constrain="NOT NULL" mode="update" />
+		<Parameter name="AddrIPV4" desc="Ipv4 address" type="string" range="[0,15]" constrain="NOT NULL" c_type="ipv4" mode="update" />
+		<Parameter name="SipPort" desc="SIP port" type="int" range="[1024,65535]" constrain="NOT NULL" mode="update" default="5060" />
+		<Parameter name="WorkMode" desc="Work mode" type="enum" range="0,1" vlist="0:standalone mode,1:neted mode" default="0" />
+	</MOC>
+</Moc-Config>

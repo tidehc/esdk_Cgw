@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="MRSFileInfo" MOC_NAME_C="MRS文件信息" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="" Relation="">
+		<Parameter name="SessionId" desc="任务号" type="string" range="[1,64]" constrain="PRI" mode="display" />
+		<Parameter name="FileId" desc="文件号" type="int" range="[1,65535]" constrain="PRI" mode="display" />
+		<Parameter name="FilePath" desc="文件路径" type="string" range="[1,250]" constrain="NOT NULL" mode="update" />
+		<Parameter name="FileStatus" desc="文件状态" type="enum" range="0,1,2,3,4,5" vlist="0:创建成功,1:存储失败,2:正在存储,3:成功,4:等待删除,5:已删除" constrain="NOT NULL" mode="update" />
+		<Parameter name="RecType" desc="任务类型" type="enum" range="1,2" vlist="1:会话录制,2:IPC录制" constrain="NOT NULL" mode="display" />
+		<Parameter name="BeginTime" desc="开始时间" type="string" range="[1,64]" constrain="NOT NULL" />
+		<Parameter name="EndTime" desc="结束时间" type="string" range="[1,64]" constrain="NOT NULL" mode="update" />
+		<Parameter name="Remark" desc="备注" type="string" range="[0,1024]" mode="update" />
+		<Parameter name="fullBeginTime" desc="完整开始时间（微秒）" type="double" range="" />
+		<Parameter name="fullEndTime" desc="完整结束时间（微秒）" type="double" range="" />
+	</MOC>
+</Moc-Config>

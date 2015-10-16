@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+
+  <servicesSettings>
+    <!--Session timeout duration.-->
+    <sessionOverTime>3</sessionOverTime>
+
+    <!--refreshDeviceListOverTime. 180s.-->
+    <refreshDeviceListOverTime>180</refreshDeviceListOverTime>
+
+    <!--deviceListUnusedOverTime. 5s.-->
+    <deviceListUnusedOverTime>5</deviceListUnusedOverTime>
+
+  </servicesSettings>
+
+  <monitorSettings>
+    <!--Whether to enable a surveillance platform. One node indicates one surveillance platform. If "enable" is set to "true", the platform is enabled.-->
+    <monitor enable="true">
+      <!--Surveillance platform ID. This parameter is configurable and must be unique.This length should not more than 63-->
+      <id>ivs</id>
+      <!--Name of the surveillance platform. This parameter is configurable.-->
+      <name>ivs</name>
+      <!--Application to which the surveillance platform connects. This parameter is not configurable.-->
+      <class>CgwMonitorManage.Ivs.IvsVideoMonitor,CgwMonitorManage.Ivs</class>
+      <!--The IP Address used to connect to the surveillance platform (IVS). This parameter is configurable.-->
+      <ip>172.22.8.101</ip>
+      <!--The IP Port used to connect to the surveillance platform (IVS). The default value is 9900. This parameter is configurable.-->
+      <port>9900</port>
+      <!--User name used to connect to the surveillance platform (IVS). This parameter is configurable.-->
+      <user>admin</user>
+      <!--Password used to connect to the surveillance platform (IVS). This parameter is configurable.-->
+      <connPwd needEncrypt="false">1qw2!QW@</connPwd>
+    </monitor>
+    <monitor enable="false">
+      <!--Surveillance platform ID. This parameter is configurable and must be unique.This length should not more than 63-->
+      <id>T28181IVS</id>
+      <!--Name of the surveillance platform. This parameter is configurable.-->
+      <name>T28181IVS</name>
+      <!--Application to which the surveillance platform connects. This parameter is not configurable.-->
+      <class>CgwMonitorManage.T28181.T28181VideoMonitor,CgwMonitorManage.T28181</class>
+      <!--The IP Address used to connect to the surveillance platform (T28181). This parameter is configurable.-->
+      <serverIp>172.22.8.101</serverIp>
+      <!--The Sip Port of the surveillance platform (T28181). The default value is 5061. This parameter is configurable.-->
+      <serverSipPort>5061</serverSipPort>
+      <!--The Local Sip Port used to connect to the surveillance platform (T28181). This parameter is configurable.-->
+      <localSipPort>5068</localSipPort>
+      <!--QueryDeviceTimeOut(second) -->
+      <QueryDeviceTimeOut>60</QueryDeviceTimeOut>
+      <!--Surveillance platform (T28181) used this user to connect to local CGW platform. This parameter is configurable.-->
+      <user>T89</user>
+      <!--Surveillance platform (T28181) used this password to connect to local CGW platform. This parameter is configurable.-->
+      <connPwd needEncrypt="False">1qw2!QW@</connPwd>
+      <!--Local CGW platform ID -->
+      <localSignalGateway>T89</localSignalGateway>
+      <!--Domain ID of surveillance platform (T28181)  -->
+      <serverSignalGateway>T28181</serverSignalGateway>
+      <!--Local CGW platform used this user to connect to Surveillance platform (T28181). This parameter is configurable.-->
+      <serverSipAccount>T89</serverSipAccount>
+      <!--Local CGW platform used this password to connect to Surveillance platform (T28181). This parameter is configurable.-->
+      <serverSipPasswd needEncrypt="false">1qw2!QW@</serverSipPasswd>
+      <!--Domain ID of surveillance platform (T28181)  -->
+      <deviceID>T28181</deviceID>
+      <!--Type of Surveillance platform (T28181),the value should be null or huawei-->
+      <platformType></platformType>
+    </monitor>
+    <monitor enable="false">
+      <!--Surveillance platform ID. This parameter is configurable and must be unique.This length should not more than 63-->
+      <id>eLTE</id>
+      <!--Name of the surveillance platform. This parameter is configurable.-->
+      <name>eLTE</name>
+      <!--Application to which the platform connects. This parameter is not configurable.-->
+      <class>CgwMonitorManage.eLTE.eLTEVideoMonitor,CgwMonitorManage.eLTE</class>
+      <!--The IP Address used to connect to the  platform (eLTE). This parameter is configurable.-->
+      <ip>172.22.9.105</ip>
+      <!--The SIP Port used to connect to the  platform (eLTE). The default value is 5060. This parameter is configurable.-->
+      <port>5060</port>
+      <!--The Local Sip Port used to Get the LocalIP (ELTE). This parameter is configurable.-->
+      <LocalPort>5700</LocalPort>
+      <!--User name used to connect to the  platform (eLTE). This parameter is configurable.-->
+      <user>4115</user>
+      <!--Password used to connect to the  platform (eLTE). This parameter is configurable.-->
+      <connPwd needEncrypt="False">4115</connPwd>
+      <UserCategory>
+        <PTTUSER>true</PTTUSER>
+        <FIXEDCAMERA>true</FIXEDCAMERA>
+      </UserCategory>
+      <VideoParameter>
+        <!--Video Format，“QCIF”、“CIF”、“D1”、“720P”、“1080P”.-->
+        <FmtValue>720P</FmtValue>
+        <!--“0”Front;“1”Back-->
+        <CameraType>1</CameraType>
+        <!--“0”NOT Need user Confirm;“1”Need user Confirm-->
+        <UserConfirmType>0</UserConfirmType>
+        <!--“0”Audio;“1”No Audio-->
+        <MuteType>1</MuteType>
+      </VideoParameter>
+    </monitor>
+  </monitorSettings>
+
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <probing privatePath="eLTeSDK"/>
+    </assemblyBinding>
+  </runtime>
+</configuration>

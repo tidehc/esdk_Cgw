@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="CallRecTaskInfo" MOC_NAME_C="录像任务信息" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="only" Relation="">
+		<Parameter name="task_id" desc="任务号" type="string" range="[1,64]" constrain="PRI" mode="display" />
+		<Parameter name="node_id" desc="节点号" type="int" range="[1,1024]" mode="display" />
+		<Parameter name="task_status" desc="任务状态" type="enum" range="0,1,2,3" vlist="0:初始化,1:正在存储,2:失败,3:成功" mode="display" />
+		<Parameter name="task_type" desc="任务类型" type="enum" range="1,2,3" vlist="1:录音,2:录像,3:录像加伴音" mode="display" />
+		<Parameter name="call_type" desc="呼叫类型" type="enum" range="0,1,2,3,4" vlist="0:语音点呼,1:视频点呼,2:视频回传,3:群组呼叫,4:未知类型" mode="display" />
+		<Parameter name="caller" desc="主叫" type="int" range="" mode="display" />
+		<Parameter name="caller_vpn" desc="主叫VPN" type="int" range="" mode="display" />
+		<Parameter name="callee" desc="被叫" type="int" range="" mode="display" />
+		<Parameter name="callee_vpn" desc="被叫VPN" type="int" range="" mode="display" />
+		<Parameter name="work_dir" desc="存储目录" type="string" range="[1,200]" mode="display" />
+		<Parameter name="invite_time_sec" desc="开始时间（秒）" type="int" range="" mode="display" />
+		<Parameter name="invite_time_usec" desc="开始时间（纳秒）" type="int" range="" mode="display" />
+		<Parameter name="end_time_sec" desc="结束时间（秒）" type="int" range="" mode="display" />
+		<Parameter name="end_time_usec" desc="结束时间（纳秒）" type="int" range="" mode="display" />
+		<Parameter name="is_emergency" desc="紧急标志" type="enum" range="0,1" vlist="0:否,1:是" mode="display" />
+		<Parameter name="is_prempted" desc="抢话标志" type="enum" range="0,1" vlist="0:否,1:是" mode="display" />
+		<Parameter name="opt_status" desc="操作状态" type="int" range="[0,65536]" mode="display" />
+		<Parameter name="err_type" desc="失败类型" type="int" range="[0,65536]" mode="display" />
+		<Parameter name="call_flag" desc="会话属性" type="int" range="" mode="display" />
+		<Parameter name="callerstr" desc="主叫" type="string" range="[1,80]" mode="display" />
+		<Parameter name="calleestr" desc="被叫" type="string" range="[1,80]" mode="display" />
+		<Parameter name="invite_time_full" desc="完整开始时间（微秒）" type="double" range="" />
+		<Parameter name="end_time_full" desc="完整结束时间（微秒）" type="double" range="" />
+		<Parameter name="node_ip" desc="节点ip" type="string" range="[0,15]" mode="display" />
+	</MOC>
+</Moc-Config>

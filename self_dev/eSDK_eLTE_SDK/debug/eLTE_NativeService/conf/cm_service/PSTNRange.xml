@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="PSTNRange" MOC_NAME_C="PSTN网关号段" Module="BCC" ACCESS_CONTROL="add,delete,read" DEST_SVC="custom:ubp_gatewayrange:CreateModule:before" Relation="">
+		<Parameter name="PSTNID" desc="PSTN ID" type="int" range="[0,2147483647]" constrain="PRI" mode="display" FK="FK:DRUR:PSTNGW:PSTNGWID" />
+		<Parameter name="StartISDN" desc="号段编号开始号码" type="string" range="[1,8]" constrain="PRI" not_begin_with="0" all_num="" mode="display" />
+		<Parameter name="EndISDN" desc="号段编号结束号码" type="string" range="[1,8]" constrain="PRI" not_begin_with="0" all_num="" ge="EndISDN,StartISDN" mode="display" />
+	</MOC>
+</Moc-Config>

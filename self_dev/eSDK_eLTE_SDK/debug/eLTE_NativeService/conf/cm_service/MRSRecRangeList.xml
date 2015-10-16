@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="MRSRecRangeList" MOC_NAME_C="录音录像号段" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="custom:ubp_mrs_moc:CreateModule:before" Relation="">
+		<Parameter name="ID" desc="区间ID" type="int" range="[1,2147483647]" constrain="PRI" mode="display" />
+		<Parameter name="Name" desc="区间描述" type="string" range="[0,512]" mode="update" />
+		<Parameter name="BeginISDN" desc="起始ISDN" type="string" range="[1,64]" constrain="NOT NULL" mode="update" />
+		<Parameter name="EndISDN" desc="终止ISDN" type="string" range="[1,64]" constrain="NOT NULL" mode="update" />
+	</MOC>
+</Moc-Config>

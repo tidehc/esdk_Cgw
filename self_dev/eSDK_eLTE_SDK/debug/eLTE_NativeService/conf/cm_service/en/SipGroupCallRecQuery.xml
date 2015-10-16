@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="SipGroupCallRecQuery" MOC_NAME_C="" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="" Relation="">
+		<Parameter name="SessionId" desc="Task ID" type="string" range="[1,64]" mode="display" />
+		<Parameter name="TaskType" desc="Task type" type="enum" range="1,2,3" vlist="1: audio recording,2: video recording,3: audio and video recording" mode="display" />
+		<Parameter name="CallType" desc="Call type" type="enum" range="0,1,2,3,4" vlist="0: PTP voice call,1: PTP video call,2: video upload,3: group call,4: unknown type" mode="display" />
+		<Parameter name="Caller" desc="Caller" type="int" range="" mode="display" />
+		<Parameter name="Caller_vpn" desc="Caller VPN" type="int" range="" mode="display" />
+		<Parameter name="Callee" desc="Callee" type="int" range="" mode="display" />
+		<Parameter name="Callee_vpn" desc="Callee VPN" type="int" range="" mode="display" />
+		<Parameter name="PttInfoOwer" desc="Group call participant" type="int" range="" mode="display" />
+		<Parameter name="IsEmergency" desc="Emergency flag" type="enum" range="0,1" vlist="0: no,1: yes" mode="display" />
+		<Parameter name="WorkDir" desc="Storage directory" type="string" range="[1,200]" mode="display" />
+		<Parameter name="NodeID" desc="Node ID" type="int" range="[0,65535]" mode="display" />
+		<Parameter name="NodeName" desc="Node name" type="string" range="[0,128]" mode="display" />
+		<Parameter name="NodeType" desc="Node type" type="enum" range="0,1" vlist="0: MRS_C (control node),1: MRS_D (data node)" mode="display" />
+		<Parameter name="NodeAddrIPV4" desc="IPV4 address" type="string" range="[4,15]" c_type="ipv4" mode="display" />
+		<Parameter name="FileId" desc="File ID" type="int" range="[0,65535]" mode="display" />
+		<Parameter name="FilePath" desc="File path" type="string" range="[1,250]" mode="display" />
+		<Parameter name="FileBeginTime" desc="Begin time" type="datetime" range="[1,64]" mode="display" />
+		<Parameter name="FileEndTime" desc="End time" type="datetime" range="[1,64]" mode="display" />
+		<Parameter name="FileDuration" desc="File or call duration" type="int" range="" mode="display" />
+		<Parameter name="PlayUrl" desc="URL address for play" type="string" range="[1,512]" mode="display" />
+		<Parameter name="DownloadUrl" desc="URL address for download" type="string" range="[1,512]" mode="display" />
+		<Parameter name="CallFlag" desc="call properties" type="int" range="" mode="display" />
+		<Parameter name="Remark" desc="Remark" type="string" range="[0,1024]" mode="display" />
+		<Parameter name="CallerStr" desc="CallerStr" type="string" range="[1,64]" mode="display" />
+		<Parameter name="CalleeStr" desc="CalleeStr" type="string" range="[1,64]" mode="display" />
+		<Parameter name="fullFileBeginTime" desc="full begin time(ms)" type="double" range="" />
+		<Parameter name="fullFileEndTime" desc="full end time(ms)" type="double" range="" />
+	</MOC>
+</Moc-Config>

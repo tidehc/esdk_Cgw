@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="EmencyGroupMember" MOC_NAME_C="紧急组呼热麦时间设置" Module="DC" ACCESS_CONTROL="modify,read" DEST_SVC="" Relation="">
+		<Parameter name="EmencyGrpkeyID" desc="Emergency   group  key ID" type="int" range="[1,128]" constrain="PRI" />
+		<Parameter name="EmencyGrpTime" desc="Emergency   group  mic time" type="int" range="[1,300]" mode="update" default="300" />
+	</MOC>
+</Moc-Config>

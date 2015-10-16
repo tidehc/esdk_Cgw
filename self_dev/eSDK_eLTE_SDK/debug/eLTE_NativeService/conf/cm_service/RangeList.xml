@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="RangeList" MOC_NAME_C="号段集" Module="OMC,MDC,MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="" Relation="">
+		<Parameter name="RangeID" desc="号段ID" type="int" range="" constrain="PRI" mode="display" />
+		<Parameter name="RangeAlias" desc="号段别名" type="string" range="[0,10]" mode="update" />
+		<Parameter name="RangeCategory" desc="号段类型" type="enum" range="1,2" vlist="1:用户号段,2: 组号段" mode="update" />
+		<Parameter name="FromISDN" desc="号段起始" type="string" range="[1,8]" constrain="NOT NULL" mode="update" />
+		<Parameter name="ToISDN" desc="号段终止" type="string" range="[1,8]" constrain="NOT NULL" ge="ToISDN,FromISDN" mode="update" />
+	</MOC>
+</Moc-Config>

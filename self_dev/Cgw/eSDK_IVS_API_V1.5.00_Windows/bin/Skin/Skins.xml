@@ -1,0 +1,1194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2013 (http://www.altova.com) by  () -->
+<Skins>
+	<Skin ID="1">
+		<ToolBar>
+			<BackGround>
+				<Picture>\\Skin\\black\\ToolBar\\PNG\\BLACK_BG.PNG</Picture>
+			</BackGround>
+			<Button Name="Move" Type="PNG">
+				<!--移动-->
+				<Picture Status="Hover">\\Skin\\black\\IAToolBar\\PNG\\MOVE_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\IAToolBar\\PNG\\MOVE_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\IAToolBar\\PNG\\MOVE_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\IAToolBar\\PNG\\MOVE_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="Polygon" Type="PNG">
+				<!--不规则-->
+				<Picture Status="Hover">\\Skin\\black\\IAToolBar\\PNG\\Polygon_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\IAToolBar\\PNG\\Polygon_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\IAToolBar\\PNG\\Polygon_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\IAToolBar\\PNG\\Polygon_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="ZoomIn" Type="PNG">
+				<!--缩小-->
+				<Picture Status="Hover">\\Skin\\black\\IAToolBar\\PNG\\ZoomIn_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\IAToolBar\\PNG\\ZoomIn_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\IAToolBar\\PNG\\ZoomIn_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\IAToolBar\\PNG\\ZoomIn_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="Delete" Type="PNG">
+        <!--IA 删除-->
+        <Picture Status="Hover">\\Skin\\black\\TitleBar\\PNG\\DELETE_FOCUS.PNG</Picture>
+        <Picture Status="Clicked">\\Skin\\black\\TitleBar\\PNG\\DELETE_SELECT.PNG</Picture>
+        <Picture Status="Gray">\\Skin\\black\\TitleBar\\PNG\\DELETE_GRAY.PNG</Picture>
+        <Picture Status="Normal">\\Skin\\black\\TitleBar\\PNG\\DELETE_NORMAL.PNG</Picture>
+      </Button>
+			<Button Name="ZoomOut" Type="PNG">
+				<!--放大-->
+				<Picture Status="Hover">\\Skin\\black\\IAToolBar\\PNG\\ZoomOut_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\IAToolBar\\PNG\\ZoomOut_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\IAToolBar\\PNG\\ZoomOut_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\IAToolBar\\PNG\\ZoomOut_NORMAL.PNG</Picture>
+			</Button>	
+			<Button Name="Rect" Type="PNG">
+				<!--矩形-->
+				<Picture Status="Hover">\\Skin\\black\\IAToolBar\\PNG\\Rect_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\IAToolBar\\PNG\\Rect_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\IAToolBar\\PNG\\Rect_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\IAToolBar\\PNG\\Rect_NORMAL.PNG</Picture>
+			</Button>	
+			<Button Name="DisplayMode" Type="PNG">
+				<!--显示-->
+				<Picture Status="Hover">\\Skin\\black\\IAToolBar\\PNG\\DisplayMode_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\IAToolBar\\PNG\\DisplayMode_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\IAToolBar\\PNG\\DisplayMode_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\IAToolBar\\PNG\\DisplayMode_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="Play" Type="PNG">
+				<!--播放-->
+				<Picture Status="Hover">\\Skin\\black\\IAToolBar\\PNG\\Play_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\IAToolBar\\PNG\\Play_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\IAToolBar\\PNG\\Play_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\IAToolBar\\PNG\\Play_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="Stop" Type="PNG">
+        <!--播放-->
+        <Picture Status="Hover">\\Skin\\black\\IAToolBar\\PNG\\STOP_FOCUS.PNG</Picture>
+        <Picture Status="Clicked">\\Skin\\black\\IAToolBar\\PNG\\STOP_SELECT.PNG</Picture>
+        <Picture Status="Gray">\\Skin\\black\\IAToolBar\\PNG\\STOP_GRAY.PNG</Picture>
+        <Picture Status="Normal">\\Skin\\black\\IAToolBar\\PNG\\STOP_NORMAL.PNG</Picture>
+      </Button>
+			<Button Name="SnapShot" Type="PNG">
+				<!--抓拍-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\CAPUTRE_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\CAPUTRE_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\CAPUTRE_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\CAPUTRE_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="LocalRecord" Type="PNG">
+				<!--本地录像-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\RECORD_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\RECORD_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\RECORD_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\RECORD_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="BookMark" Type="PNG">
+				<!--书签-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\LABEL_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\LABEL_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\LABEL_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\LABEL_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="Zoom" Type="PNG">
+				<!--局部放大-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\MAGNIFY_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\MAGNIFY_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\MAGNIFY_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\MAGNIFY_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="PlayRecord" Type="PNG">
+				<!--即时回放-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\BACK_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\BACK_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\BACK_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\BACK_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="PlaySound" Type="PNG">
+				<!--声音-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\SOUND_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\SOUND_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\SOUND_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\SOUND_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="TalkBack" Type="PNG">
+				<!--对讲-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\TALKBACK_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\TALKBACK_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\TALKBACK_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\TALKBACK_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="VideoTVW" Type="PNG">
+				<!--视频上墙-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\TVWALL_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\TVWALL_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\TVWALL_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\TVWALL_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="AlarmWin" Type="PNG">
+				<!--设置告警窗口-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\SETWARDWND_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\SETWARDWND_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\SETWARDWND_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\SETWARDWND_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="PTZ" Type="PNG">
+				<!--云镜控制-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\PTZ_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\PTZ_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\PTZ_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\PTZ_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="PTZ3D" Type="PNG">
+				<!--3D定位-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\PTZ3D_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\PTZ3D_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\PTZ3D_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\PTZ3D_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="IA" Type="PNG">
+				<!--叠加智能分析-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\SUPERINTEL_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\SUPERINTEL_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\SUPERINTEL_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\SUPERINTEL_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="OpenMap" Type="PNG">
+				<!--打开电子地图-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\EMAP_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\EMAP_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\EMAP_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\EMAP_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="WindowMain" Type="PNG">
+				<!--一主多辅-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\MASTERMAUXILIARY_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\MASTERMAUXILIARY_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\MASTERMAUXILIARY_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\MASTERMAUXILIARY_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="PlayQuality" Type="PNG">
+				<!--画质优先-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\NETQUALITY_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\NETQUALITY_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\NETQUALITY_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\NETQUALITY_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="PlayNet" Type="PNG">
+				<!--网速优先-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\NET_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\NET_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\NET_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\NET_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="Extend" Type="PNG">
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\LOCKER_UP_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\LOCKER_UP_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\LOCKER_UP_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\LOCKER_UP_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="Retracted" Type="PNG">
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\RETRACTED_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\RETRACTED_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\RETRACTED_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\RETRACTED_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="PlayNoSound" Type="PNG">
+				<!--声音-静音-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\NOSOUND_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\NOSOUND_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\NOSOUND_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\NOSOUND_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="NoTalkBack" Type="PNG">
+				<!--对讲-无声-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\NOTALKBACK_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\NOTALKBACK_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\NOTALKBACK_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\NOTALKBACK_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="ReturnBack" Type="PNG">
+				<!--返回-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\RETURN_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\RETURN_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\RETURN_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\RETURN_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="StartBack" Type="PNG">
+				<!--开始播放-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\START_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\START_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\START_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\START_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="StopBack" Type="PNG">
+				<!--停住播放-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\PNG\\STOP_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\ToolBar\\PNG\\STOP_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\PNG\\STOP_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\PNG\\STOP_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="SnapShot" Type="BMP">
+				<!--抓拍 - BMP-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\BMP\\CAPTURE_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\BMP\\CAPTURE_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\BMP\\CAPTURE_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="LocalRecord" Type="BMP">
+				<!--本地录像 - BMP-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\BMP\\RECORD_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\BMP\\RECORD_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\BMP\\RECORD_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="BookMark" Type="BMP">
+				<!--书签 - BMP-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\BMP\\LABEL_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\BMP\\LABEL_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\BMP\\LABEL_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="Zoom" Type="BMP">
+				<!--局部放大 - BMP-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\BMP\\MAGNIFY_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\BMP\\MAGNIFY_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\BMP\\MAGNIFY_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="PlayRecord" Type="BMP">
+				<!--即时回放 - BMP-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\BMP\\INSTANT_BP_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\BMP\\INSTANT_BP_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\BMP\\INSTANT_BP_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="PlaySound" Type="BMP">
+				<!--声音 - BMP-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\BMP\\SOUND_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\BMP\\SOUND_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\BMP\\SOUND_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="TalkBack" Type="BMP">
+				<!--对讲 - BMP-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\BMP\\TALK_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\BMP\\TALK_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\BMP\\TALK_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="VideoTVW" Type="BMP">
+				<!--视频上墙 - BMP-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\BMP\\TV_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\BMP\\TV_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\BMP\\TV_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="AlarmWin" Type="BMP">
+				<!--设置告警窗口 - BMP-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\BMP\\SETWND_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\BMP\\SETWND_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\BMP\\SETWND_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="PTZ" Type="BMP">
+				<!--云镜控制 - BMP-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\BMP\\PTZ_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\BMP\\PTZ_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\BMP\\PTZ_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="PTZ3D" Type="BMP">
+				<!--3D定位 - BMP-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\BMP\\PTZ3D_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\BMP\\PTZ3D_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\BMP\\PTZ3D_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="IA" Type="BMP">
+				<!--叠加智能分析 - BMP-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\BMP\\SUPERINTEL_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\BMP\\SUPERINTEL_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\BMP\\SUPERINTEL_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="OpenMap" Type="BMP">
+				<!--打开电子地图 - BMP-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\BMP\\E_MAP_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\BMP\\E_MAP_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\BMP\\E_MAP_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="WindowMain" Type="BMP">
+				<!--一主多辅 - BMP-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\BMP\\MASTERAUXILIARY_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\BMP\\ MASTERAUXILIARY_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\BMP\\MASTERAUXILIARY_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="PlayQuality" Type="BMP">
+				<!--画质优先 - BMP-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\BMP\\QUALITY_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\BMP\\QUALITY_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\BMP\\QUALITY_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="PlayNet" Type="BMP">
+				<!--网速优先 - BMP-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\BMP\\NET_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\BMP\\NET_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\BMP\\NET_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="PlayNoSound" Type="BMP">
+				<!--声音-静音 - BMP-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\BMP\\NOSOUND_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\BMP\\NOSOUND_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\BMP\\NOSOUND_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="NoTalkBack" Type="BMP">
+				<!--对讲-无声 - BMP-->
+				<Picture Status="Hover">\\Skin\\black\\ToolBar\\BMP\\NOTALK_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\black\\ToolBar\\BMP\\NOTALK_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\black\\ToolBar\\BMP\\NOTALK_NORMAL.BMP</Picture>
+			</Button>
+			<Menu>
+				<MenuHead>
+					<Picture>\Skin\black\ToolBar\BMP\bgup.bmp</Picture>
+				</MenuHead>
+				<MenuTail>
+					<Picture>\Skin\black\ToolBar\BMP\bgdown.bmp</Picture>
+				</MenuTail>
+				<MenuMidl>
+					<Picture>\Skin\black\ToolBar\BMP\bgmiddle.bmp</Picture>
+				</MenuMidl>
+				<MenuHover>
+					<Picture>\Skin\black\ToolBar\BMP\bar.bmp</Picture>
+				</MenuHover>
+			</Menu>
+		</ToolBar>
+		<TitleBar>
+			<BackGround>
+				<Picture>\\Skin\\black\\TitleBar\\PNG\\BLACK_BG.png</Picture>
+			</BackGround>
+			<Button Name="Info" Type="PNG">
+				<!--视频信息-->
+				<Picture Status="Hover">\\Skin\\black\\TitleBar\\PNG\\MESSAGE_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\TitleBar\\PNG\\MESSAGE_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\TitleBar\\PNG\\MESSAGE_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\TitleBar\\PNG\\MESSAGE_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="Off" Type="PNG">
+				<!--关闭 停止播放-->
+				<Picture Status="Hover">\\Skin\\black\\TitleBar\\PNG\\OFF_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\TitleBar\\PNG\\OFF_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\TitleBar\\PNG\\OFF_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\TitleBar\\PNG\\OFF_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="TVWallHandling" Type="PNG">
+		        <!--电视墙正在上墙状态-->
+		        <Picture Status="Hover">\\Skin\\black\\TitleBar\\PNG\\TV_Wall_HANDLING.PNG</Picture>
+		        <Picture Status="Clicked">\\Skin\\black\\TitleBar\\PNG\\TV_Wall_HANDLING.PNG</Picture>
+		        <Picture Status="Gray">\\Skin\\black\\TitleBar\\PNG\\TV_Wall_HANDLING.PNG</Picture>
+		        <Picture Status="Normal">\\Skin\\black\\TitleBar\\PNG\\TV_Wall_HANDLING.PNG</Picture>
+		    </Button>
+			<Button Name="TVWallOK" Type="PNG">
+	        	<!--电视墙已上墙状态-->
+		        <Picture Status="Hover">\\Skin\\black\\TitleBar\\PNG\\TV_Wall_OK.PNG</Picture>
+		        <Picture Status="Clicked">\\Skin\\black\\TitleBar\\PNG\\TV_Wall_OK.PNG</Picture>
+		        <Picture Status="Gray">\\Skin\\black\\TitleBar\\PNG\\TV_Wall_OK.PNG</Picture>
+		        <Picture Status="Normal">\\Skin\\black\\TitleBar\\PNG\\TV_Wall_OK.PNG</Picture>
+	      	</Button>
+			<Button Name="TVWallVideoBroken" Type="PNG">
+	        	<!--电视墙视频断流状态状态-->
+		        <Picture Status="Hover">\\Skin\\black\\TitleBar\\PNG\\TVWALL_VIDEO_BROKEN.PNG</Picture>
+		        <Picture Status="Clicked">\\Skin\\black\\TitleBar\\PNG\\TVWALL_VIDEO_BROKEN.PNG</Picture>
+		        <Picture Status="Gray">\\Skin\\black\\TitleBar\\PNG\\TVWALL_VIDEO_BROKEN.PNG</Picture>
+		        <Picture Status="Normal">\\Skin\\black\\TitleBar\\PNG\\TVWALL_VIDEO_BROKEN.PNG</Picture>
+	      	</Button>
+			<Button Name="TVWallReConnect" Type="PNG">
+	        	<!--电视墙正在重连状态-->
+		        <Picture Status="Hover">\\Skin\\black\\TitleBar\\PNG\\TVWALL_RECONNECT.PNG</Picture>
+		        <Picture Status="Clicked">\\Skin\\black\\TitleBar\\PNG\\TVWALL_RECONNECT.PNG</Picture>
+		        <Picture Status="Gray">\\Skin\\black\\TitleBar\\PNG\\TVWALL_RECONNECT.PNG</Picture>
+		        <Picture Status="Normal">\\Skin\\black\\TitleBar\\PNG\\TVWALL_RECONNECT.PNG</Picture>
+	      	</Button>
+			<Button Name="Add" Type="PNG">
+				<!--移动侦测添加-->
+				<Picture Status="Hover">\\Skin\\black\\TitleBar\\PNG\\ADD_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\TitleBar\\PNG\\ADD_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\TitleBar\\PNG\\ADD_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\TitleBar\\PNG\\ADD_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="Delete" Type="PNG">
+				<!--移动侦测删除-->
+				<Picture Status="Hover">\\Skin\\black\\TitleBar\\PNG\\DELETE_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\TitleBar\\PNG\\DELETE_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\TitleBar\\PNG\\DELETE_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\TitleBar\\PNG\\DELETE_NORMAL.PNG</Picture>
+			</Button>
+		    <Button Name="Left" Type="PNG">
+				<!--左边按钮-->
+				<Picture Status="Hover">\\Skin\\black\\TitleBar\\PNG\\LEFT_NOMAL.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\TitleBar\\PNG\\LEFT_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\TitleBar\\PNG\\LEFT_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\TitleBar\\PNG\\LEFT_NOMAL.PNG</Picture>
+			</Button>
+		    <Button Name="Right" Type="PNG">
+				<!--左边按钮-->
+				<Picture Status="Hover">\\Skin\\black\\TitleBar\\PNG\\RIGHT_NOMAL.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\TitleBar\\PNG\\RIGHT_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\TitleBar\\PNG\\RIGHT_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\TitleBar\\PNG\\RIGHT_NOMAL.PNG</Picture>
+			</Button>
+			<Button Name="TrunCuise" Type="PNG">
+				<!--轮训状态-->
+				<Picture Status="Hover">\\Skin\\black\\TitleBar\\PNG\\TURNCRUISE_ON.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\TitleBar\\PNG\\TURNCRUISE_ON.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\TitleBar\\PNG\\TURNCRUISE_OFF.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\TitleBar\\PNG\\TURNCRUISE_ON.PNG</Picture>
+			</Button>
+			<Button Name="SingleFrameStatus" Type="PNG">
+				<!--单帧状态-->
+				<Picture Status="Hover">\\Skin\\black\\TitleBar\\PNG\\SINGLEFRAME_STATUS_ON.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\TitleBar\\PNG\\SINGLEFRAME_STATUS_ON.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\TitleBar\\PNG\\SINGLEFRAME_STATUS_ON.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\TitleBar\\PNG\\SINGLEFRAME_STATUS_ON.PNG</Picture>
+			</Button>
+			<Button Name="AlarmStatus" Type="PNG">
+				<!--告警状态-->
+				<Picture Status="Hover">\\Skin\\black\\TitleBar\\PNG\\ALARM_STATUS_ON.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\TitleBar\\PNG\\ALARM_STATUS_ON.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\TitleBar\\PNG\\ALARM_STATUS_ON.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\TitleBar\\PNG\\ALARM_STATUS_ON.PNG</Picture>
+			</Button>
+			<Button Name="RecordStatus" Type="PNG">
+				<!--手动录像状态-->
+				<Picture Status="Hover">\\Skin\\black\\TitleBar\\PNG\\RECORD_STATUS_ON.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\TitleBar\\PNG\\RECORD_STATUS_ON.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\TitleBar\\PNG\\RECORD_STATUS_ON.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\TitleBar\\PNG\\RECORD_STATUS_ON.PNG</Picture>
+			</Button>
+			<Button Name="CruiseTrackStatus" Type="PNG">
+				<!--巡航状态-->
+				<Picture Status="Hover">\\Skin\\black\\TitleBar\\PNG\\CRUISETRACK_STATUS_ON.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\TitleBar\\PNG\\CRUISETRACK_STATUS_ON.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\TitleBar\\PNG\\CRUISETRACK_STATUS_ON.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\TitleBar\\PNG\\CRUISETRACK_STATUS_ON.PNG</Picture>
+			</Button>
+			<Button Name="WatermarkGary" Type="PNG">
+				<Picture Status="Hover">\\Skin\\black\\TitleBar\\PNG\\WATERMARKGRAY.png</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\TitleBar\\PNG\\WATERMARKGRAY.png</Picture>
+				<Picture Status="Gray">\\Skin\\black\\TitleBar\\PNG\\WATERMARKGRAY.png</Picture>
+				<Picture Status="Normal">\\Skin\\black\\TitleBar\\PNG\\WATERMARKGRAY.png</Picture>
+			</Button>
+			<Button Name="WatermarkNomal" Type="PNG">
+				<Picture Status="Hover">\\Skin\\black\\TitleBar\\PNG\\WATERMARKNOMAL.png</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\TitleBar\\PNG\\WATERMARKNOMAL.png</Picture>
+				<Picture Status="Gray">\\Skin\\black\\TitleBar\\PNG\\WATERMARKNOMAL.png</Picture>
+				<Picture Status="Normal">\\Skin\\black\\TitleBar\\PNG\\WATERMARKNOMAL.png</Picture>
+			</Button>
+		</TitleBar>
+		<SoundCtrl>
+			<BackGround>
+				<Picture>\\Skin\\black\\ToolBar\\PNG\\BLACK_BG.PNG</Picture>
+			</BackGround>
+		</SoundCtrl>
+		<VideoPane>
+			<VideoPaneBackGround>
+				<Picture>\\Skin\\black\\VideoPane\\BMP\\logo.png</Picture>
+			</VideoPaneBackGround>
+			<AlarmBackGround>
+				<Picture>\\Skin\\black\\VideoPane\\BMP\\logo_alarm.png</Picture>
+			</AlarmBackGround>
+			<InstantReplayBackGround>
+				<Picture>\\Skin\\black\\VideoPane\\BMP\\instantreplay.png</Picture>
+			</InstantReplayBackGround>
+		</VideoPane>
+		<TVWallStatusBar>
+		  <Online>
+			<Picture>\\Skin\\black\\TVWallStatusBar\\PNG\\TVWall_Channel_Online.png</Picture>        
+		  </Online>
+		  <Offline>
+			<Picture>\\Skin\\black\\TVWallStatusBar\\PNG\\TVWall_Channel_Offline.png</Picture>
+		  </Offline>
+		</TVWallStatusBar>
+		<TranslucentBG>
+			<BkGround>
+				<Picture>\\Skin\\black\\VideoPane\\BMP\\TRANSLUCENT_BG.png</Picture>
+			</BkGround>
+		</TranslucentBG>
+		<DigtalZoom>
+			<Button Name="Left" Type="PNG">
+				<!--左边按钮-->
+				<Picture Status="Hover">\\Skin\\black\\DigtalPtz\\PNG\\LEFT_NOMAL.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\DigtalPtz\\PNG\\LEFT_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\DigtalPtz\\PNG\\LEFT_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\DigtalPtz\\PNG\\LEFT_NOMAL.PNG</Picture>
+			</Button>
+			<Button Name="TopLeft" Type="PNG">
+				<!--左上按钮-->
+				<Picture Status="Hover">\\Skin\\black\\DigtalPtz\\PNG\\TOP_LEFT_NOMAL.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\DigtalPtz\\PNG\\TOP_LEFT_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\DigtalPtz\\PNG\\TOP_LEFT_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\DigtalPtz\\PNG\\TOP_LEFT_NOMAL.PNG</Picture>
+			</Button>
+			<Button Name="Top" Type="PNG">
+				<!--上边按钮-->
+				<Picture Status="Hover">\\Skin\\black\\DigtalPtz\\PNG\\TOP_NOMAL.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\DigtalPtz\\PNG\\TOP_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\DigtalPtz\\PNG\\TOP_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\DigtalPtz\\PNG\\TOP_NOMAL.PNG</Picture>
+			</Button>
+			<Button Name="TopRight" Type="PNG">
+				<!--右上按钮-->
+				<Picture Status="Hover">\\Skin\\black\\DigtalPtz\\PNG\\TOP_RIGHT_NOMAL.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\DigtalPtz\\PNG\\TOP_RIGHT_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\DigtalPtz\\PNG\\TOP_RIGHT_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\DigtalPtz\\PNG\\TOP_RIGHT_NOMAL.PNG</Picture>
+			</Button>
+			<Button Name="Right" Type="PNG">
+				<!--右边按钮-->
+				<Picture Status="Hover">\\Skin\\black\\DigtalPtz\\PNG\\RIGHT_NOMAL.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\DigtalPtz\\PNG\\RIGHT_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\DigtalPtz\\PNG\\RIGHT_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\DigtalPtz\\PNG\\RIGHT_NOMAL.PNG</Picture>
+			</Button>
+			<Button Name="BottomRight" Type="PNG">
+				<!--右下按钮-->
+				<Picture Status="Hover">\\Skin\\black\\DigtalPtz\\PNG\\BOTTOM_RIGHT_NOMAL.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\DigtalPtz\\PNG\\BOTTOM_RIGHT_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\DigtalPtz\\PNG\\BOTTOM_RIGHT_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\DigtalPtz\\PNG\\BOTTOM_RIGHT_NOMAL.PNG</Picture>
+			</Button>
+			<Button Name="Bottom" Type="PNG">
+				<!--下边按钮-->
+				<Picture Status="Hover">\\Skin\\black\\DigtalPtz\\PNG\\BOTTOM_NOMAL.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\DigtalPtz\\PNG\\BOTTOM_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\DigtalPtz\\PNG\\BOTTOM_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\DigtalPtz\\PNG\\BOTTOM_NOMAL.PNG</Picture>
+			</Button>
+			<Button Name="BottomLeft" Type="PNG">
+				<!--左下按钮-->
+				<Picture Status="Hover">\\Skin\\black\\DigtalPtz\\PNG\\BOTTOM_LEFT_NOMAL.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\DigtalPtz\\PNG\\BOTTOM_LEFT_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\DigtalPtz\\PNG\\BOTTOM_LEFT_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\DigtalPtz\\PNG\\BOTTOM_LEFT_NOMAL.PNG</Picture>
+			</Button>
+			<Button Name="SnapShot" Type="PNG">
+				<!--抓拍-->
+				<Picture Status="Hover">\\Skin\\black\\DigtalPtz\\PNG\\CAPUTRE_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\DigtalPtz\\PNG\\CAPUTRE_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\DigtalPtz\\PNG\\CAPUTRE_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\DigtalPtz\\PNG\\CAPUTRE_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="ZoomIn" Type="PNG">
+				<!--缩小-->
+				<Picture Status="Hover">\\Skin\\black\\DigtalPtz\\PNG\\ZoomIn_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\DigtalPtz\\PNG\\ZoomIn_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\DigtalPtz\\PNG\\ZoomIn_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\DigtalPtz\\PNG\\ZoomIn_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="ZoomOut" Type="PNG">
+				<!--放大-->
+				<Picture Status="Hover">\\Skin\\black\\DigtalPtz\\PNG\\ZoomOut_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\DigtalPtz\\PNG\\ZoomOut_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\black\\DigtalPtz\\PNG\\ZoomOut_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\black\\DigtalPtz\\PNG\\ZoomOut_NORMAL.PNG</Picture>
+			</Button>	
+			<Button Name="ReatText" Type="PNG">
+				<!--百分比-->
+				<Picture Status="Hover">\\Skin\\black\\DigtalPtz\\PNG\\ZOOM_REAT_TEXT.png</Picture>
+				<Picture Status="Clicked">\\Skin\\black\\DigtalPtz\\PNG\\ZOOM_REAT_TEXT.png</Picture>
+				<Picture Status="Gray">\\Skin\\black\\DigtalPtz\\PNG\\ZOOM_REAT_TEXT.png</Picture>
+				<Picture Status="Normal">\\Skin\\black\\DigtalPtz\\PNG\\ZOOM_REAT_TEXT.png</Picture>
+			</Button>
+			<Button Name="ZoomOver" Type="PNG">
+			<!--关闭-->
+			<Picture Status="Hover">\\Skin\\black\\DigtalPtz\\PNG\\ZoomOver_FOCUS.PNG</Picture>
+			<Picture Status="Clicked">\\Skin\\black\\DigtalPtz\\PNG\\ZoomOver_SELECT.PNG</Picture>
+			<Picture Status="Gray">\\Skin\\black\\DigtalPtz\\PNG\\ZoomOver_GRAY.PNG</Picture>
+			<Picture Status="Normal">\\Skin\\black\\DigtalPtz\\PNG\\ZoomOver_NORMAL.PNG</Picture>
+		</Button>
+		</DigtalZoom>
+	</Skin>
+	<Skin ID="2">
+		<ToolBar>
+			<BackGround>
+				<Picture>\\Skin\\white\\ToolBar\\PNG\\BLACK_BG.PNG</Picture>
+			</BackGround>
+			<Button Name="Move" Type="PNG">
+				<!--移动-->
+				<Picture Status="Hover">\\Skin\\white\\IAToolBar\\PNG\\MOVE_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\IAToolBar\\PNG\\MOVE_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\IAToolBar\\PNG\\MOVE_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\IAToolBar\\PNG\\MOVE_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="Polygon" Type="PNG">
+				<!--不规则-->
+				<Picture Status="Hover">\\Skin\\white\\IAToolBar\\PNG\\Polygon_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\IAToolBar\\PNG\\Polygon_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\IAToolBar\\PNG\\Polygon_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\IAToolBar\\PNG\\Polygon_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="ZoomIn" Type="PNG">
+				<!--缩小-->
+				<Picture Status="Hover">\\Skin\\white\\IAToolBar\\PNG\\ZoomIn_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\IAToolBar\\PNG\\ZoomIn_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\IAToolBar\\PNG\\ZoomIn_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\IAToolBar\\PNG\\ZoomIn_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="Delete" Type="PNG">
+        <!--IA 删除-->
+        <Picture Status="Hover">\\Skin\\white\\TitleBar\\PNG\\DELETE_FOCUS.PNG</Picture>
+        <Picture Status="Clicked">\\Skin\\white\\TitleBar\\PNG\\DELETE_SELECT.PNG</Picture>
+        <Picture Status="Gray">\\Skin\\white\\TitleBar\\PNG\\DELETE_GRAY.PNG</Picture>
+        <Picture Status="Normal">\\Skin\\white\\TitleBar\\PNG\\DELETE_NORMAL.PNG</Picture>
+      </Button>
+			<Button Name="ZoomOut" Type="PNG">
+				<!--放大-->
+				<Picture Status="Hover">\\Skin\\white\\IAToolBar\\PNG\\ZoomOut_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\IAToolBar\\PNG\\ZoomOut_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\IAToolBar\\PNG\\ZoomOut_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\IAToolBar\\PNG\\ZoomOut_NORMAL.PNG</Picture>
+			</Button>	
+			<Button Name="Rect" Type="PNG">
+				<!--矩形-->
+				<Picture Status="Hover">\\Skin\\white\\IAToolBar\\PNG\\Rect_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\IAToolBar\\PNG\\Rect_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\IAToolBar\\PNG\\Rect_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\IAToolBar\\PNG\\Rect_NORMAL.PNG</Picture>
+			</Button>	
+			<Button Name="DisplayMode" Type="PNG">
+				<!--显示-->
+				<Picture Status="Hover">\\Skin\\white\\IAToolBar\\PNG\\DisplayMode_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\IAToolBar\\PNG\\DisplayMode_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\IAToolBar\\PNG\\DisplayMode_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\IAToolBar\\PNG\\DisplayMode_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="Play" Type="PNG">
+				<!--播放-->
+				<Picture Status="Hover">\\Skin\\white\\IAToolBar\\PNG\\Play_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\IAToolBar\\PNG\\Play_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\IAToolBar\\PNG\\Play_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\IAToolBar\\PNG\\Play_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="Stop" Type="PNG">
+        <!--播放-->
+        <Picture Status="Hover">\\Skin\\white\\IAToolBar\\PNG\\STOP_FOCUS.PNG</Picture>
+        <Picture Status="Clicked">\\Skin\\white\\IAToolBar\\PNG\\STOP_SELECT.PNG</Picture>
+        <Picture Status="Gray">\\Skin\\white\\IAToolBar\\PNG\\STOP_GRAY.PNG</Picture>
+        <Picture Status="Normal">\\Skin\\white\\IAToolBar\\PNG\\STOP_NORMAL.PNG</Picture>
+      </Button>
+			<Button Name="SnapShot" Type="PNG">
+				<!--抓拍-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\CAPUTRE_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\CAPUTRE_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\CAPUTRE_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\CAPUTRE_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="LocalRecord" Type="PNG">
+				<!--本地录像-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\RECORD_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\RECORD_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\RECORD_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\RECORD_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="BookMark" Type="PNG">
+				<!--书签-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\LABEL_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\LABEL_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\LABEL_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\LABEL_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="Zoom" Type="PNG">
+				<!--局部放大-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\MAGNIFY_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\MAGNIFY_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\MAGNIFY_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\MAGNIFY_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="PlayRecord" Type="PNG">
+				<!--即时回放-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\BACK_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\BACK_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\BACK_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\BACK_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="PlaySound" Type="PNG">
+				<!--声音-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\SOUND_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\SOUND_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\SOUND_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\SOUND_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="TalkBack" Type="PNG">
+				<!--对讲-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\TALKBACK_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\TALKBACK_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\TALKBACK_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\TALKBACK_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="VideoTVW" Type="PNG">
+				<!--视频上墙-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\TVWALL_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\TVWALL_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\TVWALL_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\TVWALL_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="AlarmWin" Type="PNG">
+				<!--设置告警窗口-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\SETWARDWND_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\SETWARDWND_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\SETWARDWND_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\SETWARDWND_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="PTZ" Type="PNG">
+				<!--云镜控制-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\PTZ_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\PTZ_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\PTZ_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\PTZ_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="PTZ3D" Type="PNG">
+				<!--3D定位-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\PTZ3D_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\PTZ3D_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\PTZ3D_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\PTZ3D_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="IA" Type="PNG">
+				<!--叠加智能分析-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\SUPERINTEL_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\SUPERINTEL_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\SUPERINTEL_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\SUPERINTEL_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="OpenMap" Type="PNG">
+				<!--打开电子地图-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\EMAP_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\EMAP_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\EMAP_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\EMAP_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="WindowMain" Type="PNG">
+				<!--一主多辅-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\MASTERMAUXILIARY_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\MASTERMAUXILIARY_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\MASTERMAUXILIARY_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\MASTERMAUXILIARY_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="PlayQuality" Type="PNG">
+				<!--画质优先-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\NETQUALITY_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\NETQUALITY_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\NETQUALITY_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\NETQUALITY_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="PlayNet" Type="PNG">
+				<!--网速优先-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\NET_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\NET_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\NET_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\NET_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="Extend" Type="PNG">
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\LOCKER_UP_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\LOCKER_UP_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\LOCKER_UP_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\LOCKER_UP_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="Retracted" Type="PNG">
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\RETRACTED_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\RETRACTED_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\RETRACTED_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\RETRACTED_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="PlayNoSound" Type="PNG">
+				<!--声音-静音-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\NOSOUND_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\NOSOUND_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\NOSOUND_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\NOSOUND_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="NoTalkBack" Type="PNG">
+				<!--对讲-无声-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\NOTALKBACK_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\NOTALKBACK_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\NOTALKBACK_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\NOTALKBACK_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="ReturnBack" Type="PNG">
+				<!--返回-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\RETURN_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\RETURN_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\RETURN_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\RETURN_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="StartBack" Type="PNG">
+				<!--开始播放-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\START_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\START_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\START_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\START_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="StopBack" Type="PNG">
+				<!--停住播放-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\PNG\\STOP_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\ToolBar\\PNG\\STOP_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\PNG\\STOP_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\PNG\\STOP_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="SnapShot" Type="BMP">
+				<!--抓拍 - BMP-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\BMP\\CAPTURE_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\BMP\\CAPTURE_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\BMP\\CAPTURE_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="LocalRecord" Type="BMP">
+				<!--本地录像 - BMP-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\BMP\\RECORD_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\BMP\\RECORD_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\BMP\\RECORD_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="BookMark" Type="BMP">
+				<!--书签 - BMP-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\BMP\\LABEL_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\BMP\\LABEL_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\BMP\\LABEL_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="Zoom" Type="BMP">
+				<!--局部放大 - BMP-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\BMP\\MAGNIFY_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\BMP\\MAGNIFY_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\BMP\\MAGNIFY_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="PlayRecord" Type="BMP">
+				<!--即时回放 - BMP-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\BMP\\INSTANT_BP_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\BMP\\INSTANT_BP_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\BMP\\INSTANT_BP_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="PlaySound" Type="BMP">
+				<!--声音 - BMP-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\BMP\\SOUND_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\BMP\\SOUND_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\BMP\\SOUND_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="TalkBack" Type="BMP">
+				<!--对讲 - BMP-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\BMP\\TALK_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\BMP\\TALK_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\BMP\\TALK_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="VideoTVW" Type="BMP">
+				<!--视频上墙 - BMP-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\BMP\\TV_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\BMP\\TV_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\BMP\\TV_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="AlarmWin" Type="BMP">
+				<!--设置告警窗口 - BMP-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\BMP\\SETWND_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\BMP\\SETWND_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\BMP\\SETWND_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="PTZ" Type="BMP">
+				<!--云镜控制 - BMP-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\BMP\\PTZ_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\BMP\\PTZ_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\BMP\\PTZ_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="PTZ3D" Type="BMP">
+				<!--3D定位 - BMP-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\BMP\\PTZ3D_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\BMP\\PTZ3D_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\BMP\\PTZ3D_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="IA" Type="BMP">
+				<!--叠加智能分析 - BMP-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\BMP\\SUPERINTEL_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\BMP\\SUPERINTEL_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\BMP\\SUPERINTEL_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="OpenMap" Type="BMP">
+				<!--打开电子地图 - BMP-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\BMP\\E_MAP_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\BMP\\E_MAP_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\BMP\\E_MAP_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="WindowMain" Type="BMP">
+				<!--一主多辅 - BMP-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\BMP\\MASTERAUXILIARY_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\BMP\\ MASTERAUXILIARY_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\BMP\\MASTERAUXILIARY_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="PlayQuality" Type="BMP">
+				<!--画质优先 - BMP-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\BMP\\QUALITY_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\BMP\\QUALITY_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\BMP\\QUALITY_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="PlayNet" Type="BMP">
+				<!--网速优先 - BMP-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\BMP\\NET_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\BMP\\NET_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\BMP\\NET_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="PlayNoSound" Type="BMP">
+				<!--声音-静音 - BMP-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\BMP\\NOSOUND_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\BMP\\NOSOUND_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\BMP\\NOSOUND_NORMAL.BMP</Picture>
+			</Button>
+			<Button Name="NoTalkBack" Type="BMP">
+				<!--对讲-无声 - BMP-->
+				<Picture Status="Hover">\\Skin\\white\\ToolBar\\BMP\\NOTALK_SELECT.BMP</Picture>
+				<Picture Status="Gray">\\Skin\\white\\ToolBar\\BMP\\NOTALK_GRAY.BMP</Picture>
+				<Picture Status="Normal">\\Skin\\white\\ToolBar\\BMP\\NOTALK_NORMAL.BMP</Picture>
+			</Button>
+			<Menu>
+				<MenuHead>
+					<Picture>\Skin\white\ToolBar\BMP\bgup.bmp</Picture>
+				</MenuHead>
+				<MenuTail>
+					<Picture>\Skin\white\ToolBar\BMP\bgdown.bmp</Picture>
+				</MenuTail>
+				<MenuMidl>
+					<Picture>\Skin\white\ToolBar\BMP\bgmiddle.bmp</Picture>
+				</MenuMidl>
+				<MenuHover>
+					<Picture>\Skin\white\ToolBar\BMP\bar.bmp</Picture>
+				</MenuHover>
+			</Menu>
+		</ToolBar>
+		<TitleBar>
+			<BackGround>
+				<Picture>\\Skin\\white\\TitleBar\\PNG\\BLACK_BG.png</Picture>
+			</BackGround>
+			<Button Name="Info" Type="PNG">
+				<!--视频信息-->
+				<Picture Status="Hover">\\Skin\\white\\TitleBar\\PNG\\MESSAGE_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\TitleBar\\PNG\\MESSAGE_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\TitleBar\\PNG\\MESSAGE_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\TitleBar\\PNG\\MESSAGE_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="Off" Type="PNG">
+				<!--关闭 停止播放-->
+				<Picture Status="Hover">\\Skin\\white\\TitleBar\\PNG\\OFF_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\TitleBar\\PNG\\OFF_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\TitleBar\\PNG\\OFF_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\TitleBar\\PNG\\OFF_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="TVWallHandling" Type="PNG">
+		        <!--电视墙正在上墙状态-->
+		        <Picture Status="Hover">\\Skin\\white\\TitleBar\\PNG\\TV_Wall_HANDLING.PNG</Picture>
+		        <Picture Status="Clicked">\\Skin\\white\\TitleBar\\PNG\\TV_Wall_HANDLING.PNG</Picture>
+		        <Picture Status="Gray">\\Skin\\white\\TitleBar\\PNG\\TV_Wall_HANDLING.PNG</Picture>
+		        <Picture Status="Normal">\\Skin\\white\\TitleBar\\PNG\\TV_Wall_HANDLING.PNG</Picture>
+		    </Button>
+			<Button Name="TVWallOK" Type="PNG">
+	        	<!--电视墙已上墙状态-->
+		        <Picture Status="Hover">\\Skin\\white\\TitleBar\\PNG\\TV_Wall_OK.PNG</Picture>
+		        <Picture Status="Clicked">\\Skin\\white\\TitleBar\\PNG\\TV_Wall_OK.PNG</Picture>
+		        <Picture Status="Gray">\\Skin\\white\\TitleBar\\PNG\\TV_Wall_OK.PNG</Picture>
+		        <Picture Status="Normal">\\Skin\\white\\TitleBar\\PNG\\TV_Wall_OK.PNG</Picture>
+	      	</Button>
+			<Button Name="TVWallVideoBroken" Type="PNG">
+	        	<!--电视墙视频断流状态状态-->
+		        <Picture Status="Hover">\\Skin\\white\\TitleBar\\PNG\\TVWALL_VIDEO_BROKEN.PNG</Picture>
+		        <Picture Status="Clicked">\\Skin\\white\\TitleBar\\PNG\\TVWALL_VIDEO_BROKEN.PNG</Picture>
+		        <Picture Status="Gray">\\Skin\\white\\TitleBar\\PNG\\TVWALL_VIDEO_BROKEN.PNG</Picture>
+		        <Picture Status="Normal">\\Skin\\white\\TitleBar\\PNG\\TVWALL_VIDEO_BROKEN.PNG</Picture>
+	      	</Button>
+			<Button Name="TVWallReConnect" Type="PNG">
+	        	<!--电视墙正在重连状态-->
+		        <Picture Status="Hover">\\Skin\\white\\TitleBar\\PNG\\TVWALL_RECONNECT.PNG</Picture>
+		        <Picture Status="Clicked">\\Skin\\white\\TitleBar\\PNG\\TVWALL_RECONNECT.PNG</Picture>
+		        <Picture Status="Gray">\\Skin\\white\\TitleBar\\PNG\\TVWALL_RECONNECT.PNG</Picture>
+		        <Picture Status="Normal">\\Skin\\white\\TitleBar\\PNG\\TVWALL_RECONNECT.PNG</Picture>
+	      	</Button>
+			<Button Name="Add" Type="PNG">
+				<!--移动侦测添加-->
+				<Picture Status="Hover">\\Skin\\white\\TitleBar\\PNG\\ADD_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\TitleBar\\PNG\\ADD_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\TitleBar\\PNG\\ADD_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\TitleBar\\PNG\\ADD_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="Delete" Type="PNG">
+				<!--移动侦测删除-->
+				<Picture Status="Hover">\\Skin\\white\\TitleBar\\PNG\\DELETE_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\TitleBar\\PNG\\DELETE_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\TitleBar\\PNG\\DELETE_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\TitleBar\\PNG\\DELETE_NORMAL.PNG</Picture>
+			</Button>
+		    <Button Name="Left" Type="PNG">
+				<!--左边按钮-->
+				<Picture Status="Hover">\\Skin\\white\\TitleBar\\PNG\\LEFT_NOMAL.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\TitleBar\\PNG\\LEFT_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\TitleBar\\PNG\\LEFT_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\TitleBar\\PNG\\LEFT_NOMAL.PNG</Picture>
+			</Button>
+		    <Button Name="Right" Type="PNG">
+				<!--左边按钮-->
+				<Picture Status="Hover">\\Skin\\white\\TitleBar\\PNG\\RIGHT_NOMAL.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\TitleBar\\PNG\\RIGHT_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\TitleBar\\PNG\\RIGHT_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\TitleBar\\PNG\\RIGHT_NOMAL.PNG</Picture>
+			</Button>
+			<Button Name="TrunCuise" Type="PNG">
+				<!--轮训状态-->
+				<Picture Status="Hover">\\Skin\\white\\TitleBar\\PNG\\TURNCRUISE_ON.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\TitleBar\\PNG\\TURNCRUISE_ON.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\TitleBar\\PNG\\TURNCRUISE_OFF.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\TitleBar\\PNG\\TURNCRUISE_ON.PNG</Picture>
+			</Button>
+			<Button Name="SingleFrameStatus" Type="PNG">
+				<!--单帧状态-->
+				<Picture Status="Hover">\\Skin\\white\\TitleBar\\PNG\\SINGLEFRAME_STATUS_ON.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\TitleBar\\PNG\\SINGLEFRAME_STATUS_ON.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\TitleBar\\PNG\\SINGLEFRAME_STATUS_ON.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\TitleBar\\PNG\\SINGLEFRAME_STATUS_ON.PNG</Picture>
+			</Button>
+			<Button Name="AlarmStatus" Type="PNG">
+				<!--告警状态-->
+				<Picture Status="Hover">\\Skin\\white\\TitleBar\\PNG\\ALARM_STATUS_ON.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\TitleBar\\PNG\\ALARM_STATUS_ON.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\TitleBar\\PNG\\ALARM_STATUS_ON.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\TitleBar\\PNG\\ALARM_STATUS_ON.PNG</Picture>
+			</Button>
+			<Button Name="RecordStatus" Type="PNG">
+				<!--手动录像状态-->
+				<Picture Status="Hover">\\Skin\\white\\TitleBar\\PNG\\RECORD_STATUS_ON.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\TitleBar\\PNG\\RECORD_STATUS_ON.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\TitleBar\\PNG\\RECORD_STATUS_ON.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\TitleBar\\PNG\\RECORD_STATUS_ON.PNG</Picture>
+			</Button>
+			<Button Name="CruiseTrackStatus" Type="PNG">
+				<!--巡航状态-->
+				<Picture Status="Hover">\\Skin\\white\\TitleBar\\PNG\\CRUISETRACK_STATUS_ON.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\TitleBar\\PNG\\CRUISETRACK_STATUS_ON.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\TitleBar\\PNG\\CRUISETRACK_STATUS_ON.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\TitleBar\\PNG\\CRUISETRACK_STATUS_ON.PNG</Picture>
+			</Button>
+			<Button Name="WatermarkGary" Type="PNG">
+				<Picture Status="Hover">\\Skin\\white\\TitleBar\\PNG\\WATERMARKGRAY.png</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\TitleBar\\PNG\\WATERMARKGRAY.png</Picture>
+				<Picture Status="Gray">\\Skin\\white\\TitleBar\\PNG\\WATERMARKGRAY.png</Picture>
+				<Picture Status="Normal">\\Skin\\white\\TitleBar\\PNG\\WATERMARKGRAY.png</Picture>
+			</Button>
+			<Button Name="WatermarkNomal" Type="PNG">
+				<Picture Status="Hover">\\Skin\\white\\TitleBar\\PNG\\WATERMARKNOMAL.png</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\TitleBar\\PNG\\WATERMARKNOMAL.png</Picture>
+				<Picture Status="Gray">\\Skin\\white\\TitleBar\\PNG\\WATERMARKNOMAL.png</Picture>
+				<Picture Status="Normal">\\Skin\\white\\TitleBar\\PNG\\WATERMARKNOMAL.png</Picture>
+			</Button>
+		</TitleBar>
+		<SoundCtrl>
+			<BackGround>
+				<Picture>\\Skin\\white\\ToolBar\\PNG\\BLACK_BG.PNG</Picture>
+			</BackGround>
+		</SoundCtrl>
+		<VideoPane>
+			<VideoPaneBackGround>
+				<Picture>\\Skin\\white\\VideoPane\\BMP\\logo.png</Picture>
+			</VideoPaneBackGround>
+			<AlarmBackGround>
+				<Picture>\\Skin\\white\\VideoPane\\BMP\\logo_alarm.png</Picture>
+			</AlarmBackGround>
+			<InstantReplayBackGround>
+				<Picture>\\Skin\\white\\VideoPane\\BMP\\instantreplay.png</Picture>
+			</InstantReplayBackGround>
+		</VideoPane>
+		<TVWallStatusBar>
+		  <Online>
+			<Picture>\\Skin\\white\\TVWallStatusBar\\PNG\\TVWall_Channel_Online.png</Picture>        
+		  </Online>
+		  <Offline>
+			<Picture>\\Skin\\white\\TVWallStatusBar\\PNG\\TVWall_Channel_Offline.png</Picture>
+		  </Offline>
+		</TVWallStatusBar>
+		<TranslucentBG>
+			<BkGround>
+				<Picture>\\Skin\\white\\VideoPane\\BMP\\TRANSLUCENT_BG.png</Picture>
+			</BkGround>
+		</TranslucentBG>
+		<DigtalZoom>
+			<Button Name="Left" Type="PNG">
+				<!--左边按钮-->
+				<Picture Status="Hover">\\Skin\\white\\DigtalPtz\\PNG\\LEFT_NOMAL.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\DigtalPtz\\PNG\\LEFT_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\DigtalPtz\\PNG\\LEFT_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\DigtalPtz\\PNG\\LEFT_NOMAL.PNG</Picture>
+			</Button>
+			<Button Name="TopLeft" Type="PNG">
+				<!--左上按钮-->
+				<Picture Status="Hover">\\Skin\\white\\DigtalPtz\\PNG\\TOP_LEFT_NOMAL.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\DigtalPtz\\PNG\\TOP_LEFT_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\DigtalPtz\\PNG\\TOP_LEFT_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\DigtalPtz\\PNG\\TOP_LEFT_NOMAL.PNG</Picture>
+			</Button>
+			<Button Name="Top" Type="PNG">
+				<!--上边按钮-->
+				<Picture Status="Hover">\\Skin\\white\\DigtalPtz\\PNG\\TOP_NOMAL.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\DigtalPtz\\PNG\\TOP_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\DigtalPtz\\PNG\\TOP_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\DigtalPtz\\PNG\\TOP_NOMAL.PNG</Picture>
+			</Button>
+			<Button Name="TopRight" Type="PNG">
+				<!--右上按钮-->
+				<Picture Status="Hover">\\Skin\\white\\DigtalPtz\\PNG\\TOP_RIGHT_NOMAL.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\DigtalPtz\\PNG\\TOP_RIGHT_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\DigtalPtz\\PNG\\TOP_RIGHT_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\DigtalPtz\\PNG\\TOP_RIGHT_NOMAL.PNG</Picture>
+			</Button>
+			<Button Name="Right" Type="PNG">
+				<!--右边按钮-->
+				<Picture Status="Hover">\\Skin\\white\\DigtalPtz\\PNG\\RIGHT_NOMAL.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\DigtalPtz\\PNG\\RIGHT_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\DigtalPtz\\PNG\\RIGHT_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\DigtalPtz\\PNG\\RIGHT_NOMAL.PNG</Picture>
+			</Button>
+			<Button Name="BottomRight" Type="PNG">
+				<!--右下按钮-->
+				<Picture Status="Hover">\\Skin\\white\\DigtalPtz\\PNG\\BOTTOM_RIGHT_NOMAL.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\DigtalPtz\\PNG\\BOTTOM_RIGHT_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\DigtalPtz\\PNG\\BOTTOM_RIGHT_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\DigtalPtz\\PNG\\BOTTOM_RIGHT_NOMAL.PNG</Picture>
+			</Button>
+			<Button Name="Bottom" Type="PNG">
+				<!--下边按钮-->
+				<Picture Status="Hover">\\Skin\\white\\DigtalPtz\\PNG\\BOTTOM_NOMAL.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\DigtalPtz\\PNG\\BOTTOM_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\DigtalPtz\\PNG\\BOTTOM_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\DigtalPtz\\PNG\\BOTTOM_NOMAL.PNG</Picture>
+			</Button>
+			<Button Name="BottomLeft" Type="PNG">
+				<!--左下按钮-->
+				<Picture Status="Hover">\\Skin\\white\\DigtalPtz\\PNG\\BOTTOM_LEFT_NOMAL.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\DigtalPtz\\PNG\\BOTTOM_LEFT_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\DigtalPtz\\PNG\\BOTTOM_LEFT_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\DigtalPtz\\PNG\\BOTTOM_LEFT_NOMAL.PNG</Picture>
+			</Button>
+			<Button Name="SnapShot" Type="PNG">
+				<!--抓拍-->
+				<Picture Status="Hover">\\Skin\\white\\DigtalPtz\\PNG\\CAPUTRE_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\DigtalPtz\\PNG\\CAPUTRE_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\DigtalPtz\\PNG\\CAPUTRE_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\DigtalPtz\\PNG\\CAPUTRE_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="ZoomIn" Type="PNG">
+				<!--缩小-->
+				<Picture Status="Hover">\\Skin\\white\\DigtalPtz\\PNG\\ZoomIn_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\DigtalPtz\\PNG\\ZoomIn_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\DigtalPtz\\PNG\\ZoomIn_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\DigtalPtz\\PNG\\ZoomIn_NORMAL.PNG</Picture>
+			</Button>
+			<Button Name="ZoomOut" Type="PNG">
+				<!--放大-->
+				<Picture Status="Hover">\\Skin\\white\\DigtalPtz\\PNG\\ZoomOut_FOCUS.PNG</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\DigtalPtz\\PNG\\ZoomOut_SELECT.PNG</Picture>
+				<Picture Status="Gray">\\Skin\\white\\DigtalPtz\\PNG\\ZoomOut_GRAY.PNG</Picture>
+				<Picture Status="Normal">\\Skin\\white\\DigtalPtz\\PNG\\ZoomOut_NORMAL.PNG</Picture>
+			</Button>	
+			<Button Name="ReatText" Type="PNG">
+				<!--百分比-->
+				<Picture Status="Hover">\\Skin\\white\\DigtalPtz\\PNG\\ZOOM_REAT_TEXT.png</Picture>
+				<Picture Status="Clicked">\\Skin\\white\\DigtalPtz\\PNG\\ZOOM_REAT_TEXT.png</Picture>
+				<Picture Status="Gray">\\Skin\\white\\DigtalPtz\\PNG\\ZOOM_REAT_TEXT.png</Picture>
+				<Picture Status="Normal">\\Skin\\white\\DigtalPtz\\PNG\\ZOOM_REAT_TEXT.png</Picture>
+			</Button>
+			<Button Name="ZoomOver" Type="PNG">
+			<!--关闭-->
+			<Picture Status="Hover">\\Skin\\white\\DigtalPtz\\PNG\\ZoomOver_FOCUS.PNG</Picture>
+			<Picture Status="Clicked">\\Skin\\white\\DigtalPtz\\PNG\\ZoomOver_SELECT.PNG</Picture>
+			<Picture Status="Gray">\\Skin\\white\\DigtalPtz\\PNG\\ZoomOver_GRAY.PNG</Picture>
+			<Picture Status="Normal">\\Skin\\white\\DigtalPtz\\PNG\\ZoomOver_NORMAL.PNG</Picture>
+		</Button>
+		</DigtalZoom>
+	</Skin>
+</Skins>

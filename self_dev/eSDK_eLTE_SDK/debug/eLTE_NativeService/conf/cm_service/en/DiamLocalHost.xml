@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="DiamLocalHost" MOC_NAME_C="Diam本地主机" Module="BCC" ACCESS_CONTROL="modify,read" DEST_SVC="" Relation="">
+		<Parameter name="LocalHostIndex" desc="Local index" type="int" range="[0,63]" constrain="PRI" mode="display" />
+		<Parameter name="LocalHost" desc="Local host" type="string" range="[1,127]" constrain="NOT NULL" mode="update" />
+		<Parameter name="LocalRealm" desc="Local domain" type="string" range="[1,127]" constrain="NOT NULL" mode="update" />
+		<Parameter name="LocalDiamPort" desc="Local diameter port" type="int" range="[1024,65535]" constrain="NOT NULL" mode="update" default="3868" />
+	</MOC>
+</Moc-Config>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="CallForward" MOC_NAME_C="呼叫转移" Module="BCC" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="custom:ubp_callForwardnode:CreateModule:before" Relation="">
+		<Parameter name="ISDN" desc="User number" type="string" range="[1,20]" constrain="PRI" all_num="" mode="display" />
+		<Parameter name="TargetISDN" desc="Transfer taget number" type="string" range="[1,20]" constrain="NOT NULL" all_num="" mode="update" />
+		<Parameter name="ActiveState" desc="Call status" type="enum" range="0,1" vlist="0: deactive,1: active" constrain="NOT NULL" mode="update" />
+	</MOC>
+</Moc-Config>

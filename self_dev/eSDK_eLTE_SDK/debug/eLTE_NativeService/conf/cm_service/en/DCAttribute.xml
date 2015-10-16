@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="DCAttribute" MOC_NAME_C="调度台权限信息" Module="OMC,MDC,MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="" Relation="">
+		<Parameter name="ISDN" desc="DC User number" type="string" range="[1,8]" constrain="PRI" not_begin_with="0" all_num="" mode="display" FK="FK:DCUR:FixedUser:ISDN" />
+		<Parameter name="Privilege" desc="Service permission" type="bitset" range="" vlist="1: BreakOff ,2: BreakIn,4: Discreet Supervision,8: video Monitoring,16: Short Message Export,32:Supervision,64:Video Projection" constrain="NOT NULL" mode="update" />
+		<Parameter name="DispatcherRole" desc="Dispatcher role" type="enum" range="0,1,2" vlist="0: administrator,1: common dispatcher,2: upper:level dispatcher" constrain="NOT NULL" mode="update" default="1" />
+	</MOC>
+</Moc-Config>

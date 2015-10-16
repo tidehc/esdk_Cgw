@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="UBPService" MOC_NAME_C="" Module="FWK" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="" Relation="">
+		<Parameter name="ServiceID" desc="服务ID" type="int" range="[1,2147483647]" constrain="PRI" />
+		<Parameter name="NodeID" desc="节点ID" type="int" range="[1,2147483647]" not_begin_with="0" all_num="" default="0" />
+		<Parameter name="ServiceName" desc="服务名" type="string" range="[0,31]" constrain="NOT NULL" />
+		<Parameter name="ServiceType" desc="服务类型" type="string" range="[1,16]" constrain="NOT NULL" />
+		<Parameter name="AddrIPV4" desc="IPV4地址" type="string" range="[0,15]" constrain="NOT NULL" c_type="ipv4" />
+		<Parameter name="RpnPort" desc="ZMQ Rpn监听端口" type="int" range="[1,65535]" constrain="NOT NULL" />
+		<Parameter name="PubPort" desc="ZMQ Pub监听端口" type="int" range="[1,65535]" constrain="NOT NULL" />
+		<Parameter name="DealerPort" desc="ZMQ Dealer监听端口" type="int" range="[1,65535]" constrain="NOT NULL" />
+		<Parameter name="Core" desc="服务进程绑定CPU" type="string" range="[0,31]" constrain="NOT NULL" />
+		<Parameter name="DomainName" desc="域名称" type="string" range="[0,255]" />
+		<Parameter name="HostName" desc="主机名称" type="string" range="[0,255]" />
+	</MOC>
+</Moc-Config>

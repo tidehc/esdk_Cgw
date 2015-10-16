@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1E38A79A-BB83-4CB2-8C5F-BC8448258428}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>sipsdk</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\output\debug\</OutDir>
+    <IntDir>..\temp\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\output\release\</OutDir>
+    <IntDir>..\temp\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;SIPSDK_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)dcg\inc\depend;$(ProjectDir)dcg\inc\sipstack;$(ProjectDir)..\..\..\platform\minisip\include;$(ProjectDir);$(ProjectDir)..\include;$(ProjectDir)..\..\..\platform\IVS\IVS_COMMON\CBB\release\new\inc\ACE_wrappers;$(ProjectDir)..\..\..\platform\IVS\IVS_COMMON\CBB\release\new\inc\xml;$(ProjectDir)..\..\..\self_dev\eSDKClientLogAPI\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4355;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>eSDKLogAPI.lib;ACEd.lib;tinyxml.lib;cbb.lib;coresip.lib;sipext.lib;sipsdp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)\..\..\..\platform\minisip\lib;$(ProjectDir)\..\..\..\platform\IVS\IVS_COMMON\CBB\release\new\windows\debug;$(ProjectDir)\..\..\..\platform\IVS\IVS_BP\release\new\windows\debug;$(ProjectDir)\..\..\..\self_dev\eSDKClientLogAPI\debug</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;SIPSDK_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)dcg\inc\depend;$(ProjectDir)dcg\inc\sipstack;$(ProjectDir)..\..\..\platform\minisip\include;$(ProjectDir);$(ProjectDir)..\include;$(ProjectDir)..\..\..\platform\IVS\IVS_COMMON\CBB\release\new\inc\ACE_wrappers;$(ProjectDir)..\..\..\platform\IVS\IVS_COMMON\CBB\release\new\inc\xml;$(ProjectDir)..\..\..\self_dev\eSDKClientLogAPI\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4355;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)\..\..\..\platform\minisip\lib;$(ProjectDir)\..\..\..\platform\IVS\IVS_COMMON\CBB\release\new\windows\release;$(ProjectDir)\..\..\..\platform\IVS\IVS_BP\release\new\windows\release;$(ProjectDir)\..\..\..\self_dev\eSDKClientLogAPI\release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>eSDKLogAPI.lib;ACE.lib;tinyxml.lib;cbb.lib;coresip.lib;sipext.lib;sipsdp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataType.h" />
+    <ClInclude Include="dcg\inc\depend\CConnMgr.h" />
+    <ClInclude Include="dcg\inc\depend\CLockGuard.h" />
+    <ClInclude Include="dcg\inc\depend\CNVSTimer.h" />
+    <ClInclude Include="dcg\inc\depend\CSynchronized.h" />
+    <ClInclude Include="dcg\inc\depend\CSyncQueue.h" />
+    <ClInclude Include="dcg\inc\depend\digcalc.h" />
+    <ClInclude Include="dcg\inc\depend\md5.h" />
+    <ClInclude Include="dcg\inc\depend\MiniSip.h" />
+    <ClInclude Include="dcg\inc\depend\rand.h" />
+    <ClInclude Include="dcg\inc\depend\randutil.h" />
+    <ClInclude Include="dcg\inc\depend\sip_namespace.h" />
+    <ClInclude Include="dcg\inc\depend\vos.h" />
+    <ClInclude Include="dcg\inc\depend\vos_basetype.h" />
+    <ClInclude Include="dcg\inc\depend\vos_common.h" />
+    <ClInclude Include="dcg\inc\depend\vos_cond.h" />
+    <ClInclude Include="dcg\inc\depend\vos_config.h" />
+    <ClInclude Include="dcg\inc\depend\vos_errno.h" />
+    <ClInclude Include="dcg\inc\depend\vos_mem.h" />
+    <ClInclude Include="dcg\inc\depend\vos_mutex.h" />
+    <ClInclude Include="dcg\inc\depend\vos_sema.h" />
+    <ClInclude Include="dcg\inc\depend\vos_thread.h" />
+    <ClInclude Include="dcg\inc\depend\vos_time.h" />
+    <ClInclude Include="dcg\inc\sipstack\CDcgStack.hpp" />
+    <ClInclude Include="dcg\inc\sipstack\CSipStack.hpp" />
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_client.hpp" />
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_client_impl.hpp" />
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_header.hpp" />
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_mgr.hpp" />
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_mgr_impl.hpp" />
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_msg.hpp" />
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_msg_handler.hpp" />
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_msg_impl.hpp" />
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_msg_type.hpp" />
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_server.hpp" />
+    <ClInclude Include="dcg\inc\sipstack\sipstack_agent_server_impl.hpp" />
+    <ClInclude Include="dcg\inc\sipstack\sipstack_config.hpp" />
+    <ClInclude Include="dcg\inc\sipstack\sipstack_defs.h" />
+    <ClInclude Include="dcg\inc\sipstack\sipstack_exception.hpp" />
+    <ClInclude Include="dcg\inc\sipstack\sipstack_import.hpp" />
+    <ClInclude Include="dcg\inc\sipstack\sipstack_msg_ctrl.h" />
+    <ClInclude Include="dcg\inc\sipstack\sipstack_msg_wrap.hpp" />
+    <ClInclude Include="dcg\inc\sipstack\sipstack_sync_agent_msg_handler_impl.hpp" />
+    <ClInclude Include="dcg\inc\sipstack\sipstack_task.h" />
+    <ClInclude Include="eSDKTool.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="minidmp.h" />
+    <ClInclude Include="sipsdk.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UnhandledExceptionFilter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dcg\src\depend\CConnMgr.cpp" />
+    <ClCompile Include="dcg\src\depend\CLockGuard.cpp" />
+    <ClCompile Include="dcg\src\depend\CNVSTimer.cpp" />
+    <ClCompile Include="dcg\src\depend\CSynchronized.cpp" />
+    <ClCompile Include="dcg\src\depend\digcalc.cpp" />
+    <ClCompile Include="dcg\src\depend\md5.cpp" />
+    <ClCompile Include="dcg\src\depend\MiniSip.cpp" />
+    <ClCompile Include="dcg\src\depend\rand.cpp" />
+    <ClCompile Include="dcg\src\depend\randutil.cpp" />
+    <ClCompile Include="dcg\src\depend\vos_adaptor.cpp" />
+    <ClCompile Include="dcg\src\depend\vos_cond.cpp" />
+    <ClCompile Include="dcg\src\depend\vos_mem.cpp" />
+    <ClCompile Include="dcg\src\depend\vos_mutex.cpp" />
+    <ClCompile Include="dcg\src\depend\vos_sema.cpp" />
+    <ClCompile Include="dcg\src\depend\vos_thread.cpp" />
+    <ClCompile Include="dcg\src\depend\vos_time.cpp" />
+    <ClCompile Include="dcg\src\sipstack\CDcgStack.cpp" />
+    <ClCompile Include="dcg\src\sipstack\CSipStack.cpp" />
+    <ClCompile Include="dcg\src\sipstack\sipstack_agent_client_impl.cpp" />
+    <ClCompile Include="dcg\src\sipstack\sipstack_agent_mgr_impl.cpp" />
+    <ClCompile Include="dcg\src\sipstack\sipstack_agent_msg_impl.cpp" />
+    <ClCompile Include="dcg\src\sipstack\sipstack_agent_server_impl.cpp" />
+    <ClCompile Include="dcg\src\sipstack\sipstack_config.cpp" />
+    <ClCompile Include="dcg\src\sipstack\sipstack_exception.cpp" />
+    <ClCompile Include="dcg\src\sipstack\sipstack_log.cpp" />
+    <ClCompile Include="dcg\src\sipstack\sipstack_msg_ctrl.cpp" />
+    <ClCompile Include="dcg\src\sipstack\sipstack_msg_wrap.cpp" />
+    <ClCompile Include="dcg\src\sipstack\sipstack_sync_agent_msg_handler_impl.cpp" />
+    <ClCompile Include="dcg\src\sipstack\sipstack_task.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="eSDKTool.cpp" />
+    <ClCompile Include="minidmp.cpp" />
+    <ClCompile Include="sipsdk.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UnhandledExceptionFilter.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

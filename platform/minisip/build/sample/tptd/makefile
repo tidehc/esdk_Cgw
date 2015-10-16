@@ -1,0 +1,129 @@
+# GNU make Makefile template for individual componets
+# Copyrights (c) Huawei Technologies (I) Pvt. Ltd.
+
+#include the common MiniSip code organization definitions
+include $(SS_CODE_BUILD)/make.minisip.defs.mk
+
+# Include a common definition file
+include $(SS_CODE_BUILD)/makedefs.minisip.mk
+
+SS_TPTD_LIB = tptdcm
+
+SS_TPTD_DIR     = $(SS_ROOT)/../$(SS_RELEASE_DIR)/sample/tptd
+
+SS_TPTD_SRC_DIR = $(SS_TPTD_DIR)/common/src
+SS_TPTD_OBJ_DIR = $(SS_OBJ_DIR)/sample/tptd
+
+SS_TPTD_LIB_DEBUG_DIR   = $(SS_LIB_DEBUG_DIR)
+SS_TPTD_LIB_RELEASE_DIR = $(SS_LIB_RELEASE_DIR)
+
+SS_SAMPLIB_DEBUG_DIR   = $(SS_LIB_DEBUG_DIR)
+SS_SAMPLIB_RELEASE_DIR = $(SS_LIB_RELEASE_DIR)
+
+SS_TPTD_OBJ_DEBUG_DIR   = $(SS_TPTD_OBJ_DIR)/debug
+SS_TPTD_OBJ_RELEASE_DIR = $(SS_TPTD_OBJ_DIR)/release
+
+SS_TPTD_INCLUDE_DIR = $(SS_TPTD_DIR)/common/include
+SS_TPTD_H_DIR       = $(SS_TPTD_DIR)/common/h
+
+# Set up the include folder directory with Internal headers of the component
+SS_TPTD_INCLUDES = $(SS_CC_INCLUDE)$(SS_TPTD_INCLUDE_DIR)\
+                  $(SS_CC_INCLUDE)$(SS_TPTD_H_DIR)\
+                  $(SS_CC_INCLUDE)$(SS_TPTD_DIR)/sockwrap/h
+
+# Append the include folder DIRECTORY with external includes
+# This section gives a clear picture of header dependency for the component
+SS_TPTD_INCLUDES += $(SS_CC_INCLUDE)$(SS_SSP_INCLUDE_DIR)\
+                   $(SS_CC_INCLUDE)$(SS_SSP_H_DIR)\
+	               $(SS_CC_INCLUDE)$(SS_SMP_INCLUDE_DIR)\
+	               $(SS_CC_INCLUDE)$(SS_SMP_H_DIR)\
+	               $(SS_CC_INCLUDE)$(SS_MMF_INCLUDE_DIR)\
+	               $(SS_CC_INCLUDE)$(SS_DSM_INCLUDE_DIR)\
+	               $(SS_CC_INCLUDE)$(SS_DSM_H_DIR)\
+	               $(SS_CC_INCLUDE)$(SS_CBB_INCLUDE_DIR)\
+	               $(SS_CC_INCLUDE)$(SS_CBB_H_DIR)\
+	               $(SS_CC_INCLUDE)$(SS_CODEC_INCLUDE_DIR)\
+	               $(SS_CC_INCLUDE)$(SS_CODEC_H_DIR)\
+	               $(SS_CC_INCLUDE)$(SS_FRM_INCLUDE_DIR)\
+	               $(SS_CC_INCLUDE)$(SS_FRM_H_DIR)\
+	               $(SS_CC_INCLUDE)$(SS_UTIL_INCLUDE_DIR)\
+	               $(SS_CC_INCLUDE)$(SS_UTIL_H_DIR)\
+	               $(SS_CC_INCLUDE)$(SS_TPT_INCLUDE_DIR)\
+	               $(SS_CC_INCLUDE)$(SS_TPT_H_DIR) \
+	               $(SS_CC_INCLUDE)$(SS_SIGCOMP_ROOT)/include \
+	               $(SS_CC_INCLUDE)$(SS_TPTD_INCLUDE_DIR)\
+	               $(SS_CC_INCLUDE)$(SS_TPTD_H_DIR)
+
+# TptD Object List
+SS_TPTD_DEBUG_OBJS =  \
+	$(SS_TPTD_OBJ_DEBUG_DIR)/tptdcmm.$(SS_OBJ_SUFFIX) \
+	$(SS_TPTD_OBJ_DEBUG_DIR)/tptddsm.$(SS_OBJ_SUFFIX) \
+	$(SS_TPTD_OBJ_DEBUG_DIR)/tptddrm.$(SS_OBJ_SUFFIX) \
+	$(SS_TPTD_OBJ_DEBUG_DIR)/tptdlink.$(SS_OBJ_SUFFIX)\
+	$(SS_TPTD_OBJ_DEBUG_DIR)/tptdmgmt.$(SS_OBJ_SUFFIX)\
+	$(SS_TPTD_OBJ_DEBUG_DIR)/tptdrrm.$(SS_OBJ_SUFFIX)
+
+SS_TPTD_RELEASE_OBJS =  \
+	$(SS_TPTD_OBJ_RELEASE_DIR)/tptdcmm.$(SS_OBJ_SUFFIX) \
+	$(SS_TPTD_OBJ_RELEASE_DIR)/tptddsm.$(SS_OBJ_SUFFIX) \
+	$(SS_TPTD_OBJ_RELEASE_DIR)/tptddrm.$(SS_OBJ_SUFFIX) \
+	$(SS_TPTD_OBJ_RELEASE_DIR)/tptdlink.$(SS_OBJ_SUFFIX)\
+	$(SS_TPTD_OBJ_RELEASE_DIR)/tptdmgmt.$(SS_OBJ_SUFFIX)\
+	$(SS_TPTD_OBJ_RELEASE_DIR)/tptdrrm.$(SS_OBJ_SUFFIX)
+
+
+# Common Targets
+
+all: $(SS_TPTD_DEBUG_OBJS) $(SS_TPTD_RELEASE_OBJS)
+	$(call SS_ARCHIVE,$(SS_TPTD_LIB_DEBUG_DIR),$(SS_TPTD_DEBUG_OBJS),$(SS_TPTD_LIB))
+	$(call SS_ARCHIVE,$(SS_TPTD_LIB_RELEASE_DIR),$(SS_TPTD_RELEASE_OBJS),$(SS_TPTD_LIB))
+
+clean:
+	$(SS_RMV) $(SS_TPTD_OBJ_DEBUG_DIR)/*.$(SS_OBJ_SUFFIX)
+	$(SS_RMV) $(SS_TPTD_OBJ_RELEASE_DIR)/*.$(SS_OBJ_SUFFIX)
+	$(SS_RMV) $(SS_TPTD_LIB_DEBUG_DIR)/*.$(SS_LIB_SUFFIX)
+	$(SS_RMV) $(SS_TPTD_LIB_RELEASE_DIR)/*.$(SS_LIB_SUFFIX)
+
+cleanlib:
+	$(SS_RMV) $(SS_TPTD_LIB_DEBUG_DIR)/*.$(SS_LIB_SUFFIX)
+	$(SS_RMV) $(SS_TPTD_LIB_RELEASE_DIR)/*.$(SS_LIB_SUFFIX)
+
+
+# DEBUG OBJECTS BUILDING RULES
+$(SS_TPTD_OBJ_DEBUG_DIR)/tptdcmm.$(SS_OBJ_SUFFIX): $(SS_TPTD_SRC_DIR)/tptdcmm.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_DEBUG),$(SS_TPTD_INCLUDES),$(SS_TPTD_SRC_DIR),$(SS_TPTD_OBJ_DEBUG_DIR),tptdcmm)
+
+$(SS_TPTD_OBJ_DEBUG_DIR)/tptddsm.$(SS_OBJ_SUFFIX): $(SS_TPTD_SRC_DIR)/tptddsm.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_DEBUG),$(SS_TPTD_INCLUDES),$(SS_TPTD_SRC_DIR),$(SS_TPTD_OBJ_DEBUG_DIR),tptddsm)
+
+$(SS_TPTD_OBJ_DEBUG_DIR)/tptddrm.$(SS_OBJ_SUFFIX): $(SS_TPTD_SRC_DIR)/tptddrm.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_DEBUG),$(SS_TPTD_INCLUDES),$(SS_TPTD_SRC_DIR),$(SS_TPTD_OBJ_DEBUG_DIR),tptddrm)
+
+$(SS_TPTD_OBJ_DEBUG_DIR)/tptdlink.$(SS_OBJ_SUFFIX): $(SS_TPTD_SRC_DIR)/tptdlink.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_DEBUG),$(SS_TPTD_INCLUDES),$(SS_TPTD_SRC_DIR),$(SS_TPTD_OBJ_DEBUG_DIR),tptdlink)
+
+$(SS_TPTD_OBJ_DEBUG_DIR)/tptdmgmt.$(SS_OBJ_SUFFIX): $(SS_TPTD_SRC_DIR)/tptdmgmt.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_DEBUG),$(SS_TPTD_INCLUDES),$(SS_TPTD_SRC_DIR),$(SS_TPTD_OBJ_DEBUG_DIR),tptdmgmt)
+
+$(SS_TPTD_OBJ_DEBUG_DIR)/tptdrrm.$(SS_OBJ_SUFFIX): $(SS_TPTD_SRC_DIR)/tptdrrm.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_DEBUG),$(SS_TPTD_INCLUDES),$(SS_TPTD_SRC_DIR),$(SS_TPTD_OBJ_DEBUG_DIR),tptdrrm)
+
+# RELEASE OBJECTS BUILDING RULES
+$(SS_TPTD_OBJ_RELEASE_DIR)/tptdcmm.$(SS_OBJ_SUFFIX): $(SS_TPTD_SRC_DIR)/tptdcmm.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_RELEASE),$(SS_TPTD_INCLUDES),$(SS_TPTD_SRC_DIR),$(SS_TPTD_OBJ_RELEASE_DIR),tptdcmm)
+
+$(SS_TPTD_OBJ_RELEASE_DIR)/tptddsm.$(SS_OBJ_SUFFIX): $(SS_TPTD_SRC_DIR)/tptddsm.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_RELEASE),$(SS_TPTD_INCLUDES),$(SS_TPTD_SRC_DIR),$(SS_TPTD_OBJ_RELEASE_DIR),tptddsm)
+
+$(SS_TPTD_OBJ_RELEASE_DIR)/tptddrm.$(SS_OBJ_SUFFIX): $(SS_TPTD_SRC_DIR)/tptddrm.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_RELEASE),$(SS_TPTD_INCLUDES),$(SS_TPTD_SRC_DIR),$(SS_TPTD_OBJ_RELEASE_DIR),tptddrm)
+
+$(SS_TPTD_OBJ_RELEASE_DIR)/tptdlink.$(SS_OBJ_SUFFIX): $(SS_TPTD_SRC_DIR)/tptdlink.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_RELEASE),$(SS_TPTD_INCLUDES),$(SS_TPTD_SRC_DIR),$(SS_TPTD_OBJ_RELEASE_DIR),tptdlink)
+
+$(SS_TPTD_OBJ_RELEASE_DIR)/tptdmgmt.$(SS_OBJ_SUFFIX): $(SS_TPTD_SRC_DIR)/tptdmgmt.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_RELEASE),$(SS_TPTD_INCLUDES),$(SS_TPTD_SRC_DIR),$(SS_TPTD_OBJ_RELEASE_DIR),tptdmgmt)
+
+$(SS_TPTD_OBJ_RELEASE_DIR)/tptdrrm.$(SS_OBJ_SUFFIX): $(SS_TPTD_SRC_DIR)/tptdrrm.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_RELEASE),$(SS_TPTD_INCLUDES),$(SS_TPTD_SRC_DIR),$(SS_TPTD_OBJ_RELEASE_DIR),tptdrrm)
+

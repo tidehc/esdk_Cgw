@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="PatchGroup" MOC_NAME_C="派接组" Module="BCC" ACCESS_CONTROL="read,viewPatchGroupMember" DEST_SVC="" Relation="">
+		<Parameter name="GroupNumber" desc="派接群组号码" type="string" range="[1,8]" constrain="PRI" not_begin_with="0" all_num="" mode="display" />
+		<Parameter name="PGName" desc="派接群组名称" type="string" range="[0,31]" mode="update" />
+		<Parameter name="PGPriority" desc="优先级" type="int" range="[1,15]" constrain="NOT NULL" mode="update" default="15" />
+		<Parameter name="DcPatchIndex" desc="调度员派接组编号" type="int" range="[1,66535]" constrain="NOT NULL" mode="update" default="1" />
+		<Parameter name="SetupDcId" desc="所属DCID" type="string" range="[1,8]" constrain="NOT NULL" not_begin_with="0" all_num="" mode="update" />
+		<Parameter name="VPNID" desc="所属VPN" type="string" range="[1,8]" mode="update" />
+	</MOC>
+</Moc-Config>

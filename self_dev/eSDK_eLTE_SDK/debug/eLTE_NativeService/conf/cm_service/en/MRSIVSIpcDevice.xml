@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="MRSIVSIpcDevice" MOC_NAME_C="IVS摄像头" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="custom:ubp_mrs_moc:CreateModule:before" Relation="">
+		<Parameter name="DevIndex" desc="Device ID" type="int" range="[100000,200000]" constrain="PRI" mode="display" />
+		<Parameter name="NodeId" desc="MRS node ID" type="int" range="[1,65535]" constrain="NOT NULL" FK="FK:DCUC:MRSNode:NodeID" mode="update" />
+		<Parameter name="ISDN" desc="User number" type="string" range="[1,8]" constrain="NOT NULL" mode="update" />
+		<Parameter name="SipUserName" desc="SIP user name (registration)" type="string" range="[1,15]" constrain="NOT NULL" mode="update" />
+		<Parameter name="SipPassword" desc="SIP password (registration)" type="string" range="[1,15]" constrain="NOT NULL" c_type="password" mode="update" />
+		<Parameter name="CameraCode" desc="IVS Camera Code" type="string" range="[1,128]" constrain="NOT NULL" mode="update" />
+		<Parameter name="DevStatus" desc="Device status" type="enum" range="0,1" vlist="0: idle,1: activated" constrain="NOT NULL" mode="update" />
+		<Parameter name="DevLinkMode" desc="Device link mode" type="enum" range="0,1" vlist="0: TCP,1: UDP" constrain="NOT NULL" mode="update" default="0" />
+		<Parameter name="DevStreamType" desc="Device stream type" type="enum" range="0,1" vlist="0:SubStream,1:MainStream" constrain="NOT NULL" mode="update" default="0" />
+	</MOC>
+</Moc-Config>

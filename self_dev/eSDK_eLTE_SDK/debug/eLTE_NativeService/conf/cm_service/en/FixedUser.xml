@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="FixedUser" MOC_NAME_C="有线用户" Module="OMC,MDC,MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="" Relation="">
+		<Parameter name="ISDN" desc="User number" type="string" range="[1,8]" constrain="PRI" not_begin_with="0" all_num="" mode="display" />
+		<Parameter name="UserName" desc="User name" type="string" range="[0,32]" mode="update" />
+		<Parameter name="UserPriority" desc="User priority" type="int" range="[1,15]" constrain="NOT NULL" mode="update" default="15" />
+		<Parameter name="SipPass" desc="SIP password" type="string" range="[1,18]" constrain="NOT NULL" c_type="password" mode="update" />
+		<Parameter name="Category" desc="User type" type="enum" range="0,1,2,3,4,5,6,7,255" vlist="0: Dispatcher,1: FixedCamera,2: PSTNUser,3: TETRAUser,4: PLMNUser ,5:External PTT User,6:SDKApplicationGWUser,7:TAPPUser,255: OtherUser" constrain="NOT NULL" mode="update" default="0" />
+		<Parameter name="Location" desc="User Location" type="enum" range="0,1" vlist="0:Local User,1:External User" mode="display" default="0" />
+		<Parameter name="VPNID" desc="VPN ID" type="int" range="[0,200]" constrain="NOT NULL" mode="update" default="0" />
+		<Parameter name="VPNOut" desc="VPN out permission" type="enum" range="0,1" vlist="0: forbidden,1: allowed," mode="update" default="0" />
+		<Parameter name="VPNIn" desc="VPN in permission" type="enum" range="0,1" vlist="0: forbidden,1: allowed" mode="update" default="1" />
+		<Parameter name="Capability" desc="User Service Capability" type="bitset" range="" vlist="1:Group Call,2:PTP Video Call,4: Video Monitoring,8:VOIP" default="10" />
+	</MOC>
+</Moc-Config>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="MRSESDKIVSInfo" MOC_NAME_C="IVSSDK信息" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="custom:ubp_mrs_moc:CreateModule:before" Relation="">
+		<Parameter name="ID" desc="ID" type="int" range="[1,2147483647]" constrain="PRI" mode="display" />
+		<Parameter name="NodeID" desc="节点ID" type="int" range="[1,65535]" constrain="NOT NULL" FK="FK:DCUC:MRSNode:NodeID" mode="update" />
+		<Parameter name="IP" desc="eSDK服务IP地址" type="string" range="[0,15]" constrain="NOT NULL" ipv4="" c_type="ipv4" mode="update" />
+		<Parameter name="Port" desc="eSDK服务端口" type="int" range="[1,65535]" constrain="NOT NULL" mode="update" default="8086" />
+		<Parameter name="UserName" desc="IVS用户名" type="string" range="[1,128]" constrain="NOT NULL" mode="update" />
+		<Parameter name="Password" desc="IVS密码" type="string" range="[1,128]" constrain="NOT NULL" c_type="password" mode="update" />
+	</MOC>
+</Moc-Config>

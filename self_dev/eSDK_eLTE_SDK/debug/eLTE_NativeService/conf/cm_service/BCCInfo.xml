@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="BCCInfo" MOC_NAME_C="调度机信息" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="custom:ubp_mrs_moc:CreateModule:before" Relation="">
+		<Parameter name="BccIP" desc="IPV4地址" type="string" range="[4,15]" constrain="PRI" c_type="ipv4" mode="display" />
+		<Parameter name="SipPort" desc="BCC SIP端口" type="int" range="[1024,65535]" constrain="NOT NULL" mode="update" default="5060" />
+	</MOC>
+</Moc-Config>

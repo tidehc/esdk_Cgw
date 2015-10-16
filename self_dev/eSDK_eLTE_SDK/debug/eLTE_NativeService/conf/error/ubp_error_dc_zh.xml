@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+///////////////////////////////////////////////////////////////////////
+//  UBP全局错误码定义范围如下：
+// Common  : 0     ~ -999
+// Platform:-1000  ~ -9999   
+// OM      :-10000 ~ -19999   
+// BCC     :-20000 ~ -29999
+// BDC     :-30000 ~ -39999
+// DC      :-40000 ~ -49999
+// MRS     :-50000 ~ -59999
+// VGW     :-60000 ~ -69999
+///////////////////////////////////////////////////////////////////////
+-->
+
+<Errors xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
+       xsd:noNamespaceSchemaLocation="error_number.xsd">
+
+    
+<!--
+//DC:-40000 ~ -49999
+-->  
+<!--
+//DC_SDK:-40000 ~ -40999
+-->  
+  <Error>
+    <code>-40001</code>
+		<detail message="invalid state, opration is not accepted,because the current state of the corresponding resources cann't do this opreration" suggestion="Check environment"/>
+	</Error>
+  
+	<Error>
+	  <code>-40002</code>
+		<detail message="without the resources, opration is not accepted,because without the resources" suggestion=""/>
+	</Error>
+
+  <Error>
+      <code>-40003</code>
+      <detail message="opration is not accepte,because the corresponding resources does not support this operation ability" suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-40004</code>
+    <detail message="opration is not accepted,because beyond app processing capacity" suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-40005</code>
+    <detail message="no authority, user does not have the operating authority" suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-40006</code>
+    <detail message="business confilict, the current user or canmera has the similar business!" suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-40007</code>
+    <detail message="ip_dup,opration is not accepted,goals have been recorded" suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-40008</code>
+    <detail message="ip address is invalid" suggestion=""/>
+  </Error>
+
+  <Error>
+    <code>-40009</code>
+    <detail message="opration is scheduled, please wait minutes " suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-40096</code>
+    <detail message="Get future result timeout" suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-40097</code>
+    <detail message="operation failed, remote refused" suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-40098</code>
+    <detail message="opration is not accepted,goals have been recorded, reason need suggest latter " suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-40099</code>
+    <detail message="opration is not implemented" suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-40100</code>
+    <detail message="osip inner error" suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-40101</code>
+    <detail message="mediastream2 inner error" suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-40102</code>
+    <detail message="ZMQ inner error" suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-40103</code>
+    <detail message="ubp_timmer inner error" suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-40104</code>
+    <detail message="parameter error, operation failed" suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-40105</code>
+    <detail message="excess license limit, operation failed" suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-40106</code>
+    <detail message="target already existed, operation failed" suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-40107</code>
+    <detail message="target not found, operation failed" suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-40108</code>
+    <detail message="target not registered, operation failed" suggestion=""/>
+  </Error>
+  
+  <Error>
+    <code>-40109</code>
+    <detail message="ubp_timmer schedule error" suggestion=""/>
+  </Error>
+ 
+<!--
+//DC_APP:-41000 ~ -41999
+-->
+
+<!--
+//DC_GUI:-42000 ~ -42999
+-->
+
+</Errors>

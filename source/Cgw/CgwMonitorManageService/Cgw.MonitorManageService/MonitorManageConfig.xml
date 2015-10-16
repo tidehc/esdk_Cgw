@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+
+  <servicesSettings>
+    <!--Connection password. The password length must be from 8 to 64. The default password is Change_Me. -->
+    <connectPassword needEncrypt="false">Change_Me</connectPassword>
+	
+	  <!--Session timeout duration.-->
+    <sessionOverTime>3</sessionOverTime>
+	    
+  </servicesSettings>
+  
+  <monitorSettings>
+    <!--Whether to enable a surveillance platform. One node indicates one surveillance platform. If "enable" is set to "true", the platform is enabled.-->
+    <monitor enable="false">
+      <!--Surveillance platform ID. This parameter is configurable and must be unique.This length should not more than 63-->
+      <id>tiandy</id>
+      <!--Name of the surveillance platform. This parameter is configurable.-->
+      <name>tiandy</name>
+      <!--Application to which the surveillance platform connects. This parameter is not configurable.-->
+      <class>CgwMonitorManage.Tiandy.TiandyVideoMonitor,CgwMonitorManage.Tiandy</class>
+
+      <platform>
+        <!--The URL used to connect to the surveillance platform (Tiandy Easy7).This parameter is configurable.-->
+        <url>http://127.0.0.1:7000/Easy7/apps/WebService/</url>
+        <!--User name used to connect to the surveillance platform (Tiandy Easy7).This parameter is configurable.-->
+        <user></user>
+        <!--Password used to connect to the surveillance platform (Tiandy Easy7).This parameter is configurable.-->
+        <password needEncrypt="True"></password>
+        <!--PTZ control level. The range is from 0 to 10. The default value is 1.-->
+        <ptzControlLevel>1</ptzControlLevel>
+      </platform>
+
+      <!--Parameters for configuring the streaming media server.-->
+      <mediaServer>
+        <!--ID of the streaming media server. Recommend value is empty.
+          if the pareameter is empty,SDK Connect to the media server that closest to the camera.
+          if user specify the media server,sdk connect to the specified. Do not specify the media server unless sdk can't reach the media server that closest to the camera-->
+        <serverid></serverid>
+      </mediaServer>
+    </monitor>
+    <monitor enable="true">
+      <!--Surveillance platform ID. This parameter is configurable and must be unique.This length should not more than 63-->
+      <id>ivs</id>
+      <!--Name of the surveillance platform. This parameter is configurable.-->
+      <name>ivs</name>
+      <!--Application to which the surveillance platform connects. This parameter is not configurable.-->
+      <class>CgwMonitorManage.Ivs.IvsVideoMonitor,CgwMonitorManage.Ivs</class>
+      <!--The IP Address used to connect to the surveillance platform (IVS). This parameter is configurable.-->
+      <ip>10.170.103.60</ip>
+      <!--The IP Port used to connect to the surveillance platform (IVS). The default value is 9900. This parameter is configurable.-->
+      <port>9900</port>
+      <!--User name used to connect to the surveillance platform (IVS). This parameter is configurable.-->
+      <user>super</user>
+      <!--Password used to connect to the surveillance platform (IVS). This parameter is configurable.-->
+      <password needEncrypt="true">1qw2!QW@</password>
+    </monitor>
+	
+	<monitor enable="false">
+		  <!--Surveillance platform ID. This parameter is configurable and must be unique.This length should not more than 63-->
+		  <id>T28181IVS</id>
+		  <!--Name of the surveillance platform. This parameter is configurable.-->
+		  <name>T28181IVS</name>
+		  <!--Application to which the surveillance platform connects. This parameter is not configurable.-->
+		  <class>CgwMonitorManage.T28181.T28181VideoMonitor,CgwMonitorManage.T28181</class>
+		  <!--The IP Address used to connect to the surveillance platform (T28181). This parameter is configurable.-->
+		  <ip>10.170.103.60</ip>
+		  <!--The Sip Port of the surveillance platform (T28181). The default value is 5061. This parameter is configurable.-->
+		  <SipPort>5061</SipPort>
+      <!--The Sip Port used to connect to the surveillance platform (T28181). This parameter is configurable.-->
+		  <LocalPort>5061</LocalPort>
+		   <!--QueryDeviceTimeOut(second) -->
+		   <QueryDeviceTimeOut>60</QueryDeviceTimeOut>
+		  <!--User name used to connect to the surveillance platform (T28181). This parameter is configurable.-->
+		  <user>T225</user>
+		  <!--Password used to connect to the surveillance platform (T28181). This parameter is configurable.-->
+		  <password needEncrypt="False">1qw2!QW@</password>
+		  <DeviceID>a87e6371cce9435baca4</DeviceID>
+	 </monitor>
+
+    <monitor enable="false">
+      <!--Surveillance platform ID. This parameter is configurable and must be unique.This length should not more than 63-->
+      <id>eLTE</id>
+      <!--Name of the surveillance platform. This parameter is configurable.-->
+      <name>eLTE</name>
+      <!--Application to which the platform connects. This parameter is not configurable.-->
+      <class>CgwMonitorManage.eLTE.eLTEVideoMonitor,CgwMonitorManage.eLTE</class>
+      <!--The IP Address used to connect to the  platform (eLTE). This parameter is configurable.-->
+      <ip>10.170.102.202</ip>
+      <!--The IP Port used to connect to the  platform (eLTE). The default value is 9900. This parameter is configurable.-->
+      <port>5060</port>
+      <!--User name used to connect to the  platform (eLTE). This parameter is configurable.-->
+      <user>4101</user>
+      <!--Password used to connect to the  platform (eLTE). This parameter is configurable.-->
+      <password needEncrypt="False">4101</password>
+      <UserCategory>
+        <PTTUSER>true</PTTUSER>
+        <FIXEDCAMERA>true</FIXEDCAMERA>
+      </UserCategory>
+      <VideoParameter>
+        <!--Video Format，“D1”、“CIF”、“QCIF”、“1080P”、“720P”.-->
+        <FmtValue>D1</FmtValue>
+        <!--“0”Front； “1”Back-->
+        <CameraType>0</CameraType>
+        <!--“0”NOT Need user Confirm；“1”Need user Confirm-->
+        <UserConfirmType>0</UserConfirmType>
+        <!--“0”Audio；“1”No Audio-->
+        <MuteType>1</MuteType>
+      </VideoParameter>
+    </monitor>
+
+  </monitorSettings>
+
+</configuration>

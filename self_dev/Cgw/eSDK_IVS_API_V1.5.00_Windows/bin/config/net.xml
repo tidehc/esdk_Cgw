@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?> 
+
+<Net>
+	<Protocols>
+	  <Protocol>
+	    <ProtocolName>NSS</ProtocolName>
+	    <DllName>NSS</DllName>
+	  </Protocol>
+	</Protocols>
+	
+	<NetElements>
+	  <multiLink>1</multiLink>
+	  <NetElement>
+	    <NetElementName>SMU</NetElementName>
+	    <NetElementType>20105</NetElementType>
+	    <Protocol>
+	      <ProtocolName>NSS</ProtocolName> 
+	      <TransProtocol>TCP</TransProtocol>
+	      <ConnectionType>0</ConnectionType> <!-- 0: 长连接 1: 短连接 2: 无连接 -->
+	      <HeartbeatInterval>10</HeartbeatInterval>
+	      <HeartbeatTimeout>30</HeartbeatTimeout>	      
+	    </Protocol>
+	    <ServiceType>Client</ServiceType>
+	    <ClientList>
+	    </ClientList>  
+	  </NetElement>
+	  <NetElement>
+	    <NetElementName>OMU</NetElementName>
+	    <NetElementType>60105</NetElementType>
+	    <Protocol>
+	      <ProtocolName>NSS</ProtocolName> 
+	      <TransProtocol>TCP</TransProtocol>
+	      <ConnectionType>0</ConnectionType> <!-- 0: 长连接 1: 短连接 2: 无连接 -->
+	      <HeartbeatInterval>10</HeartbeatInterval>
+	      <HeartbeatTimeout>30</HeartbeatTimeout>	      
+	    </Protocol>
+	    <ServiceType>Client</ServiceType>
+	    <ClientList>
+	    </ClientList>  
+	  </NetElement>
+	  <NetElement>
+	    <NetElementName>SCU</NetElementName>
+	    <NetElementType>10105</NetElementType>
+	    <Protocol>
+	      <ProtocolName>NSS</ProtocolName> 
+	      <TransProtocol>TCP</TransProtocol>
+	      <ConnectionType>0</ConnectionType> <!-- 0: 长连接 1: 短连接 2: 无连接 -->
+	      <HeartbeatInterval>10</HeartbeatInterval>
+	      <HeartbeatTimeout>30</HeartbeatTimeout>	      
+	    </Protocol>
+	    <ServiceType>Client</ServiceType>
+	    <ClientList>
+	    </ClientList>  
+	  </NetElement>
+	</NetElements>
+	
+	<Threads>
+	  <CommuThread>
+	    <ThreadName>ControlCommuThread</ThreadName>
+	    <RunNetElementList>
+	        <NetElementName>SMU</NetElementName>
+			<NetElementName>OMU</NetElementName>
+			<NetElementName>SCU</NetElementName>
+	    </RunNetElementList>
+	  </CommuThread>	  
+	</Threads>	
+</Net>
+        

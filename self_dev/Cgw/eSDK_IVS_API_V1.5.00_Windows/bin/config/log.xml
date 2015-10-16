@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Log>
+  <LogBasePath>../log/sdk</LogBasePath>
+  <ModuleType>IVS_SDK</ModuleType>                    <!-- 内部模块名称 -->
+  <NodeCode></NodeCode>                        <!-- 内部模块编号 -->
+  <LogBufferEnable>True</LogBufferEnable>        <!-- 写日志方式是缓存还是直接写（true为通过缓存），只对run和dbg日志生效 -->
+  <IsBufferDebugLog>True</IsBufferDebugLog>      <!-- 该开关只当debug日志关了的时候才有用，系统会缓存n条（n为下一个配置项）日志，当出现紧急级别日志时会把缓存的日志输出 -->
+  <BufferNumber>100</BufferNumber> 
+  <RunLog>
+    <FileNumber>10</FileNumber>
+    <FileSize>20</FileSize>
+  </RunLog>
+  <DebugLog>
+    <DebugLogSwitch>False</DebugLogSwitch>
+    <FileNumber>15</FileNumber>
+    <FileSize>20</FileSize>
+  </DebugLog>
+  <InterfaceLog>
+    <FileNumber>5</FileNumber>
+    <FileSize>10</FileSize>
+  </InterfaceLog>
+  <SecurityLog>
+    <SecurityLogSwitch>false</SecurityLogSwitch> <!--安全日志开关，false为不启动-->
+    <FileNumber>5</FileNumber>
+    <FileSize>10</FileSize>
+  </SecurityLog>
+  <OperationLog>
+    <OperationLogSwitch>false</OperationLogSwitch> <!--安全日志开关，false为不启动-->
+    <FileNumber>5</FileNumber>
+    <FileSize>10</FileSize>
+  </OperationLog>
+  <SftpServerInfo>
+    <WorkSpace></WorkSpace>                       <!-- 备份文件的一级目录, 暂时不支持多级目录, 若不配置则不备份日志 -->
+    <ServerAddr>192.7.10.53</ServerAddr>          <!-- 备份日志的SFTP服务器的地址 -->
+    <ServerPort>22</ServerPort>                   <!-- 备份日志的SFTP服务器的端口 -->
+    <Username>root</Username>                     <!-- 登入SFTP服务器的用户名 -->
+    <Password>jDLanV7f9qp4chy7l2NmDw==</Password> <!-- 登入SFTP服务器的密码, 须为加密过后的, 加密密钥见: 密钥汇总表 -->
+  </SftpServerInfo>
+</Log>
+

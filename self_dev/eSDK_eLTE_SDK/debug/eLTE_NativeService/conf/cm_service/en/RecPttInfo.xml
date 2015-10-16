@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="RecPttInfo" MOC_NAME_C="PTT录音信息" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="only" Relation="">
+		<Parameter name="task_id" desc="Task ID" type="string" range="[1,64]" constrain="PRI" mode="display" />
+		<Parameter name="event_idx" desc="Event index" type="int" range="" constrain="PRI" mode="display" />
+		<Parameter name="is_release" desc="Floor status" type="enum" range="0,1,2" vlist="0: floor requested,1: floor released,2: unknown" mode="display" />
+		<Parameter name="ower" desc="Floor owner" type="int" range="[0,65535]" mode="display" />
+		<Parameter name="time_sec" desc="Duration of a floor event (s)" type="int" range="" mode="display" />
+		<Parameter name="time_usec" desc="Duration of a floor event (ns)" type="int" range="" mode="display" />
+	</MOC>
+</Moc-Config>

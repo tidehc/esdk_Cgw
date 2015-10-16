@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="RecPttInfo" MOC_NAME_C="PTT录音信息" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="only" Relation="">
+		<Parameter name="task_id" desc="任务号" type="string" range="[1,64]" constrain="PRI" mode="display" />
+		<Parameter name="event_idx" desc="事件编号" type="int" range="" constrain="PRI" mode="display" />
+		<Parameter name="is_release" desc="话权状态标志" type="enum" range="0,1,2" vlist="0:获取话权,1:释放话权,2:未知状态" mode="display" />
+		<Parameter name="ower" desc="话权人" type="int" range="[0,65535]" mode="display" />
+		<Parameter name="time_sec" desc="话权事件时间（秒）" type="int" range="" mode="display" />
+		<Parameter name="time_usec" desc="话权事件时间（纳秒）" type="int" range="" mode="display" />
+	</MOC>
+</Moc-Config>

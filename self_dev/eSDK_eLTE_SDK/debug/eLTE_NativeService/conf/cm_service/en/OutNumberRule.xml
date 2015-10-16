@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="OutNumberRule" MOC_NAME_C="出局号码规则" Module="OMC,MDC" ACCESS_CONTROL="read" DEST_SVC="" Relation="">
+		<Parameter name="PrefixNum" desc="Prefix string" type="string" range="[1,16]" constrain="PRI" mode="display" />
+		<Parameter name="LengthLimit" desc="Length of matching num" type="bitset" range="" vlist="1:Length 1,2:Length 2,4:Length 3,8:Length 4,16:Length 5,32:Length 6,64:Length 7,128:Length 8,256:Length 9,512:Length 10,1024:Length 11,2048:Length 12,4096:Length 13,8192:Length 14,16384:Length 15,32768:Length 16,65536:Length 17,131072:Length 18,262144:Length 19,524288:Length 20,1048576:Length 21,2097152:Length 22,4194304:Length 23,8388608:Length 24,16777216:Length 25,33554432:Length 26,67108864:Length 27,134217728:Length 28,268435456:Length 29,536870912:Length 30,1073741824:Length 31,2147483648:Length 32" mode="display" default="0" />
+	</MOC>
+</Moc-Config>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d270f373-1ed9-4873-ad75-8dd29e3e2a23" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://127.0.0.1:5699/CgwMonitorManageService?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CgwMonitorManageService.xsd" MetadataType="Schema" ID="54eaa258-8196-417a-a2fc-7c5ee1ffcbd2" SourceId="1" SourceUrl="http://127.0.0.1:5699/CgwMonitorManageService?xsd=xsd4" />
+    <MetadataFile FileName="CgwMonitorManageService1.xsd" MetadataType="Schema" ID="1e79abee-7ade-4699-a755-c2073e857f15" SourceId="1" SourceUrl="http://127.0.0.1:5699/CgwMonitorManageService?xsd=xsd3" />
+    <MetadataFile FileName="CgwMonitorManageService2.xsd" MetadataType="Schema" ID="9d9755e6-9c45-49c0-846a-440e9e8f46aa" SourceId="1" SourceUrl="http://127.0.0.1:5699/CgwMonitorManageService?xsd=xsd2" />
+    <MetadataFile FileName="CgwMonitorManageService3.xsd" MetadataType="Schema" ID="808a635a-de96-4ad8-98df-0fac853101fe" SourceId="1" SourceUrl="http://127.0.0.1:5699/CgwMonitorManageService?xsd=xsd1" />
+    <MetadataFile FileName="CgwMonitorManageService4.xsd" MetadataType="Schema" ID="0dd99fc5-8f4f-468c-a10f-54dd1382d12a" SourceId="1" SourceUrl="http://127.0.0.1:5699/CgwMonitorManageService?xsd=xsd0" />
+    <MetadataFile FileName="MonitorManageService.wsdl" MetadataType="Wsdl" ID="869c318d-a6ba-492a-a87d-2d6b83022d63" SourceId="1" SourceUrl="http://127.0.0.1:5699/CgwMonitorManageService?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

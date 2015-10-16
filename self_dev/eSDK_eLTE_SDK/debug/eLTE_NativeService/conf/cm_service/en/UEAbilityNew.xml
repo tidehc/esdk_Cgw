@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="UEAbilityNew" MOC_NAME_C="终端能力New" Module="DC" ACCESS_CONTROL="read" DEST_SVC="" Relation="">
+		<Parameter name="ISDN" desc="User number" type="string" range="[1,8]" constrain="PRI" mode="display" />
+		<Parameter name="Model" desc="UE Model" type="enum" range="0,1" vlist="0:UE,1:Mobile Station" mode="display" default="0" />
+		<Parameter name="SoftwareVersion" desc="UE software version" type="enum" range="0" vlist="0:TTR2.1                                1: TTR3.0  " mode="display" default="0" />
+		<Parameter name="UAppVersion" desc="UE eApp version" type="enum" range="0" vlist="0:TTR2.1                                1: TTR3.0   " default="0" />
+		<Parameter name="PreCamera" desc="Previous camera" type="bitset" range="" vlist="0:NULL,1:QCIF,2:CIF,4:D1,8:720P,16:1080P" mode="display" default="7" />
+		<Parameter name="PostCamera" desc="Post camera" type="bitset" range="" vlist="0:NULL,1:QCIF,2:CIF,4:D1,8:720P,16:1080P" mode="display" default="31" />
+		<Parameter name="ExtCamera" desc="External camera" type="bitset" range="" vlist="0:NULL,1:QCIF,2:CIF,4:D1,8:720P,16:1080P" mode="display" default="0" />
+	</MOC>
+</Moc-Config>

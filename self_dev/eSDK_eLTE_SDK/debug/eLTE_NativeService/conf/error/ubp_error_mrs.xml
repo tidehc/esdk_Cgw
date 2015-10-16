@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+///////////////////////////////////////////////////////////////////////
+
+// BDC            :-30000 ~ -34999
+// BDC_FRAMEWORK  :-35000 ~ -39999
+// MRS            :-50000 ~ -64999
+// VGW            :-65000 ~ -69999
+//For example : 
+//static const ACE_INT32 ERR_UBP_MQ_XXX1 = -20000;
+///////////////////////////////////////////////////////////////////////
+-->
+
+<Errors xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
+       xsd:noNamespaceSchemaLocation="error_number.xsd">
+
+<!-- Code Base -64999 - -63999 -->
+<!-- Code Base begin -->
+ <Error>
+    <!-- MRS_ERROR_INVLAID_ZMQ_MSG -->
+    <code>-64997</code>
+		<detail message="invlaid zmq message" suggestion="check zmq message"/>
+</Error>
+
+ <Error>
+    <!-- MRS_ERROR_INVLAID_APP_FRAME -->
+    <code>-64996</code>
+		<detail message="invlaid app frame" suggestion="check app frame"/>
+</Error>
+
+ <Error>
+    <!-- MRS_ERROR_NULL_POINTOR -->
+    <code>-64995</code>
+		<detail message="null pointor" suggestion="check pointor"/>
+</Error>
+
+ <Error>
+    <!-- MRS_ERROR_DB_ERROR -->
+    <code>-64994</code>
+		<detail message="database error" suggestion="check database"/>
+</Error>
+
+ <Error>
+    <!-- MRS_ERRCODE_DB_NO_RES -->
+    <code>-64993</code>
+		<detail message="query db no results" suggestion="check database data"/>
+</Error>
+
+<!-- Code Base end -->
+
+
+<!-- MRS_REC ERROR -63999 - -60000 -->
+<!-- MRS_REC ERROR begin -->
+ <Error>
+    <!-- REC_ERROR_TASK_EXISTS -->
+    <code>-63999</code>
+		<detail message="task already exists" suggestion="check input parameter"/>
+</Error>
+
+ <Error>
+    <!-- REC_ERROR_ADD_RECORD_SESSION -->
+    <code>-63998</code>
+		<detail message="add record session error" suggestion="check input parameter"/>
+</Error>
+
+ <Error>
+    <!-- REC_ERROR_TASK_NOT_EXISTS -->
+    <code>-63997</code>
+		<detail message="task not exists" suggestion="check input parameter"/>
+</Error>
+
+ <Error>
+    <!-- REC_ERROR_RANGE_LIST_INVALID_INPUT_VALUE -->
+    <code>-63996</code>
+		<detail message="invalid input" suggestion="check input parameter"/>
+</Error>
+
+ <Error>
+    <!-- REC_ERROR_RANGE_LIST_INVALID_RANGE -->
+    <code>-63995</code>
+		<detail message="invalid range,end ISDN must be greater than or equal to the begin ISDN" suggestion="check input parameter"/>
+</Error>
+
+ <Error>
+    <!-- REC_ERROR_RANGE_LIST_DUPLICATE_PRIMARY_KEY -->
+    <code>-63994</code>
+		<detail message="duplicate id" suggestion="check input parameter"/>
+</Error>
+
+ <Error>
+    <!-- REC_ERROR_RANGE_LIST_RANGE_CONFLICT -->
+    <code>-63993</code>
+		<detail message="range conflict" suggestion="check input parameter"/>
+</Error>
+
+ <Error>
+    <!-- REC_ERROR_RANGE_LIST_NOEXIST_PRIMARY_KEY -->
+    <code>-63992</code>
+		<detail message="id does not exist" suggestion="check input parameter"/>
+</Error>
+
+<Error>
+    <!-- REC_ERROR_RANGE_LIST_HAVE_RELY_DATA -->
+    <code>-63991</code>
+		<detail message="range have rely data" suggestion="check input parameter"/>
+</Error>
+
+<Error>
+    <!-- REC_ERROR_SIPRECSCHEDULE_INVALID_RECTYPE -->
+    <code>-63990</code>
+		<detail message="invalid rectype " suggestion="check input parameter"/>
+</Error>
+
+<Error>
+    <!-- REC_ERROR_SIPRECSCHEDULE_INVALID_SCHEDULETYPE -->
+    <code>-63989</code>
+		<detail message="invalid schedule type " suggestion="check input parameter"/>
+</Error>
+
+<Error>
+    <!-- REC_ERROR_SIPRECSCHEDULE_INVALID_DATETIME -->
+    <code>-63988</code>
+		<detail message="invalid datetime " suggestion="check input parameter"/>
+</Error>
+
+<Error>
+    <!-- REC_ERROR_SIPRECSCHEDULE_INVALID_DATETIME_RANGE -->
+    <code>-63987</code>
+		<detail message="invalid datetime range" suggestion="check input parameter"/>
+</Error>
+
+<Error>
+    <!-- REC_ERROR_SIPRECSCHEDULE_INVALID_TIME -->
+    <code>-63986</code>
+		<detail message="invalid time" suggestion="check input parameter"/>
+</Error>
+
+<Error>
+    <!-- REC_ERROR_SIPRECSCHEDULE_INVALID_TIME_RANGE -->
+    <code>-63985</code>
+		<detail message="invalid time range" suggestion="check input parameter"/>
+</Error>
+
+<Error>
+    <!-- REC_ERROR_SIPRECSCHEDULE_NOEXIST_RANGE -->
+    <code>-63984</code>
+		<detail message="range not exist" suggestion="check input parameter"/>
+</Error>
+
+<Error>
+    <!-- REC_ERROR_SIPRECSCHEDULE_DUPLICATE_PRIMARY_KEY -->
+    <code>-63983</code>
+		<detail message="duplicate range id" suggestion="check input parameter"/>
+</Error>
+
+<Error>
+    <!-- REC_ERROR_SIPRECSCHEDULE_NOEXIST_SCHEDULE -->
+    <code>-63982</code>
+		<detail message="schedule does not exist" suggestion="check input parameter"/>
+</Error>
+
+<!-- MRS_REC ERROR end -->
+
+
+<!-- MRS_VGW ERROR -59999 - -55000 -->
+<!-- MRS_VGW ERROR begin -->
+
+ <Error>
+    <!-- VGW_INIT_SDK_ERROR -->
+    <code>-59999</code>
+		<detail message="init sdk error" suggestion="check sdk lib correct"/>
+</Error>
+
+<Error>
+    <!-- VGW_ADD_DEVICE_ERROR -->
+    <code>-59998</code>
+		<detail message="add device error" suggestion="check input parameter"/>
+</Error>
+
+<Error>
+    <!-- VGW_NOT_REGEIST_ERROR -->
+    <code>-59997</code>
+		<detail message="device is not registered on the sdk" suggestion="check device parameter"/>
+</Error>
+
+<Error>
+    <!-- VGW_CLOSE_SDK_ERROR -->
+    <code>-59996</code>
+		<detail message="close sdk error" suggestion="check sdk call"/>
+</Error>
+
+<Error>
+    <!-- VGW_SDK_NOT_INIT_ERROR -->
+    <code>-59995</code>
+		<detail message="sdk not initialized" suggestion="check sdk init"/>
+</Error>
+
+<Error>
+    <!-- VGW_DEVICE_EXISTS_ERROR -->
+    <code>-59994</code>
+		<detail message="device id already exists" suggestion="please enter a new device id "/>
+</Error>
+
+<Error>
+    <!-- VGW_DEVICE_NOT_EXISTS_ERROR -->
+    <code>-59993</code>
+		<detail message="device id does not exist" suggestion="check input parameter"/>
+</Error>
+
+<Error>
+    <!-- VGW_DEVICE_PALY_ERROR -->
+    <code>-59992</code>
+		<detail message="device play failed" suggestion="check device"/>
+</Error>
+
+<Error>
+    <!-- VGW_CONTEXT_NOT_EXISTS_ERROR -->
+    <code>-59991</code>
+		<detail message="device id does not exist" suggestion="check input parameter"/>
+</Error>
+
+<Error>
+    <!-- VGW_DEVICE_STATUS_ERROR -->
+    <code>-59990</code>
+		<detail message="device status error" suggestion="check input parameter"/>
+</Error>
+
+<Error>
+    <!-- VGW_PARA_OVERSIZE -->
+    <code>-59989</code>
+		<detail message="parameter out of range" suggestion="check parameter range"/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_INIT_SDK_ERROR -->
+    <code>-59988</code>
+		<detail message="init sdk error" suggestion="check sdk lib correct"/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_INIT_SDK_ERROR -->
+    <code>-59987</code>
+		<detail message="close sdk failed" suggestion="check sdk call"/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IPC_ISDN_ERROR -->
+    <code>-59986</code>
+		<detail message="user number is not a valid user number of ipc." suggestion="please check user number is a ipc user number."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IPC_ISDN_NOT_IN_RANGE -->
+    <code>-59985</code>
+		<detail message="user number is not in range of mrs." suggestion="please check user number is in range of mrs."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IPC_ISDN_NOT_IN_VPN -->
+    <code>-59984</code>
+		<detail message="user number is not in vpn of mrs." suggestion="please check user number is in vpn of mrs."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IPC_ACTIVE_STATE_MOD -->
+    <code>-59983</code>
+		<detail message="Equipment activation state is not allowed to change" suggestion="Please change to free after modification "/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IPC_ACTIVE_STATE_RMV -->
+    <code>-59982</code>
+		<detail message="Equipment activated now,can not remove it." suggestion="Please deactive device first."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_PIC_VIDEO_UPLOAD_STATE_MOD -->
+    <code>-59981</code>
+		<detail message="device is being uploaded videos, can not be modified." suggestion="Please stop uploaded videos."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_PIC_LOCAL_RECORD_STATE_MOD -->
+    <code>-59980</code>
+		<detail message="device is recording, can not be modified." suggestion="Please stop record."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_PIC_VIDEO_UPLOAD_STATE_RMV -->
+    <code>-59979</code>
+		<detail message="device is being uploaded videos, can not be deleted." suggestion="Please stop uploaded videos."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_PIC_LOCAL_RECORD_STATE_RMV -->
+    <code>-59978</code>
+		<detail message="device is recording,can not be deleted." suggestion="Please stop record."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_ESDK_IP_EMPTY_ERROR -->
+    <code>-59977</code>
+		<detail message="eSDK ip can not be empty." suggestion="Please check eSDK ip."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_ESDK_IP_INVALID_LEN_ERROR -->
+    <code>-59976</code>
+		<detail message="eSDK ip is invalid." suggestion="Please check eSDK ip."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IVS_USER_NAME_EMPTY_ERROR -->
+    <code>-59975</code>
+		<detail message="ivs user name can not be empty." suggestion="Please check ivs user name."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IVS_USER_NAME_INVALID_LEN_ERROR -->
+    <code>-59974</code>
+		<detail message="ivs user name can not be empty." suggestion="Please check ivs user name."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IVS_PASSWORD_EMPTY_ERROR -->
+    <code>-59973</code>
+		<detail message="ivs password can not be empty." suggestion="Please check ivs user password."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IVS_PASSWORD_INVALID_LEN_ERROR -->
+    <code>-59972</code>
+		<detail message="ivs password is invalid." suggestion="Please check ivs user password."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_ESDK_ID_EXISTS_ERROR -->
+    <code>-59971</code>
+		<detail message="eSDK service ID duplicate." suggestion="Please check eSDK service ID."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IVS_USER_ID_EXISTS_ERROR -->
+    <code>-59970</code>
+		<detail message="ivs user ID duplicate." suggestion="Please check ivs user ID."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_ESDK_ID_NO_EXIST_ERROR -->
+    <code>-59969</code>
+		<detail message="eSDK service does not exist." suggestion="Please config eSDK service."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IVS_USER_ID_NO_EXIST_ERROR -->
+    <code>-59968</code>
+		<detail message="ivs user does not exist." suggestion="Please config ivs user."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IVS_VIDEO_PLAYBACK_MOD_ERROR -->
+    <code>-59967</code>
+		<detail message="ivs camera in playback, can not modify." suggestion="Please stop playback."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IVS_VIDEO_PLAYBACK_RMV_ERROR -->
+    <code>-59966</code>
+		<detail message="ivs camera in playback,can not remove." suggestion="Please stop playback."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IVS_USER_NOT_ONLINE -->
+    <code>-59965</code>
+		<detail message="ivs not online." suggestion="Please check eSDK service or retry."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IVS_EXPORT_LIST_NOT_GENERATED -->
+    <code>-59964</code>
+		<detail message="camera export list has not been generated." suggestion="Please retry."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_NODE_ID_DIFFERENT -->
+    <code>-59963</code>
+		<detail message="node id are not the same." suggestion="Please check config."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_CONVERT_ISDN_ERROR -->
+    <code>-59962</code>
+		<detail message="convert user number fail." suggestion="Please check user number."/>
+</Error>
+
+<!-- MRS_VGW ERROR end -->
+
+<!--  MRS_MGR_ERROR -54999 - -50000 -->  
+<!--  MRS_MGR_ERROR begin -->
+
+ <Error>
+ <!--MRS_MGR_ERRCODE_RMV_FILE_ERROR-->
+    <code>-54998</code>
+		<detail message="remove file error" suggestion="check file status"/>
+</Error> 
+
+<Error>
+ <!--MRS_MGR_ERRCODE_RMV_DIR_ERROR-->
+    <code>-54997</code>
+		<detail message="remove directory error" suggestion="check directory status"/>
+</Error>
+
+<Error>
+ <!--MRS_MGR_ERRCODE_PATH_NOT_EXISTS-->
+    <code>-54996</code>
+		<detail message="path not exists" suggestion="check path"/>
+</Error>   
+
+<Error>
+ <!--MRS_MGR_ERRCODE_FILE_NOT_EXISTS-->
+    <code>-54995</code>
+		<detail message="file not exists" suggestion="check file"/>
+</Error> 
+   
+<Error>
+ <!--MRS_MGR_ERRCODE_DIR_NOT_EXISTS-->
+    <code>-54994</code>
+		<detail message="directory not exists" suggestion="check directory"/>
+</Error> 
+
+<Error>
+ <!--MRS_MGR_ERRCODE_REC_TASK_NOT_EXISTS-->
+    <code>-54993</code>
+		<detail message="rec task not exists" suggestion="check rec task table data"/>
+</Error> 
+
+<Error>
+ <!--MRS_MGR_ERRCODE_MAKEFILEPATH_THROW_EXCEPTION-->
+    <code>-54992</code>
+		<detail message="make file path throw exception" suggestion="check input parameter"/>
+</Error> 
+
+<Error>
+ <!--MRS_MGR_PATH_NOT_REGULAR_FILE-->
+    <code>-54991</code>
+		<detail message="path not regular file" suggestion="check input parameter"/>
+</Error> 
+
+<Error>
+ <!--MRS_MGR_ERRCODE_RMV_FILE_THROW_EXCEPTION-->
+    <code>-54990</code>
+		<detail message="remove file throw exception" suggestion="check input parameter"/>
+</Error> 
+
+<Error>
+ <!--MRS_MGR_ERRCODE_DB_QUERY_ERROR-->
+    <code>-54989</code>
+		<detail message="query database error" suggestion="check databse"/>
+</Error> 
+
+<Error>
+ <!--MRS_MGR_ERRCODE_DB_DATA_EXCEPTION-->
+    <code>-54988</code>
+		<detail message="database data exception" suggestion="check databse data"/>
+</Error> 
+
+<Error>
+ <!--MRS_MGR_ERRCODE_DB_DELETE_ERROR-->
+    <code>-54987</code>
+		<detail message="execute delete sql error" suggestion="check input parameter"/>
+</Error>
+
+<Error>
+ <!--MRS_MGR_ERRCODE_PARAMETER_ERROR-->
+    <code>-54986</code>
+		<detail message="input parameter error" suggestion="check input parameter"/>
+</Error> 
+
+<!--  MRS_MGR_ERROR end -->
+
+<!--  MRS_MOC_ERROR -54999 - -50000 -->  
+<!--  MRS_MOC_ERROR begin -->
+<Error>
+ <!--MRS_MOC_ERROR_MRSNODE_SAME_NAME_EXISTS-->
+    <code>-52998</code>
+		<detail message="MRSNode with same name exists." suggestion="check name of mrsnode"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_MRSNODE_SAME_IP_EXISTS-->
+    <code>-52997</code>
+		<detail message="MRSNode with same ip exists." suggestion="check ip of mrsnode"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_MRSNODE_MRSC_EXISTS-->
+    <code>-52996</code>
+		<detail message="MRSNode with MRS_C type exists." suggestion="check type of mrsnode"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_MRSNODE_MRSC_NOT_EXISTS-->
+    <code>-52995</code>
+		<detail message="MRSNode with MRS_C type not exists." suggestion="check type of mrsnode"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_BCCINFO_EXISTS-->
+    <code>-52994</code>
+		<detail message="bcc info of MRSNODE exists." suggestion="pelease remove bcc info of MRSNODE first."/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_RECSIPINFO_EXISTS-->
+    <code>-52993</code>
+		<detail message="sip info of MRSNODE exists." suggestion="pelease remove sip info of MRSNODE first."/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_IPCDEVICE_EXISTS-->
+    <code>-52992</code>
+		<detail message="ipc device exists." suggestion="pelease ipc device of this node first."/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_REC_FILE_EXISTS-->
+    <code>-52991</code>
+		<detail message="record file of this node exists." suggestion="pelease rmv record file of this node first."/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_MRSNODE_NOT_EXISTS-->
+    <code>-52990</code>
+		<detail message="mrs node not exists." suggestion="pelease check mrs node."/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_RMV_ACTIVED_STOR_RESOURCE-->
+    <code>-52989</code>
+		<detail message="can not remove actived storage resource." suggestion="pelease deactived storage resource first."/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_STOR_RESOURCE_NOT_DIRTORY-->
+    <code>-52988</code>
+		<detail message="storage resource not valid dirtory." suggestion="pelease check resource path first."/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_STOR_RESOURCE_PATH_INVALID-->
+    <code>-52987</code>
+		<detail message="storage resource path is invalid,must begin with /home/ubp/mrs" suggestion="pelease check resource path first."/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_STOR_RESOURCE_EXISTS-->
+    <code>-52986</code>
+		<detail message="storage resource exists,can not remove." suggestion="pelease check resource first."/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_RMV_INNER_STOR_RESOURCE-->
+    <code>-52985</code>
+		<detail message="can not remove or deactived inner storage resource." suggestion="pelease check resource first."/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_VGWSIPPORT_SAME_WTIH_RECSIPPORT-->
+    <code>-52984</code>
+		<detail message="sip port of vgw can not be same with rec." suggestion="pelease check port."/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_MRSD_EXISTS-->
+    <code>-52983</code>
+		<detail message="can not remove mrs_c node,you must remove mrs_d node first." suggestion=""/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_MOD_NODE_TYPE-->
+    <code>-52982</code>
+		<detail message="can not modify the type of mrs node." suggestion=""/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_IPC_NOT_EXISTS-->
+    <code>-52981</code>
+		<detail message="ipc device not exists." suggestion="pelease check ipc device."/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_IPC_ISDN_EXISTS-->
+    <code>-52980</code>
+		<detail message="isdn of ipc exists." suggestion="pelease check isdn."/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_IPC_SCHEDULE_REC_TASK_EXISTS-->
+    <code>-52979</code>
+		<detail message="ipc schedule record task exists." suggestion="pelease check schedule reord task."/>
+</Error> 
+<!--  MRS_MOC_ERROR end -->
+
+<Error>
+ <!--MRS_MOC_ERROR_MOD_RMV_ACTIVED_IPC-->
+    <code>-52978</code>
+		<detail message="can not remove actived ipc." suggestion="pelease deactive ipc first."/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_ENDTIME_EARLY_THAN_NOW-->
+    <code>-52977</code>
+		<detail message="end time early than current server time." suggestion="please check end time."/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_IPC_DEVINDEX_EXISTS-->
+    <code>-52976</code>
+		<detail message="device id of ipc exists." suggestion="please check device id."/>
+</Error>
+
+<Error>
+ <!--MRS_MOC_ERROR_MRSNODE_MUST_BE_MRSC-->
+    <code>-52975</code>
+		<detail message="mrs node must be mrs control node." suggestion="please check node ID."/>
+</Error>
+
+<Error>
+ <!--MRS_MOC_ERROR_FIXEDUSER_ISDN_NOT_EXISTS-->
+    <code>-52974</code>
+		<detail message="user number not exists." suggestion="please check user number."/>
+</Error>
+
+<Error>
+ <!--MRS_MOC_ERROR_EXECUTE_NATIVE_SQL-->
+    <code>-52973</code>
+		<detail message="execute sql statement failed." suggestion="please check database."/>
+</Error>
+ 
+ <Error>
+ <!--MRS_MOC_ERROR_ESDKIVS_INFO_EXISTS-->
+    <code>-52972</code>
+		<detail message="eSDK service exists." suggestion="please remove eSDK service."/>
+</Error>
+
+<Error>
+ <!--MRS_MOC_ERROR_ESDKIVS_INFO_NOT_EXISTS-->
+    <code>-52971</code>
+		<detail message="IVS ID not exists." suggestion="please config eSDK service."/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_IVS_IPC_DEVICE_EXISTS-->
+    <code>-52970</code>
+		<detail message="ivs ipc exists." suggestion="please remove ivs ipc."/>
+</Error>
+
+<Error>
+ <!--MRS_MOC_ERROR_ESDKIVS_INFO_ID_EXISTS-->
+    <code>-52969</code>
+		<detail message="eSDK service id duplicate." suggestion="please check eSDK service id."/>
+</Error>
+
+<Error>
+ <!--MRS_MOC_ERROR_IVS_IPC_DEVINDEX_EXISTS-->
+    <code>-52968</code>
+		<detail message="ivs ipc id duplicate." suggestion="please check ivs ipc id."/>
+</Error>
+
+<Error>
+ <!--MRS_MOC_ERROR_IVS_IPC_CAMERACODE_EXISTS-->
+    <code>-52967</code>
+		<detail message="IVS camera code duplicate." suggestion="please check ivs camera code."/>
+</Error>
+
+<!--  MRS_MOC_ERROR end -->
+
+</Errors>

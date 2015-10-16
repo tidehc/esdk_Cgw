@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="UEAbility" MOC_NAME_C="终端能力" Module="DC" ACCESS_CONTROL="" DEST_SVC="custom:ubp_ueability_moc:CreateModule:after" Relation="">
+		<Parameter name="ISDN" desc="User number" type="string" range="[1,8]" constrain="PRI" mode="display" />
+		<Parameter name="Model" desc="UE Model" type="enum" range="0,1" vlist="0:UE,1:Mobile Station" mode="display" />
+		<Parameter name="SoftwareVersion" desc="UE software version" type="enum" range="0" vlist="0:V200R002" mode="display" />
+		<Parameter name="UAppVersion" desc="UE eApp version" type="enum" range="0" vlist="0:V200R002" mode="display" />
+		<Parameter name="PreCamera" desc="Previous camera" type="enum" range="0,1,2,3,4,5" vlist="0:NULL,1:QCIF,2:CIF,3:D1,4:720P,5:1080P" mode="display" />
+		<Parameter name="PostCamera" desc="Post camera" type="enum" range="0,1,2,3,4,5" vlist="0:NULL,1:QCIF,2:CIF,3:D1,4:720P,5:1080P" mode="display" />
+		<Parameter name="ExtCamera" desc="External camera" type="enum" range="0,1,2,3,4,5" vlist="0:NULL,1:QCIF,2:CIF,3:D1,4:720P,5:1080P" mode="display" />
+	</MOC>
+</Moc-Config>

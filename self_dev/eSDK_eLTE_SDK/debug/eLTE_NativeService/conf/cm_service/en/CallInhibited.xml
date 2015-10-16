@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="CallInhibited" MOC_NAME_C="呼入呼出禁止" Module="OMC,MDC" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="" Relation="">
+		<Parameter name="ISDN" desc="User number" type="string" range="[1,8]" constrain="PRI" not_begin_with="0" all_num="" mode="display" />
+		<Parameter name="ForbidenOut" desc="Out forbidden switch" type="enum" range="0,1" vlist="0: not forbidden,1: forbidden" constrain="NOT NULL" control="0:,1:OutType|OutISDNStart|OutISDNEnd" mode="update" />
+		<Parameter name="OutType" desc="Out forbidden type" type="enum" range="0,1" vlist="0: Range,1: All" input="0:OutISDNStart|OutISDNEnd" control="0:OutISDNStart|OutISDNEnd,1:" mode="update" />
+		<Parameter name="OutISDNStart" desc="Out number start" type="string" range="[0,8]" not_begin_with="0" all_num="" mode="update" />
+		<Parameter name="OutISDNEnd" desc="Out number end" type="string" range="[0,8]" not_begin_with="0" all_num="" ge="OutISDNEnd,OutISDNStart" dup="OutISDNStart|OutISDNEnd" mode="update" />
+		<Parameter name="ForbidenIn" desc="In forbidden switch" type="enum" range="0,1" vlist="0: not forbidden,1: forbidden" constrain="NOT NULL" relate="1:ForbidenOut,1:ForbidenIn" control="0:,1:InType|InISDNStart|InISDNEnd" mode="update" />
+		<Parameter name="InType" desc="In forbidden type" type="enum" range="0,1" vlist="0: Range,1: All" input="0:InISDNStart|InISDNEnd" control="0:InISDNStart|InISDNEnd,1:" mode="update" />
+		<Parameter name="InISDNStart" desc="In number start" type="string" range="[0,8]" not_begin_with="0" all_num="" mode="update" />
+		<Parameter name="InISDNEnd" desc="In number end" type="string" range="[0,8]" not_begin_with="0" all_num="" ge="InISDNEnd,InISDNStart" dup="InISDNStart|InISDNEnd" mode="update" />
+	</MOC>
+</Moc-Config>

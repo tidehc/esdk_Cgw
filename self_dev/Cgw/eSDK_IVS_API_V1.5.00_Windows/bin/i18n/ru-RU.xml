@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Content>
+	<Rect>Прямоугольник</Rect>
+	<Polygon>Многоугольник</Polygon>
+	<Delete>Удалить</Delete>
+	<DisplayMode>Настроить формат</DisplayMode>
+	<Play>Воспроизвести</Play>
+	<Stop>Стоп</Stop>
+	<SnapShot>Снимок</SnapShot>
+	<LocalRecord>Локальная запись</LocalRecord>
+	<PlayRecord>Мгновенное воспроизведение</PlayRecord>
+	<BookMark>Закладка</BookMark>
+	<Zoom>Увеличить</Zoom>
+	<PTZ>Управление PTZ-камерой</PTZ>
+	<PlaySound>Громкость</PlaySound>
+	<PlayNoSound>Громкость</PlayNoSound>
+	<TalkBack>Голосовая связь</TalkBack>
+	<NoTalkBack>Голосовая связь</NoTalkBack>
+	<VideoTVW>Показывать видео на видеостене</VideoTVW>
+	<AlarmWin>Установить как видеоокно сигнализации</AlarmWin>
+	<OpenMap>Открыть эл. карту</OpenMap>
+	<WindowMain>Установить как главное видеоокно</WindowMain>
+	<IA>Показ результатов интеллект. анализа</IA>
+	<PlayQuality>Приоритет качества изображения</PlayQuality>
+	<PlayNet>Приоритет скорости</PlayNet>
+	<Extend>Развернуть</Extend>
+	<Retracted>Свернуть</Retracted>
+	<PTZ3D>3D-позиционирование</PTZ3D>
+	<ReConnecting>Повторное подключение...</ReConnecting>
+	<Off>Закрыть</Off>
+	<Info>Видеоинформация</Info>
+	<ZoomIn>Увеличить</ZoomIn>
+	<ZoomOut>Уменьшить</ZoomOut>
+	<ZoomOver>Выключить</ZoomOver>
+	<TVWallVideoBroken>Видеопотоки прерваны</TVWallVideoBroken>
+	<TVWallDecDisconn>Декодер повторно подключается к платформе после отключения.</TVWallDecDisconn>
+	<TVWallHandling>Воспроизведение видео на видеостене</TVWallHandling>
+	<TVWallOK>Видео на видеостене</TVWallOK>
+	<WatermarkGary>Нет данных водяного знака</WatermarkGary>
+	<WatermarkNomal>Данные водяного знака</WatermarkNomal>
+	<TrunCuise>Последовательность</TrunCuise>
+	<SingleFrameStatus>Покадровое воспроизведение видео</SingleFrameStatus>
+	<AlarmStatus>Уведомление о срабатывании сигнализации</AlarmStatus>
+	<RecordStatus>Запись вручную</RecordStatus>
+	<CruiseTrackStatus>Охранный маршрут</CruiseTrackStatus>
+	<TvWalling>Be TvWalling</TvWalling>
+	<TVWallReConnect>Повторное подключение...</TVWallReConnect>
+</Content>

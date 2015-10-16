@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--encrypted_mode:加密模式 取值范围 0 自适应 1 明文 2 密文 
+    support_statefwl :主被动方式     取值 1 主动 2 被动
+    command_port :命令端口
+    data_port :数据端口
+    transfer_mode:传输模式        取值  1 bin方式  2 ASC方式
+    transfer_size :传输值大小
+    min_port:最小端口,主动连接时用 10000-20000
+    max_port:最大端口,主动连接时用 10000-20000
+    ccc_suport:穿越防火墙    0 不支持 1 支持    
+    time_out:超时时间,单位秒
+	ftp_mode: 0 ftp 1 sftp
+-->
+<ftpsclient name="ftpsclient">
+    <policy  encrypted_mode="2" support_statefwl="2" command_port="2122" data_port="20" 
+             transfer_mode="2" transfer_size="4096" min_port="16100" 
+             max_port="17099" ccc_suport="0" client_num="500" time_out="30"  ftp_mode="0"> 
+    </policy>
+</ftpsclient>

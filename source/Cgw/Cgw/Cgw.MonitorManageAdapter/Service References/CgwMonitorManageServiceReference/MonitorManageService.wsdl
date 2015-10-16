@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MonitorManageService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="CgwMonitorManageService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="600000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://127.0.0.1:5699/CgwMonitorManageService?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://127.0.0.1:5699/CgwMonitorManageService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://127.0.0.1:5699/CgwMonitorManageService?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CgwMonitorManage.SmcError" />
+      <xsd:import schemaLocation="http://127.0.0.1:5699/CgwMonitorManageService?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CgwMonitorManage.Common" />
+      <xsd:import schemaLocation="http://127.0.0.1:5699/CgwMonitorManageService?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMonitorManageService_Connect_InputMessage">
+    <wsdl:part name="parameters" element="tns:Connect" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_Connect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConnectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_Disconnect_InputMessage">
+    <wsdl:part name="parameters" element="tns:Disconnect" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_Disconnect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DisconnectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_GetAllCameras_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllCameras" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_GetAllCameras_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllCamerasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_RefreshMonitorCamera_InputMessage">
+    <wsdl:part name="parameters" element="tns:RefreshMonitorCamera" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_RefreshMonitorCamera_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RefreshMonitorCameraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_GetRefreshStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRefreshStatus" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_GetRefreshStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRefreshStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_StartReceiveVideoByPipe_InputMessage">
+    <wsdl:part name="parameters" element="tns:StartReceiveVideoByPipe" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_StartReceiveVideoByPipe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StartReceiveVideoByPipeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_StopReceiveVideoByPipe_InputMessage">
+    <wsdl:part name="parameters" element="tns:StopReceiveVideoByPipe" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_StopReceiveVideoByPipe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StopReceiveVideoByPipeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_StartControlPtz_InputMessage">
+    <wsdl:part name="parameters" element="tns:StartControlPtz" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_StartControlPtz_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StartControlPtzResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_StopControlPtz_InputMessage">
+    <wsdl:part name="parameters" element="tns:StopControlPtz" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_StopControlPtz_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StopControlPtzResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_SetMic_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetMic" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_SetMic_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetMicResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_SetSpeaker_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetSpeaker" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_SetSpeaker_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetSpeakerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_MakeIFrame_InputMessage">
+    <wsdl:part name="parameters" element="tns:MakeIFrame" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_MakeIFrame_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MakeIFrameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_KeepAliver_InputMessage">
+    <wsdl:part name="parameters" element="tns:KeepAliver" />
+  </wsdl:message>
+  <wsdl:message name="IMonitorManageService_KeepAliver_OutputMessage">
+    <wsdl:part name="parameters" element="tns:KeepAliverResponse" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="IMonitorManageService">
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Connect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorManageService/Connect" message="tns:IMonitorManageService_Connect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonitorManageService/ConnectResponse" message="tns:IMonitorManageService_Connect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Disconnect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorManageService/Disconnect" message="tns:IMonitorManageService_Disconnect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonitorManageService/DisconnectResponse" message="tns:IMonitorManageService_Disconnect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetAllCameras">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorManageService/GetAllCameras" message="tns:IMonitorManageService_GetAllCameras_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonitorManageService/GetAllCamerasResponse" message="tns:IMonitorManageService_GetAllCameras_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="RefreshMonitorCamera">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorManageService/RefreshMonitorCamera" message="tns:IMonitorManageService_RefreshMonitorCamera_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonitorManageService/RefreshMonitorCameraResponse" message="tns:IMonitorManageService_RefreshMonitorCamera_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetRefreshStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorManageService/GetRefreshStatus" message="tns:IMonitorManageService_GetRefreshStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonitorManageService/GetRefreshStatusResponse" message="tns:IMonitorManageService_GetRefreshStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="StartReceiveVideoByPipe">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorManageService/StartReceiveVideoByPipe" message="tns:IMonitorManageService_StartReceiveVideoByPipe_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonitorManageService/StartReceiveVideoByPipeResponse" message="tns:IMonitorManageService_StartReceiveVideoByPipe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="StopReceiveVideoByPipe">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorManageService/StopReceiveVideoByPipe" message="tns:IMonitorManageService_StopReceiveVideoByPipe_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonitorManageService/StopReceiveVideoByPipeResponse" message="tns:IMonitorManageService_StopReceiveVideoByPipe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="StartControlPtz">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorManageService/StartControlPtz" message="tns:IMonitorManageService_StartControlPtz_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonitorManageService/StartControlPtzResponse" message="tns:IMonitorManageService_StartControlPtz_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="StopControlPtz">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorManageService/StopControlPtz" message="tns:IMonitorManageService_StopControlPtz_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonitorManageService/StopControlPtzResponse" message="tns:IMonitorManageService_StopControlPtz_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="SetMic">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorManageService/SetMic" message="tns:IMonitorManageService_SetMic_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonitorManageService/SetMicResponse" message="tns:IMonitorManageService_SetMic_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="SetSpeaker">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorManageService/SetSpeaker" message="tns:IMonitorManageService_SetSpeaker_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonitorManageService/SetSpeakerResponse" message="tns:IMonitorManageService_SetSpeaker_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="MakeIFrame">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorManageService/MakeIFrame" message="tns:IMonitorManageService_MakeIFrame_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonitorManageService/MakeIFrameResponse" message="tns:IMonitorManageService_MakeIFrame_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="KeepAliver">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorManageService/KeepAliver" message="tns:IMonitorManageService_KeepAliver_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonitorManageService/KeepAliverResponse" message="tns:IMonitorManageService_KeepAliver_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CgwMonitorManageService" type="tns:IMonitorManageService">
+    <wsp:PolicyReference URI="#CgwMonitorManageService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Connect">
+      <soap12:operation soapAction="http://tempuri.org/IMonitorManageService/Connect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Disconnect">
+      <soap12:operation soapAction="http://tempuri.org/IMonitorManageService/Disconnect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCameras">
+      <soap12:operation soapAction="http://tempuri.org/IMonitorManageService/GetAllCameras" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefreshMonitorCamera">
+      <soap12:operation soapAction="http://tempuri.org/IMonitorManageService/RefreshMonitorCamera" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRefreshStatus">
+      <soap12:operation soapAction="http://tempuri.org/IMonitorManageService/GetRefreshStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartReceiveVideoByPipe">
+      <soap12:operation soapAction="http://tempuri.org/IMonitorManageService/StartReceiveVideoByPipe" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StopReceiveVideoByPipe">
+      <soap12:operation soapAction="http://tempuri.org/IMonitorManageService/StopReceiveVideoByPipe" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartControlPtz">
+      <soap12:operation soapAction="http://tempuri.org/IMonitorManageService/StartControlPtz" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StopControlPtz">
+      <soap12:operation soapAction="http://tempuri.org/IMonitorManageService/StopControlPtz" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMic">
+      <soap12:operation soapAction="http://tempuri.org/IMonitorManageService/SetMic" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSpeaker">
+      <soap12:operation soapAction="http://tempuri.org/IMonitorManageService/SetSpeaker" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MakeIFrame">
+      <soap12:operation soapAction="http://tempuri.org/IMonitorManageService/MakeIFrame" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KeepAliver">
+      <soap12:operation soapAction="http://tempuri.org/IMonitorManageService/KeepAliver" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MonitorManageService">
+    <wsdl:port name="CgwMonitorManageService" binding="tns:CgwMonitorManageService">
+      <soap12:address location="http://127.0.0.1:5699/CgwMonitorManageService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://127.0.0.1:5699/CgwMonitorManageService</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>127.0.0.1</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="IpcMgrState" MOC_NAME_C="摄像头状态" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="custom:ubp_mrs_moc:CreateModule:before" Relation="">
+		<Parameter name="DevIndex" desc="Device ID" type="int" range="[1,65535]" constrain="PRI" FK="FK:DCUC:OMCIpcDevice:DevIndex" mode="display" />
+		<Parameter name="NodeId" desc="MRS NodeID" type="int" range="[1,65535]" constrain="NOT NULL" FK="FK:DCUC:MRSNode:NodeID" mode="update" />
+		<Parameter name="DevStatus" desc="Device status" type="enum" range="0,1" vlist="0: idle,1: activated" constrain="NOT NULL" mode="update" />
+	</MOC>
+</Moc-Config>

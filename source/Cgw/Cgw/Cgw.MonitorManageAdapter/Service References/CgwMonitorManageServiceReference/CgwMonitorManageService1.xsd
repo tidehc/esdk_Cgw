@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CgwMonitorManage.Common" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CgwMonitorManage.Common" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://127.0.0.1:5699/CgwMonitorManageService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://127.0.0.1:5699/CgwMonitorManageService?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:simpleType name="PlatformType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MONITORPLATFORM">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ELTEPLATFORM">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PlatformType" nillable="true" type="tns:PlatformType" />
+  <xs:complexType name="PagesParam">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrentPage" type="xs:int" />
+      <xs:element minOccurs="0" name="NumberPerPage" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PagesParam" nillable="true" type="tns:PagesParam" />
+  <xs:complexType name="PlatformLicenseInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsEltePlatform" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsMonitorPlatform" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PlatformLicenseInfo" nillable="true" type="tns:PlatformLicenseInfo" />
+  <xs:complexType name="ArrayOfCamera">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Camera" nillable="true" type="tns:Camera" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCamera" nillable="true" type="tns:ArrayOfCamera" />
+  <xs:complexType name="Camera">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DeviceType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsMute" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsQuiet" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="No" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParentID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" type="tns:CameraStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Camera" nillable="true" type="tns:Camera" />
+  <xs:simpleType name="CameraStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Offline" />
+      <xs:enumeration value="Online" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="CameraStatus" nillable="true" type="tns:CameraStatus" />
+  <xs:complexType name="ArrayOfCameraGroup">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CameraGroup" nillable="true" type="tns:CameraGroup" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCameraGroup" nillable="true" type="tns:ArrayOfCameraGroup" />
+  <xs:complexType name="CameraGroup">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="No" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParentID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CameraGroup" nillable="true" type="tns:CameraGroup" />
+  <xs:complexType name="ArrayOfNodeRelation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="NodeRelation" nillable="true" type="tns:NodeRelation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNodeRelation" nillable="true" type="tns:ArrayOfNodeRelation" />
+  <xs:complexType name="NodeRelation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="No" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Path" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Type" type="tns:NodeType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NodeRelation" nillable="true" type="tns:NodeRelation" />
+  <xs:simpleType name="NodeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NONE" />
+      <xs:enumeration value="CAMERA" />
+      <xs:enumeration value="GROUP" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="NodeType" nillable="true" type="tns:NodeType" />
+  <xs:complexType name="PageInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrentPage" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalPages" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalRecords" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PageInfo" nillable="true" type="tns:PageInfo" />
+  <xs:simpleType name="PtzCommandType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PTZ_CMD_ZOOM_IN">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PTZ_CMD_ZOOM_OUT">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PTZ_CMD_FOCUS_IN">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PTZ_CMD_FOCUS_OUT">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PTZ_CMD_IRIS_ENLARGE">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PTZ_CMD_IRIS_SHRINK">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">6</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PTZ_CMD_UP">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">7</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PTZ_CMD_DOWN">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">8</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PTZ_CMD_LEFT">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">9</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PTZ_CMD_RIGHT">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">10</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PtzCommandType" nillable="true" type="tns:PtzCommandType" />
+</xs:schema>

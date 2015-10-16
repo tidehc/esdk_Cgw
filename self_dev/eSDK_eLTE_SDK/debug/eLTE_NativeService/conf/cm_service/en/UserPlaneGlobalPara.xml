@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="UserPlaneGlobalPara" MOC_NAME_C="用户面全局参数" Module="BDC" ACCESS_CONTROL="modify,read" DEST_SVC="" Relation="">
+		<Parameter name="RecordId" desc="Record ID" type="int" range="" constrain="PRI" />
+		<Parameter name="UserInactiveThd" desc="User inactive period threshold(s)" type="int" range="[15,300]" mode="update" default="30" />
+		<Parameter name="DecJitterBuffer" desc="Size of video jitter buffer for decoder(ms)" type="int" range="[0,5000]" mode="update" default="100" />
+		<Parameter name="RingtoneLanguage" desc="Language classification of ringtone" type="enum" range="0,1" vlist="0:Local,1:English" default="0" />
+		<Parameter name="RTCPInterval" desc="RTCP Transmission Interval(s)" type="int" range="[1,12]" mode="update" default="3" />
+	</MOC>
+</Moc-Config>

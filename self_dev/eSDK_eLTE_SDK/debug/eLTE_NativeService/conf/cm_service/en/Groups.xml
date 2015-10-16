@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="Groups" MOC_NAME_C="群组信息" Module="OMC,MDC,MRS" ACCESS_CONTROL="add,delete,modify,read,viewGroupPTTUser,viewGroupFixedUser" DEST_SVC="" Relation="">
+		<Parameter name="GroupNumber" desc="Group number" type="string" range="[1,5]" constrain="PRI" not_begin_with="0" all_num="" mode="display" />
+		<Parameter name="GroupName" desc="Group name" type="string" range="[0,32]" mode="update" />
+		<Parameter name="GroupPriority" desc="Group priority" type="int" range="[1,15]" constrain="NOT NULL" mode="update" default="15" />
+		<Parameter name="GroupCategory" desc="Group type" type="enum" range="0,1,2" vlist="0: Global broadcast group,1: Common group,2: Local broadcast group" constrain="NOT NULL" mode="update" default="1" />
+		<Parameter name="MaxPeriod" desc="Maximum speaking time(s)" type="int" range="[1,65535]" constrain="NOT NULL" mode="update" default="60" />
+		<Parameter name="GroupState" desc="Group status" type="enum" range="0,1" vlist="0: disabled,1: enabled" constrain="NOT NULL" mode="update" default="1" />
+		<Parameter name="VPNID" desc="VPN ID" type="int" range="[0,200]" constrain="NOT NULL" mode="update" default="0" />
+	</MOC>
+</Moc-Config>

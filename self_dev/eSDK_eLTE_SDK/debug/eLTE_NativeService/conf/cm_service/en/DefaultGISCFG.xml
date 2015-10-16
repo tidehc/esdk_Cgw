@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="DefaultGISCFG" MOC_NAME_C="全局GIS参数" Module="SDS" ACCESS_CONTROL="modify,read" DEST_SVC="" Relation="">
+		<Parameter name="DefaultID" desc="Default index" type="int" range="" constrain="PRI" />
+		<Parameter name="GISRptPrd" desc="GIS report period" type="enum" range="1,2,5,10,15,30,60" vlist="1: 1s,2: 2s,5: 5s,10: 10s,15: 15s,30: 30s,60: 60s" mode="update" default="30" />
+		<Parameter name="GISRptDis" desc="GIS report distance(m)" type="int" range="[0,10000]" mode="update" default="0" />
+	</MOC>
+</Moc-Config>

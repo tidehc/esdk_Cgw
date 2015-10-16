@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dao:DAOCfgs xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:dao="http://www.td-tech.com/ubp/platform/dao"
+             xsd:schemaLocation="http://www.td-tech.com/ubp/platform/dao ubp_db_cfgdef.xsd">
+
+  <DAO name="mdc_dao"
+       active="true"
+       DefaultDAO="true">
+    <dbcfg name="user"
+           value="odb_user" />
+    <dbcfg name="passwd"
+           value="271C7C07539BA40593DC47" />
+    <dbcfg name="database"
+           value="ubpdb" />
+    <dbcfg name="user_master"
+           value="odb_user" />
+    <dbcfg name="passwd_master"
+           value="271C7C07539BA40593DC47" />
+    <dbcfg name="database_master"
+           value="ubpdb" />
+    <!--dbcfg name="host"
+           value="$ubp_local_ip" /-->
+    <dbcfg name="port"
+           value="3306" />
+    <dbcfg name="max_connection"
+           value="30" />
+    <dbcfg name="min_connection"
+           value="10" />
+    <MOC name="PTTUser" />
+    <MOC name="FixedUser" />
+    <MOC name="DCAttribute" />
+    <MOC name="Groups" />
+    <MOC name="GroupPTTUser" />
+    <MOC name="GroupFixedUser" />
+    <MOC name="VPN" />
+    <MOC name="VPNRange" />
+    <MOC name="UBPNode" />
+    <MOC name="BccNeighborNode" />
+    <MOC name="BccCfg" />
+    <MOC name="MrsRange" />
+    <MOC name="RecRangeList" />
+    <MOC name="DynamicGroup" />
+    <MOC name="DynamicGroupMember" />
+    <MOC name="DMGPhotoGroupUser" />
+    <MOC name="CallInhibited" />
+    <MOC name="DCRanges" />
+    <MOC name="RangeList" />
+    <MOC name="MRSVPN" />
+  </DAO>
+</dao:DAOCfgs>

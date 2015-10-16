@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{161C1AAC-497C-42C7-8152-1309D70721E8}</ProjectGuid>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>CgwIvsSdkClient</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)Lib;$(LibraryPath)</LibraryPath>
+    <OutDir>..\..\..\..\..\..\..\..\..\Huawei Technologies Co., Ltd\Converge Gateway\bin\MonitorManageService\IVSSDK\</OutDir>
+    <TargetName>CgwMonitorManage.Ivs.SdkClient</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\Cgw\Build\x86\Release\MonitorManageService\IVSSDK</OutDir>
+    <GenerateManifest>false</GenerateManifest>
+    <TargetName>CgwMonitorManage.Ivs.SdkClient</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>msvcrtd.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)Lib;$(LibraryPath)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)CgwMonitorManage.Ivs.SdkClient$(TargetExt)</OutputFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>xcopy "$(ProjectDir)Lib\*" "$(SolutionDir)Build\x86\Debug\" /I /Y /E</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_AFXDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <CompileAsManaged>true</CompileAsManaged>
+      <AdditionalIncludeDirectories>.\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <OutputFile>$(OutDir)CgwMonitorManage.Ivs.SdkClient$(TargetExt)</OutputFile>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy "$(ProjectDir)Lib\*" "$(SolutionDir)Build\x86\Release\" /I /Y /E</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="IvsSdkClient.cpp" />
+    <ClCompile Include="memset_s.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cgw.Common\Cgw.Common.csproj">
+      <Project>{1e2ce08d-588f-4e3b-8ae5-e287d0631edb}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\hwsdk.h" />
+    <ClInclude Include="Include\IVSSDKNetKeyBoardDef.h" />
+    <ClInclude Include="Include\ivs_error.h" />
+    <ClInclude Include="Include\IVS_SDK.h" />
+    <ClInclude Include="Include\IVS_SDKNetKeyBoard.h" />
+    <ClInclude Include="Include\IVS_SDKTVWall.h" />
+    <ClInclude Include="Include\Resource.h" />
+    <ClInclude Include="IvsSdkClient.h" />
+    <ClInclude Include="securec.h" />
+    <ClInclude Include="securectype.h" />
+    <ClInclude Include="securecutil.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Lib\ACE.dll" />
+    <None Include="Lib\AnalyzeData.dll" />
+    <None Include="Lib\bp_base.dll" />
+    <None Include="Lib\bp_frame.dll" />
+    <None Include="Lib\bp_log.dll" />
+    <None Include="Lib\bp_net.dll" />
+    <None Include="Lib\eSDKClientLogCfg.ini" />
+    <None Include="Lib\eSDKLogAPI.dll" />
+    <None Include="Lib\ivs_base.dll" />
+    <None Include="Lib\ivs_compression.dll" />
+    <None Include="Lib\IVS_IADraw.dll" />
+    <None Include="Lib\IVS_NetSource.dll" />
+    <None Include="Lib\IVS_OCXPlayer.ocx" />
+    <None Include="Lib\IVS_Player.dll" />
+    <None Include="Lib\IVS_SDK.dll" />
+    <None Include="Lib\IVS_SDKNetKeyBoard.dll" />
+    <None Include="Lib\IVS_SDKTVWall.dll" />
+    <None Include="Lib\ivs_security.dll" />
+    <None Include="Lib\ivs_sftp.dll" />
+    <None Include="Lib\libeay32.dll" />
+    <None Include="Lib\libmpg123.dll" />
+    <None Include="Lib\libssh2.dll" />
+    <None Include="Lib\log4cpp.dll" />
+    <None Include="Lib\mfc100u.dll" />
+    <None Include="Lib\mp4DLL.dll" />
+    <None Include="Lib\mp_log.conf" />
+    <None Include="Lib\msvcr100.dll" />
+    <None Include="Lib\nss.dll" />
+    <None Include="Lib\regsvrOCX.bat" />
+    <None Include="Lib\rtsp_client.dll" />
+    <None Include="Lib\ssleay32.dll" />
+    <None Include="Lib\zlib.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Lib\IVS_SDK.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

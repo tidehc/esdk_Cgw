@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+///////////////////////////////////////////////////////////////////////
+
+// BDC            :-30000 ~ -34999
+// BDC_FRAMEWORK  :-35000 ~ -39999
+// MRS            :-50000 ~ -64999
+// VGW            :-65000 ~ -69999
+//For example : 
+//static const ACE_INT32 ERR_UBP_MQ_XXX1 = -20000;
+///////////////////////////////////////////////////////////////////////
+-->
+
+<Errors xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
+       xsd:noNamespaceSchemaLocation="error_number.xsd">
+
+<!-- Code Base -64999 - -63999 -->
+<!-- Code Base begin -->
+ <Error>
+    <!-- MRS_ERROR_INVLAID_ZMQ_MSG -->
+    <code>-64997</code>
+		<detail message="无效的ZMQ消息" suggestion="请检查ZMQ消息填充"/>
+</Error>
+
+ <Error>
+    <!-- MRS_ERROR_INVLAID_APP_FRAME -->
+    <code>-64996</code>
+		<detail message="无效的app frame" suggestion="请检查app frame填充"/>
+</Error>
+
+ <Error>
+    <!-- MRS_ERROR_NULL_POINTOR -->
+    <code>-64995</code>
+		<detail message="空指针错误" suggestion="请检查指针操作"/>
+</Error>
+
+ <Error>
+    <!-- MRS_ERROR_DB_ERROR -->
+    <code>-64994</code>
+		<detail message="操作数据库出错" suggestion="请检查数据库是否正常运行和数据操作是否符合约束"/>
+</Error>
+
+ <Error>
+    <!-- MRS_ERRCODE_DB_NO_RES -->
+    <code>-64993</code>
+		<detail message="从数据库中没有查询到记录" suggestion="请检查查询语句和查询条件"/>
+</Error>
+
+<!-- Code Base end -->
+
+
+<!-- MRS_REC ERROR -63999 - -60000 -->
+<!-- MRS_REC ERROR begin -->
+ <Error>
+    <!-- REC_ERROR_TASK_EXISTS -->
+    <code>-63999</code>
+		<detail message="录像会话任务已存在" suggestion="请检查输入"/>
+</Error>
+
+ <Error>
+    <!-- REC_ERROR_ADD_RECORD_SESSION -->
+    <code>-63998</code>
+		<detail message="增加录像会话出错" suggestion="请检查输入"/>
+</Error>
+
+ <Error>
+    <!-- REC_ERROR_TASK_NOT_EXISTS -->
+    <code>-63997</code>
+		<detail message="录像会话任务不存在" suggestion="请检查输入"/>
+</Error>
+
+ <Error>
+    <!-- REC_ERROR_RANGE_LIST_INVALID_INPUT_VALUE -->
+    <code>-63996</code>
+		<detail message="无效的号段区间" suggestion="请检查号段区间配置"/>
+</Error>
+
+ <Error>
+    <!-- REC_ERROR_RANGE_LIST_INVALID_RANGE -->
+    <code>-63995</code>
+		<detail message="无效的号段区间，终止ISDN必现大于等于起始ISDN" suggestion="请检查号段区间配置，保证开始号码小于等于结束号段"/>
+</Error>
+
+ <Error>
+    <!-- REC_ERROR_RANGE_LIST_DUPLICATE_PRIMARY_KEY -->
+    <code>-63994</code>
+		<detail message="号段区间ID重复" suggestion="请输入一个不重复的号段区间ID"/>
+</Error>
+
+ <Error>
+    <!-- REC_ERROR_RANGE_LIST_RANGE_CONFLICT -->
+    <code>-63993</code>
+		<detail message="输入的号段区间和已有的号段区间有重合（有交集）" suggestion="请检查号段配置，保证填写的号段区间和已有的号段区间不重合"/>
+</Error>
+
+ <Error>
+    <!-- REC_ERROR_RANGE_LIST_NOEXIST_PRIMARY_KEY -->
+    <code>-63992</code>
+		<detail message="号段区间ID不存在 " suggestion="请检查输入"/>
+</Error>
+
+<Error>
+    <!-- REC_ERROR_RANGE_LIST_HAVE_RELY_DATA -->
+    <code>-63991</code>
+		<detail message="存在依赖于这个号段区间的录像计划 " suggestion=" 请先删除依赖于这个号段区间的录像计划，再删除这个号段区间"/>
+</Error>
+
+<Error>
+    <!-- REC_ERROR_SIPRECSCHEDULE_INVALID_RECTYPE -->
+    <code>-63990</code>
+		<detail message="无效的录像类型值 " suggestion="请检查输入"/>
+</Error>
+
+<Error>
+    <!-- REC_ERROR_SIPRECSCHEDULE_INVALID_SCHEDULETYPE -->
+    <code>-63989</code>
+		<detail message="无效的计划类型 " suggestion="请检查输入"/>
+</Error>
+
+<Error>
+    <!-- REC_ERROR_SIPRECSCHEDULE_INVALID_DATETIME -->
+    <code>-63988</code>
+		<detail message="无效的日期时间格式 " suggestion="请填写正确格式的日期时间,例如:2013-06-19 20:50:06"/>
+</Error>
+
+<Error>
+    <!-- REC_ERROR_SIPRECSCHEDULE_INVALID_DATETIME_RANGE -->
+    <code>-63987</code>
+		<detail message="无效的日期时间范围" suggestion="请保证结束日期时间大于等于开始日期时间"/>
+</Error>
+
+<Error>
+    <!-- REC_ERROR_SIPRECSCHEDULE_INVALID_TIME -->
+    <code>-63986</code>
+		<detail message="无效的时间格式" suggestion="请填写正确格式的时间,例如:16:37:00"/>
+</Error>
+
+<Error>
+    <!-- REC_ERROR_SIPRECSCHEDULE_INVALID_TIME_RANGE -->
+    <code>-63985</code>
+		<detail message="无效的时间范围" suggestion="请保证结束时间大于等于开始时间"/>
+</Error>
+
+<Error>
+    <!-- REC_ERROR_SIPRECSCHEDULE_NOEXIST_RANGE -->
+    <code>-63984</code>
+		<detail message="这个号段区间ID不存在" suggestion="请检查号段区间ID是否配置"/>
+</Error>
+
+<Error>
+    <!-- REC_ERROR_SIPRECSCHEDULE_DUPLICATE_PRIMARY_KEY -->
+    <code>-63983</code>
+		<detail message="这个号段区间对应的录像计划已经存在" suggestion="请填写新的号段区间ID"/>
+</Error>
+
+<Error>
+    <!-- REC_ERROR_SIPRECSCHEDULE_NOEXIST_SCHEDULE -->
+    <code>-63982</code>
+		<detail message="录像计划不存在" suggestion="请检查输入"/>
+</Error>
+
+<!-- MRS_REC ERROR end -->
+
+
+<!-- MRS_VGW ERROR -59999 - -55000 -->
+<!-- MRS_VGW ERROR begin -->
+
+ <Error>
+    <!-- VGW_INIT_SDK_ERROR -->
+    <code>-59999</code>
+		<detail message="SDK初始化出错" suggestion="请检查SDK库"/>
+</Error>
+
+<Error>
+    <!-- VGW_ADD_DEVICE_ERROR -->
+    <code>-59998</code>
+		<detail message="添加设备失败" suggestion="请检查输入"/>
+</Error>
+
+<Error>
+    <!-- VGW_NOT_REGEIST_ERROR -->
+    <code>-59997</code>
+		<detail message="设备SDK没有登录上" suggestion="请检查设备配置"/>
+</Error>
+
+<Error>
+    <!-- VGW_CLOSE_SDK_ERROR -->
+    <code>-59996</code>
+		<detail message="SDK退出失败" suggestion="请检查SDK调用"/>
+</Error>
+
+<Error>
+    <!-- VGW_SDK_NOT_INIT_ERROR -->
+    <code>-59995</code>
+		<detail message="SDK没有初始化" suggestion="请检查SDK初始化"/>
+</Error>
+
+<Error>
+    <!-- VGW_DEVICE_EXISTS_ERROR -->
+    <code>-59994</code>
+		<detail message="设备ID已经存在" suggestion="请确保设备ID不重复"/>
+</Error>
+
+<Error>
+    <!-- VGW_DEVICE_NOT_EXISTS_ERROR -->
+    <code>-59993</code>
+		<detail message="设备不存在" suggestion="请检查输入"/>
+</Error>
+
+<Error>
+    <!-- VGW_DEVICE_PALY_ERROR -->
+    <code>-59992</code>
+		<detail message="设备回传视频失败" suggestion="请检查设备，网络，配置参数和日志"/>
+</Error>
+
+<Error>
+    <!-- VGW_CONTEXT_NOT_EXISTS_ERROR -->
+    <code>-59991</code>
+		<detail message="设备不存在" suggestion="请检查输入"/>
+</Error>
+
+<Error>
+    <!-- VGW_DEVICE_STATUS_ERROR -->
+    <code>-59990</code>
+		<detail message="设备状态错误" suggestion="请检查输入"/>
+</Error>
+
+<Error>
+    <!-- VGW_PARA_OVERSIZE -->
+    <code>-59989</code>
+		<detail message="参数超出范围" suggestion="请检查参数范围"/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_INIT_SDK_ERROR -->
+    <code>-59988</code>
+		<detail message="SDK初始化失败" suggestion="请检查SDK库是否存在且版本正确"/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_CLOSE_SDK_ERROR -->
+    <code>-59987</code>
+		<detail message="SDK退出失败" suggestion="请确保SDK调用正确"/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IPC_ISDN_ERROR -->
+    <code>-59986</code>
+		<detail message="用户号码不是有效的摄像头用户号码" suggestion="请检查用户号码是否是一个摄像头的用户号码"/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IPC_ISDN_NOT_IN_RANGE -->
+    <code>-59985</code>
+		<detail message="用户号码不在MRS的范围内." suggestion="请检查用户号码是否在MRS的范围内"/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IPC_ISDN_NOT_IN_VPN -->
+    <code>-59984</code>
+		<detail message="用户号码不在MRS的VPN范围内." suggestion="请检查用户号码是否在MRS的VPN范围内"/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IPC_ACTIVE_STATE_MOD -->
+    <code>-59983</code>
+		<detail message="设备激活态，不允许修改！" suggestion="请确定空闲后修改！"/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IPC_ACTIVE_STATE_RMV -->
+    <code>-59982</code>
+		<detail message="设备已激活，不允许删除！" suggestion="请去激活设备时后再修改！"/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_PIC_VIDEO_UPLOAD_STATE_MOD -->
+    <code>-59981</code>
+		<detail message="设备正在回传视频, 不允许修改." suggestion="请先停止回传再试."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_PIC_LOCAL_RECORD_STATE_MOD -->
+    <code>-59980</code>
+		<detail message="设备正在做本地录像, 设备相关字段不能修改." suggestion="请先停止录像再试."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_PIC_VIDEO_UPLOAD_STATE_RMV -->
+    <code>-59979</code>
+		<detail message="设备正在回传视频, 不允许删除." suggestion="请先停止回传再试."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_PIC_LOCAL_RECORD_STATE_RMV -->
+    <code>-59978</code>
+		<detail message="设备正在做本地录像,不允许删除." suggestion="请停止录像再试."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_ESDK_IP_EMPTY_ERROR -->
+    <code>-59977</code>
+		<detail message="eSDK ip 不能为空." suggestion="请检查eSDK ip."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_ESDK_IP_INVALID_LEN_ERROR -->
+    <code>-59976</code>
+		<detail message="eSDK ip 无效." suggestion="请检查eSDK ip."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IVS_USER_NAME_EMPTY_ERROR -->
+    <code>-59975</code>
+		<detail message="ivs 用户名不能为空." suggestion="请检查ivs 用户名."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IVS_USER_NAME_INVALID_LEN_ERROR -->
+    <code>-59974</code>
+		<detail message="ivs 用户名填写无效." suggestion="请检查ivs 用户名."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IVS_PASSWORD_EMPTY_ERROR -->
+    <code>-59973</code>
+		<detail message="ivs 登录密码不能为空." suggestion="请检查ivs 登录密码."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IVS_PASSWORD_INVALID_LEN_ERROR -->
+    <code>-59972</code>
+		<detail message="ivs 登录密码填写无效." suggestion="请检查ivs 登录密码."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_ESDK_ID_EXISTS_ERROR -->
+    <code>-59971</code>
+		<detail message="eSDK 服务ID重复." suggestion="请检查eSDK 服务ID."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IVS_USER_ID_EXISTS_ERROR -->
+    <code>-59970</code>
+		<detail message="ivs 用户ID重复." suggestion="请检查ivs 用户ID."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_ESDK_ID_NO_EXIST_ERROR -->
+    <code>-59969</code>
+		<detail message="eSDK 服务不存在." suggestion="请配置eSDK 服务."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IVS_USER_ID_NO_EXIST_ERROR -->
+    <code>-59968</code>
+		<detail message="ivs 用户不存在." suggestion="请配置ivs 用户."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IVS_VIDEO_PLAYBACK_MOD_ERROR -->
+    <code>-59967</code>
+		<detail message="在视频回传,不能修改." suggestion="请先停止回传."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IVS_VIDEO_PLAYBACK_RMV_ERROR -->
+    <code>-59966</code>
+		<detail message="在视频回传,不能删除." suggestion="请先停止回传."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IVS_USER_NOT_ONLINE -->
+    <code>-59965</code>
+		<detail message="ivs 用户不在线." suggestion="请检查配置."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_IVS_EXPORT_LIST_NOT_GENERATED -->
+    <code>-59964</code>
+		<detail message="导出摄像头列表还没有生成." suggestion="请稍后重试."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_NODE_ID_DIFFERENT -->
+    <code>-59963</code>
+		<detail message="节点id不相同." suggestion="请检查配置."/>
+</Error>
+
+<Error>
+    <!-- ERRCODE_VGW_CONVERT_ISDN_ERROR -->
+    <code>-59962</code>
+		<detail message="转换用户号码失败." suggestion="请检查用户号码."/>
+</Error>
+
+<!-- MRS_VGW ERROR end -->
+
+<!--  MRS_MGR_ERROR -54999 - -50000 -->  
+<!--  MRS_MGR_ERROR begin -->
+
+ <Error>
+ <!--MRS_MGR_ERRCODE_RMV_FILE_ERROR-->
+    <code>-54998</code>
+		<detail message="移除文件出错" suggestion="请检查文件状态"/>
+</Error> 
+
+<Error>
+ <!--MRS_MGR_ERRCODE_RMV_DIR_ERROR-->
+    <code>-54997</code>
+		<detail message="移除目录出错" suggestion="请检查目录状态"/>
+</Error>
+
+<Error>
+ <!--MRS_MGR_ERRCODE_PATH_NOT_EXISTS-->
+    <code>-54996</code>
+		<detail message="路径对应的文件或目录不存在" suggestion="请检查路径是否有效"/>
+</Error>   
+
+<Error>
+ <!--MRS_MGR_ERRCODE_FILE_NOT_EXISTS-->
+    <code>-54995</code>
+		<detail message="文件不存在或者不是一个普通文件" suggestion="请检查文件"/>
+</Error> 
+   
+<Error>
+ <!--MRS_MGR_ERRCODE_DIR_NOT_EXISTS-->
+    <code>-54994</code>
+		<detail message="这个路径不是一个目录" suggestion="请检查路径是否是一个目录"/>
+</Error> 
+
+<Error>
+ <!--MRS_MGR_ERRCODE_REC_TASK_NOT_EXISTS-->
+    <code>-54993</code>
+		<detail message="录像任务不存在" suggestion="请检查数据库是否存在录像任务"/>
+</Error> 
+
+<Error>
+ <!--MRS_MGR_ERRCODE_MAKEFILEPATH_THROW_EXCEPTION-->
+    <code>-54992</code>
+		<detail message="生成文件路径出异常" suggestion="请见查文件路径"/>
+</Error> 
+
+<Error>
+ <!--MRS_MGR_PATH_NOT_REGULAR_FILE-->
+    <code>-54991</code>
+		<detail message="路径不是一个普通文件" suggestion="请检查路径是否是是一个普通文件"/>
+</Error> 
+
+<Error>
+ <!--MRS_MGR_ERRCODE_RMV_FILE_THROW_EXCEPTION-->
+    <code>-54990</code>
+		<detail message="删除文件抛异常" suggestion="请检查文件状态和文件是否存在"/>
+</Error> 
+
+<Error>
+ <!--MRS_MGR_ERRCODE_DB_QUERY_ERROR-->
+    <code>-54989</code>
+		<detail message="查询数据失败" suggestion="请检查数据库"/>
+</Error> 
+
+<Error>
+ <!--MRS_MGR_ERRCODE_DB_DATA_EXCEPTION-->
+    <code>-54988</code>
+		<detail message="数据不符合约束" suggestion="请检查相关表的数据"/>
+</Error> 
+
+<Error>
+ <!--MRS_MGR_ERRCODE_DB_DELETE_ERROR-->
+    <code>-54987</code>
+		<detail message="执行删除SQL失败" suggestion="请检查删除语句"/>
+</Error>
+
+<Error>
+ <!--MRS_MGR_ERRCODE_PARAMETER_ERROR-->
+    <code>-54986</code>
+		<detail message="输入的参数有错误" suggestion="请检查输入参数"/>
+</Error> 
+
+<!--  MRS_MGR_ERROR end -->
+
+<!--  MRS_MOC_ERROR -54999 - -50000 -->  
+<!--  MRS_MOC_ERROR begin -->
+<Error>
+ <!--MRS_MOC_ERROR_MRSNODE_SAME_NAME_EXISTS-->
+    <code>-52998</code>
+		<detail message="MRS节点名不能相同。" suggestion="请检查MRS节点名。"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_MRSNODE_SAME_IP_EXISTS-->
+    <code>-52997</code>
+		<detail message="MRS节点IP不能相同。" suggestion="请检查MRS节点IP。"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_MRSNODE_MRSC_EXISTS-->
+    <code>-52996</code>
+		<detail message="已经存在MRS控制节点。" suggestion="只能存在一个MRS控制节点。"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_MRSNODE_MRSC_NOT_EXISTS-->
+    <code>-52995</code>
+		<detail message="不存在MRS控制节点。" suggestion="请先配置MRS控制节点。"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_BCCINFO_EXISTS-->
+    <code>-52994</code>
+		<detail message="存在相关联的调度机配置信息。" suggestion="请先删除调度机配置信息。"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_RECSIPINFO_EXISTS-->
+    <code>-52993</code>
+		<detail message="存在相关联的录音录像接入配置信息。" suggestion="请先删除录音录像接入配置信息。"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_IPCDEVICE_EXISTS-->
+    <code>-52992</code>
+		<detail message="存在相关联的摄像头。" suggestion="请先删除关联的摄像头。"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_REC_FILE_EXISTS-->
+    <code>-52991</code>
+		<detail message="当前有录音录像文件信息存在，不能删除。" suggestion="请先删除关联的录音录像文件。"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_MRSNODE_NOT_EXISTS-->
+    <code>-52990</code>
+		<detail message="录音录像服务器节点不存在。" suggestion="请检查录音录像服务器节点号是否正确。"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_RMV_ACTIVED_STOR_RESOURCE-->
+    <code>-52989</code>
+		<detail message="不能删除已经激活的存储资源。" suggestion="请先去激活存储资源。"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_STOR_RESOURCE_NOT_DIRTORY-->
+    <code>-52988</code>
+		<detail message="存储资源路径不是一个已存在的路径。" suggestion="请检查存储资源路径。"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_STOR_RESOURCE_PATH_INVALID-->
+    <code>-52987</code>
+		<detail message="存储资源路径不合法，必须是/home/ubp/mrs的子目录。" suggestion="请检查存储资源路径。"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_STOR_RESOURCE_EXISTS-->
+    <code>-52986</code>
+		<detail message="存在关联的存储资源，不能删除。" suggestion="请检查存储资源。"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_RMV_INNER_STOR_RESOURCE-->
+    <code>-52985</code>
+		<detail message="不能去激活或删除内置存储资源。" suggestion="请检查存储资源。"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_VGWSIPPORT_SAME_WTIH_RECSIPPORT-->
+    <code>-52984</code>
+		<detail message="摄像头网关与录音录像使用的SIP端口不能相同。" suggestion="请检查端口。"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_MRSD_EXISTS-->
+    <code>-52983</code>
+		<detail message="必须先删除MRS_D后才能删除MRS_C节点。" suggestion=""/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_MOD_NODE_TYPE-->
+    <code>-52982</code>
+		<detail message="不允许修改节点类型。" suggestion=""/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_IPC_NOT_EXISTS-->
+    <code>-52981</code>
+		<detail message="不存在对应的摄像头。" suggestion="请检查摄像头配置。"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_IPC_ISDN_EXISTS-->
+    <code>-52980</code>
+		<detail message="摄像头的ISDN号不能相同。" suggestion="请检查摄像头的ISDN号。"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_IPC_SCHEDULE_REC_TASK_EXISTS-->
+    <code>-52979</code>
+		<detail message="存在关联的摄像头录像计划。" suggestion="请先删除摄像头录像计划。"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_MOD_RMV_ACTIVED_IPC-->
+    <code>-52978</code>
+		<detail message="激活的摄像头不允许删除。" suggestion="请先去激活摄像头。"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_ENDTIME_EARLY_THAN_NOW-->
+    <code>-52977</code>
+		<detail message="结束时间不能小于当前服务器时间。" suggestion="请配置正确的时间段。"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_IPC_DEVINDEX_EXISTS-->
+    <code>-52976</code>
+		<detail message="设备ID重复。" suggestion="请检查设备ID。"/>
+</Error>
+
+<Error>
+ <!--MRS_MOC_ERROR_MRSNODE_MUST_BE_MRSC-->
+    <code>-52975</code>
+		<detail message="节点必须是MRS控制节点。" suggestion="请检查节点ID。"/>
+</Error>  
+
+<Error>
+ <!--MRS_MOC_ERROR_FIXEDUSER_ISDN_NOT_EXISTS-->
+    <code>-52974</code>
+		<detail message="不存在这个用户号码。" suggestion="请检查用户号码。"/>
+</Error>
+
+<Error>
+ <!--MRS_MOC_ERROR_EXECUTE_NATIVE_SQL-->
+    <code>-52973</code>
+		<detail message="执行sql语句失败。" suggestion="请检查数据库。"/>
+</Error>
+
+<Error>
+ <!--MRS_MOC_ERROR_ESDKIVS_INFO_EXISTS-->
+    <code>-52972</code>
+		<detail message="存在关联的eSDK服务。" suggestion="请先删除eSDK服务。"/>
+</Error>
+
+<Error>
+ <!--MRS_MOC_ERROR_ESDKIVS_INFO_NOT_EXISTS-->
+    <code>-52971</code>
+		<detail message="不存在对应的IVS用户ID。" suggestion="请先配置eSDK服务。"/>
+</Error> 
+
+<Error>
+ <!--MRS_MOC_ERROR_IVS_IPC_DEVICE_EXISTS-->
+    <code>-52970</code>
+		<detail message="存在关联的IVS摄像头。" suggestion="请先删除对应的IVS摄像头。"/>
+</Error>
+
+<Error>
+ <!--MRS_MOC_ERROR_ESDKIVS_INFO_ID_EXISTS-->
+    <code>-52969</code>
+		<detail message="eSDK服务ID重复。" suggestion="请检查eSDK服务ID"/>
+</Error>
+
+<Error>
+ <!--MRS_MOC_ERROR_IVS_IPC_DEVINDEX_EXISTS-->
+    <code>-52968</code>
+		<detail message="IVS摄像头ID重复。" suggestion="请检查摄像头ID"/>
+</Error>
+
+<Error>
+ <!--MRS_MOC_ERROR_IVS_IPC_CAMERACODE_EXISTS-->
+    <code>-52967</code>
+		<detail message="IVS摄像头编码重复。" suggestion="请检查IVS摄像头编码"/>
+</Error>
+ 
+<!--  MRS_MOC_ERROR end -->
+
+</Errors>

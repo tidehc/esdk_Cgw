@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="ScheduleRecTask" MOC_NAME_C="录音录像计划" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="custom:ubp_mrs_moc:CreateModule:before" Relation="">
+		<Parameter name="DevIndex" desc="IPC index" type="int" range="[1,65535]" constrain="PRI" FK="FK:DCUC:OMCIpcDevice:DevIndex" mode="display" />
+		<Parameter name="TaskIdx" desc="Task index" type="int" range="[1,65535]" constrain="PRI" mode="display" />
+		<Parameter name="BeginTime" desc="Begin time" type="datetime" range="[1,64]" constrain="NOT NULL" mode="update" />
+		<Parameter name="EndTime" desc="End time" type="datetime" range="[1,64]" constrain="NOT NULL" ge="EndTime,BeginTime" mode="update" />
+	</MOC>
+</Moc-Config>

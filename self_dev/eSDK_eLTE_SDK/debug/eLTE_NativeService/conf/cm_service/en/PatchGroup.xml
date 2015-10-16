@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="PatchGroup" MOC_NAME_C="派接组" Module="BCC" ACCESS_CONTROL="read,viewPatchGroupMember" DEST_SVC="" Relation="">
+		<Parameter name="GroupNumber" desc="Patch group number" type="string" range="[1,8]" constrain="PRI" not_begin_with="0" all_num="" mode="display" />
+		<Parameter name="PGName" desc="Patch group name" type="string" range="[0,31]" mode="update" />
+		<Parameter name="PGPriority" desc="Patch group priority" type="int" range="[1,15]" constrain="NOT NULL" mode="update" default="15" />
+		<Parameter name="DcPatchIndex" desc="DC's patch group index" type="int" range="[1,66535]" constrain="NOT NULL" mode="update" default="1" />
+		<Parameter name="SetupDcId" desc="Patch group DCID" type="string" range="[1,8]" constrain="NOT NULL" not_begin_with="0" all_num="" mode="update" />
+		<Parameter name="VPNID" desc="VPN ID" type="string" range="[1,8]" mode="update" />
+	</MOC>
+</Moc-Config>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="MQUser" MOC_NAME_C="ZMQ用户" Module="FWK" ACCESS_CONTROL="modify,read" DEST_SVC="" Relation="">
+		<Parameter name="UserName" desc="用户名" type="string" range="[1,32]" constrain="PRI" />
+		<Parameter name="PassWord" desc="密码" type="string" range="[1,18]" constrain="NOT NULL" mode="update" />
+		<Parameter name="UserType" desc="用户类型" type="enum" range="0,1,2,3,4" vlist="0:SDK,1:EOMC,2:GATEWAY,3:MDC,4:MRS" constrain="NOT NULL" />
+	</MOC>
+</Moc-Config>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="BccRange" MOC_NAME_C="BCC号段" Module="OMC,MDC" ACCESS_CONTROL="read" DEST_SVC="custom:ubp_isdnrange:CreateModule:before" Relation="">
+		<Parameter name="BccNodeID" desc="BCC node ID" type="int" range="[0,2147483647]" constrain="PRI" mode="display" />
+		<Parameter name="StartIsdn" desc="Begin ISDN" type="string" range="[1,8]" constrain="PRI" mode="display" />
+		<Parameter name="EndIsdn" desc="End ISDN" type="string" range="[1,8]" constrain="PRI" not_begin_with="0" all_num="" ge="EndIsdn,StartIsdn" mode="display" />
+	</MOC>
+</Moc-Config>

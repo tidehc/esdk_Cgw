@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LocalConfig>
+    <AlarmConfigInfo>
+        <![CDATA[<Content><AlarmParaEntity><AlarmPop>0</AlarmPop><AlarmVideoWinPop>0</AlarmVideoWinPop><AlarmWinFlash>0</AlarmWinFlash></AlarmParaEntity><AlarmTypeAndLevelEntityList></AlarmTypeAndLevelEntityList></Content>]]>
+</AlarmConfigInfo>
+    <RecordConfigInfo>
+        <![CDATA[<RecordLocalParam><RecordPath>C:\IVS\LocalRecordFile</RecordPath><DownLoadPath>C:\IVS\DownloadRecordFile</DownLoadPath><TimeLen>30</TimeLen><CapacityLen>2048</CapacityLen><MinDiskCapacity>500</MinDiskCapacity><WarningDiskCapacity>1000</WarningDiskCapacity><ManualRecordTime>300</ManualRecordTime><FileSeparateType>1</FileSeparateType><FileSeparateValue>30</FileSeparateValue><VedioType>1</VedioType><NameRule>1</NameRule><PlatformDownloadSpeed>255</PlatformDownloadSpeed><PUDownloadSpeed>2</PUDownloadSpeed></RecordLocalParam>]]>
+</RecordConfigInfo>
+ <CaptureConfigInfo>
+        <![CDATA[<CaptureConfig><CapturePath>C:\IVS\LocalPictureFile</CapturePath><CaptureDownloadPath>C:\IVS\DownloadPictureFile</CaptureDownloadPath><SnapshotMode>0</SnapshotMode><SnapshotCount>1</SnapshotCount><SnapshotInterval>1</SnapshotInterval><SnapshotFormat>1</SnapshotFormat><NameRule>1</NameRule></CaptureConfig>]]>
+ </CaptureConfigInfo>
+<NetWorkConfig>
+        <![CDATA[<NetSetInfo><StreamType>1</StreamType><MultiFlag>0</MultiFlag><ProtocolType>2</ProtocolType><SupportAutoResolution>0</SupportAutoResolution><GpuEnabled>0</GpuEnabled><WinViewModel>0</WinViewModel></NetSetInfo>]]>
+</NetWorkConfig>
+    <PTZConfig />
+    <ConnectModList />
+	<ScenarioRecovery>0</ScenarioRecovery>
+</LocalConfig>

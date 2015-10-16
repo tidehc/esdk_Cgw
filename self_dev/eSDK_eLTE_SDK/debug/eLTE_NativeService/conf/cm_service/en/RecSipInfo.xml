@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="RecSipInfo" MOC_NAME_C="SIP接入信息" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="custom:ubp_mrs_moc:CreateModule:before" Relation="">
+		<Parameter name="NodeID" desc="Node ID" type="int" range="[1,65535]" constrain="PRI" FK="FK:DCUC:MRSNode:NodeID" mode="display" />
+		<Parameter name="ISDN" desc="Recording server number" type="string" range="[1,8]" constrain="NOT NULL" mode="update" />
+		<Parameter name="SipUser" desc="SIP user name" type="string" range="[1,32]" constrain="NOT NULL" mode="update" />
+		<Parameter name="SipPass" desc="SIP user password" type="string" range="[1,18]" constrain="NOT NULL" c_type="password" mode="update" />
+	</MOC>
+</Moc-Config>

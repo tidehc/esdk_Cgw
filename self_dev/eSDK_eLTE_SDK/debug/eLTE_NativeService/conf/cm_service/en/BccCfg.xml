@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="BccCfg" MOC_NAME_C="BCC配置信息" Module="BCC" ACCESS_CONTROL="modify,read" DEST_SVC="" Relation="">
+		<Parameter name="BccCfgIndex" desc="Index" type="int" range="[0,2147483647]" constrain="PRI" />
+		<Parameter name="SingleCallLimitTime" desc="Limited PTP speaking time (s)" type="int" range="[0,65535]" constrain="NOT NULL" mode="update" default="300" />
+		<Parameter name="RingCallLimitTime" desc="Limited ringing time (s)" type="int" range="[1,60]" constrain="NOT NULL" mode="update" default="30" />
+		<Parameter name="GroupIdleLimitTime" desc="Limited group idle time(s)" type="int" range="[1,3600]" constrain="NOT NULL" mode="update" default="10" />
+		<Parameter name="UserInGroupQueryTime" desc="Timer of group user quey (s)" type="int" range="[1,60]" constrain="NOT NULL" mode="update" default="15" />
+		<Parameter name="TempGroupIdleLimitTime" desc="Limited temp-group idle time (s)" type="int" range="[1,3600]" constrain="NOT NULL" mode="update" default="10" />
+		<Parameter name="TempGroupSpeakerLimitTime" desc="Limited temp-group speaking time (s)" type="int" range="[1,65535]" constrain="NOT NULL" mode="update" default="60" />
+		<Parameter name="AMRCoding" desc="AMR encoding rate" type="enum" range="0,1" vlist="0: 12.2K,1: 4.75K" constrain="NOT NULL" mode="update" default="0" />
+		<Parameter name="TimeA" desc="Sip time-a length (ms)" type="int" range="[500,4000]" constrain="NOT NULL" mode="update" default="1000" />
+		<Parameter name="ProxyAuthSwitch" desc="Proxy Authentication Switch" type="enum" range="0,1" vlist="0:ON,1:OFF" mode="update" default="0" />
+	</MOC>
+</Moc-Config>

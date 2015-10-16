@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="OMCIpcDevice" MOC_NAME_C="摄像头" Module="OMC,MRS" ACCESS_CONTROL="read" DEST_SVC="custom:ubp_mrs_moc:CreateModule:before" Relation="">
+		<Parameter name="DevIndex" desc="Device ID" type="int" range="[1,65535]" constrain="PRI" mode="display" />
+		<Parameter name="ISDN" desc="User number" type="string" range="[1,8]" constrain="NOT NULL" mode="update" />
+		<Parameter name="SdkUserName" desc="IPC user name" type="string" range="[1,15]" constrain="NOT NULL" mode="update" />
+		<Parameter name="SdkPassword" desc="IPC password" type="string" range="[1,15]" constrain="NOT NULL" c_type="password" mode="update" />
+		<Parameter name="SdkIp" desc="IPC ip address" type="string" range="[4,15]" constrain="NOT NULL" ipv4="" c_type="ipv4" mode="update" />
+		<Parameter name="SdkPort" desc="IPC port" type="int" range="[1,65535]" constrain="NOT NULL" mode="update" />
+		<Parameter name="SdkType" desc="Manufacturer" type="enum" range="0,1,2,3" vlist="0: Hikvisio,1: Huawei,2: YaAn,3:Onvif" constrain="NOT NULL" mode="update" />
+		<Parameter name="DevType" desc="Device type" type="enum" range="0" vlist="0: IPC" constrain="NOT NULL" mode="update" />
+		<Parameter name="DevLinkMode" desc="Device link mode" type="enum" range="0,1" vlist="0: TCP,1: UDP" constrain="NOT NULL" mode="update" default="0" />
+		<Parameter name="DevStreamType" desc="Device stream type" type="enum" range="0,1" vlist="0:SubStream,1:MainStream" constrain="NOT NULL" mode="update" default="0" />
+	</MOC>
+</Moc-Config>

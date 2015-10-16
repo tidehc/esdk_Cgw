@@ -1,0 +1,119 @@
+# GNU make Makefile template for individual componets
+# Copyrights (c) Huawei Technologies (I) Pvt. Ltd.
+
+#include the common MiniSip code organization definitions
+#include $(SS_CODE_BUILD)/make.minisip.defs.mk
+include ../make.minisip.defs.mk
+
+# Include a common definition file
+#include $(SS_CODE_BUILD)/makedefs.minisip.mk
+include ../makedefs.minisip.mk
+
+# Set up the include folder directory with Internal headers of the component
+SS_SDP_INCLUDES = $(SS_CC_INCLUDE)$(SS_CBB_DIR)/$(SS_INCLUDE_DIR) \
+				  $(SS_CC_INCLUDE)$(SS_CBB_DIR)/$(SS_H_DIR) \
+				  $(SS_CC_INCLUDE)$(SS_SDP_DIR)/$(SS_INCLUDE_DIR)\
+                  $(SS_CC_INCLUDE)$(SS_SDP_DIR)/$(SS_H_DIR)\
+                  $(SS_CC_INCLUDE)$(SS_SDP_DIR)/$(SS_INC_DIR)
+
+# Source Location
+SS_SDP_SRC_DIR = $(SS_SDP_DIR)/$(SS_SRC_DIR)
+
+
+# External Interface headers files exposed by this component
+SS_SDP_INCLUDE_DIR     = $(SS_SDP_DIR)/$(SS_INCLUDE_DIR)
+SS_SDP_LIB_DEBUG_DIR   = $(SS_LIB_DEBUG_DIR)
+SS_SDP_LIB_RELEASE_DIR = $(SS_LIB_RELEASE_DIR)
+SS_SDP_OBJ_DEBUG_DIR   = $(SS_SDP_OBJ_DIR)/debug
+SS_SDP_OBJ_RELEASE_DIR   = $(SS_SDP_OBJ_DIR)/release
+
+
+# Transaction Object List
+SS_SDP_DEBUG_OBJS =  \
+	$(SS_SDP_OBJ_DEBUG_DIR)/sdpapi.$(SS_OBJ_SUFFIX) \
+	$(SS_SDP_OBJ_DEBUG_DIR)/sdpdecode.$(SS_OBJ_SUFFIX) \
+	$(SS_SDP_OBJ_DEBUG_DIR)/sdpencode.$(SS_OBJ_SUFFIX) \
+	$(SS_SDP_OBJ_DEBUG_DIR)/sdpmgr.$(SS_OBJ_SUFFIX) \
+	$(SS_SDP_OBJ_DEBUG_DIR)/sdpcontext.$(SS_OBJ_SUFFIX) \
+	$(SS_SDP_OBJ_DEBUG_DIR)/sdputil.$(SS_OBJ_SUFFIX) \
+	$(SS_SDP_OBJ_DEBUG_DIR)/sdpattr.$(SS_OBJ_SUFFIX) \
+	$(SS_SDP_OBJ_DEBUG_DIR)/sdpfmtp.$(SS_OBJ_SUFFIX)
+
+SS_SDP_RELEASE_OBJS =  \
+	$(SS_SDP_OBJ_RELEASE_DIR)/sdpapi.$(SS_OBJ_SUFFIX) \
+	$(SS_SDP_OBJ_RELEASE_DIR)/sdpdecode.$(SS_OBJ_SUFFIX) \
+	$(SS_SDP_OBJ_RELEASE_DIR)/sdpencode.$(SS_OBJ_SUFFIX) \
+	$(SS_SDP_OBJ_RELEASE_DIR)/sdpmgr.$(SS_OBJ_SUFFIX) \
+	$(SS_SDP_OBJ_RELEASE_DIR)/sdpcontext.$(SS_OBJ_SUFFIX) \
+	$(SS_SDP_OBJ_RELEASE_DIR)/sdputil.$(SS_OBJ_SUFFIX) \
+	$(SS_SDP_OBJ_RELEASE_DIR)/sdpattr.$(SS_OBJ_SUFFIX) \
+	$(SS_SDP_OBJ_RELEASE_DIR)/sdpfmtp.$(SS_OBJ_SUFFIX)
+
+
+# Common Targets
+
+all: $(SS_SDP_DEBUG_OBJS) $(SS_SDP_RELEASE_OBJS)
+	$(call SS_ARCHIVE,$(SS_SDP_LIB_DEBUG_DIR),$(SS_SDP_DEBUG_OBJS),$(SS_SDP_LIB))
+	$(call SS_ARCHIVE,$(SS_SDP_LIB_RELEASE_DIR),$(SS_SDP_RELEASE_OBJS),$(SS_SDP_LIB))
+
+clean:
+	$(SS_RMV) $(SS_SDP_OBJ_DEBUG_DIR)/*.$(SS_OBJ_SUFFIX)
+	$(SS_RMV) $(SS_SDP_OBJ_RELEASE_DIR)/*.$(SS_OBJ_SUFFIX)
+	$(SS_RMV) $(SS_SDP_LIB_DEBUG_DIR)/*.$(SS_LIB_SUFFIX)
+	$(SS_RMV) $(SS_SDP_LIB_RELEASE_DIR)/*.$(SS_LIB_SUFFIX)
+
+cleanlib:
+	$(SS_RMV) $(SS_SDP_LIB_DEBUG_DIR)/*.$(SS_LIB_SUFFIX)
+	$(SS_RMV) $(SS_SDP_LIB_RELEASE_DIR)/*.$(SS_LIB_SUFFIX)
+
+
+# DEBUG OBJECTS BUILDING RULES
+$(SS_SDP_OBJ_DEBUG_DIR)/sdpapi.$(SS_OBJ_SUFFIX): $(SS_SDP_SRC_DIR)/sdpapi.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_DEBUG),$(SS_SDP_INCLUDES),$(SS_SDP_SRC_DIR),$(SS_SDP_OBJ_DEBUG_DIR),sdpapi)
+
+$(SS_SDP_OBJ_DEBUG_DIR)/sdpdecode.$(SS_OBJ_SUFFIX): $(SS_SDP_SRC_DIR)/sdpdecode.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_DEBUG),$(SS_SDP_INCLUDES),$(SS_SDP_SRC_DIR),$(SS_SDP_OBJ_DEBUG_DIR),sdpdecode)
+
+$(SS_SDP_OBJ_DEBUG_DIR)/sdpencode.$(SS_OBJ_SUFFIX): $(SS_SDP_SRC_DIR)/sdpencode.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_DEBUG),$(SS_SDP_INCLUDES),$(SS_SDP_SRC_DIR),$(SS_SDP_OBJ_DEBUG_DIR),sdpencode)
+
+$(SS_SDP_OBJ_DEBUG_DIR)/sdpmgr.$(SS_OBJ_SUFFIX): $(SS_SDP_SRC_DIR)/sdpmgr.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_DEBUG),$(SS_SDP_INCLUDES),$(SS_SDP_SRC_DIR),$(SS_SDP_OBJ_DEBUG_DIR),sdpmgr)
+
+$(SS_SDP_OBJ_DEBUG_DIR)/sdpcontext.$(SS_OBJ_SUFFIX): $(SS_SDP_SRC_DIR)/sdpcontext.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_DEBUG),$(SS_SDP_INCLUDES),$(SS_SDP_SRC_DIR),$(SS_SDP_OBJ_DEBUG_DIR),sdpcontext)
+
+$(SS_SDP_OBJ_DEBUG_DIR)/sdputil.$(SS_OBJ_SUFFIX): $(SS_SDP_SRC_DIR)/sdputil.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_DEBUG),$(SS_SDP_INCLUDES),$(SS_SDP_SRC_DIR),$(SS_SDP_OBJ_DEBUG_DIR),sdputil)
+
+$(SS_SDP_OBJ_DEBUG_DIR)/sdpattr.$(SS_OBJ_SUFFIX): $(SS_SDP_SRC_DIR)/sdpattr.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_DEBUG),$(SS_SDP_INCLUDES),$(SS_SDP_SRC_DIR),$(SS_SDP_OBJ_DEBUG_DIR),sdpattr)
+
+$(SS_SDP_OBJ_DEBUG_DIR)/sdpfmtp.$(SS_OBJ_SUFFIX): $(SS_SDP_SRC_DIR)/sdpfmtp.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_DEBUG),$(SS_SDP_INCLUDES),$(SS_SDP_SRC_DIR),$(SS_SDP_OBJ_DEBUG_DIR),sdpfmtp)
+
+# Release Object building rules
+$(SS_SDP_OBJ_RELEASE_DIR)/sdpapi.$(SS_OBJ_SUFFIX): $(SS_SDP_SRC_DIR)/sdpapi.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_RELEASE),$(SS_SDP_INCLUDES),$(SS_SDP_SRC_DIR),$(SS_SDP_OBJ_RELEASE_DIR),sdpapi)
+
+$(SS_SDP_OBJ_RELEASE_DIR)/sdpdecode.$(SS_OBJ_SUFFIX): $(SS_SDP_SRC_DIR)/sdpdecode.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_RELEASE),$(SS_SDP_INCLUDES),$(SS_SDP_SRC_DIR),$(SS_SDP_OBJ_RELEASE_DIR),sdpdecode)
+
+$(SS_SDP_OBJ_RELEASE_DIR)/sdpencode.$(SS_OBJ_SUFFIX): $(SS_SDP_SRC_DIR)/sdpencode.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_RELEASE),$(SS_SDP_INCLUDES),$(SS_SDP_SRC_DIR),$(SS_SDP_OBJ_RELEASE_DIR),sdpencode)
+
+$(SS_SDP_OBJ_RELEASE_DIR)/sdpmgr.$(SS_OBJ_SUFFIX): $(SS_SDP_SRC_DIR)/sdpmgr.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_RELEASE),$(SS_SDP_INCLUDES),$(SS_SDP_SRC_DIR),$(SS_SDP_OBJ_RELEASE_DIR),sdpmgr)
+
+$(SS_SDP_OBJ_RELEASE_DIR)/sdpcontext.$(SS_OBJ_SUFFIX): $(SS_SDP_SRC_DIR)/sdpcontext.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_RELEASE),$(SS_SDP_INCLUDES),$(SS_SDP_SRC_DIR),$(SS_SDP_OBJ_RELEASE_DIR),sdpcontext)
+
+$(SS_SDP_OBJ_RELEASE_DIR)/sdputil.$(SS_OBJ_SUFFIX): $(SS_SDP_SRC_DIR)/sdputil.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_RELEASE),$(SS_SDP_INCLUDES),$(SS_SDP_SRC_DIR),$(SS_SDP_OBJ_RELEASE_DIR),sdputil)
+
+$(SS_SDP_OBJ_RELEASE_DIR)/sdpattr.$(SS_OBJ_SUFFIX): $(SS_SDP_SRC_DIR)/sdpattr.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_RELEASE),$(SS_SDP_INCLUDES),$(SS_SDP_SRC_DIR),$(SS_SDP_OBJ_RELEASE_DIR),sdpattr)
+
+$(SS_SDP_OBJ_RELEASE_DIR)/sdpfmtp.$(SS_OBJ_SUFFIX): $(SS_SDP_SRC_DIR)/sdpfmtp.$(SS_SRC_SUFFIX)
+	$(call SS_COMPILE,$(SS_CFLAGS_RELEASE),$(SS_SDP_INCLUDES),$(SS_SDP_SRC_DIR),$(SS_SDP_OBJ_RELEASE_DIR),sdpfmtp)
+

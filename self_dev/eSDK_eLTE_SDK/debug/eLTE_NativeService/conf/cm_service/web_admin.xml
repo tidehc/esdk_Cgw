@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="web_admin" MOC_NAME_C="" Module="WEB" ACCESS_CONTROL="" DEST_SVC="" Relation="">
+		<Parameter name="id" desc="" type="string" range="" constrain="PRI" />
+		<Parameter name="create_date" desc="" type="datetime" range="" />
+		<Parameter name="modify_date" desc="" type="datetime" range="" />
+		<Parameter name="department" desc="" type="string" range="" />
+		<Parameter name="email" desc="" type="string" range="" />
+		<Parameter name="is_account_enabled" desc="" type="int" range="" />
+		<Parameter name="is_account_expired" desc="" type="int" range="" />
+		<Parameter name="is_account_locked" desc="" type="int" range="" />
+		<Parameter name="is_credentials_expired" desc="" type="int" range="" />
+		<Parameter name="locked_date" desc="" type="datetime" range="" />
+		<Parameter name="login_date" desc="" type="datetime" range="" />
+		<Parameter name="login_failure_count" desc="" type="int" range="" />
+		<Parameter name="login_ip" desc="" type="string" range="" />
+		<Parameter name="name" desc="" type="string" range="" />
+		<Parameter name="password" desc="" type="string" range="" />
+		<Parameter name="username" desc="" type="string" range="" />
+		<Parameter name="VPNID" desc="" type="int" range="" />
+		<Parameter name="change_password_date" desc="" type="datetime" range="" />
+		<Parameter name="change_password_history" desc="" type="string" range="" />
+	</MOC>
+</Moc-Config>

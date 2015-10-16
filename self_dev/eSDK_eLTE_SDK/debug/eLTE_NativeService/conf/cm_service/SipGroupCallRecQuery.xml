@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="SipGroupCallRecQuery" MOC_NAME_C="" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="" Relation="">
+		<Parameter name="SessionId" desc="任务号" type="string" range="[1,64]" mode="display" />
+		<Parameter name="TaskType" desc="任务类型" type="enum" range="1,2,3" vlist="1:录音,2:录像,3:录像加伴音" mode="display" />
+		<Parameter name="CallType" desc="呼叫类型" type="enum" range="0,1,2,3,4" vlist="0:语音点呼,1:视频点呼,2:视频回传,3:群组呼叫,4:未知类型" mode="display" />
+		<Parameter name="Caller" desc="主叫" type="int" range="" mode="display" />
+		<Parameter name="Caller_vpn" desc="主叫VPN" type="int" range="" mode="display" />
+		<Parameter name="Callee" desc="被叫" type="int" range="" mode="display" />
+		<Parameter name="Callee_vpn" desc="被叫VPN" type="int" range="" mode="display" />
+		<Parameter name="PttInfoOwer" desc="群组呼叫参与人" type="int" range="" mode="display" />
+		<Parameter name="IsEmergency" desc="紧急标志" type="enum" range="0,1" vlist="0:否,1:是" mode="display" />
+		<Parameter name="WorkDir" desc="存储目录" type="string" range="[1,200]" mode="display" />
+		<Parameter name="NodeID" desc="节点ID" type="int" range="[0,65535]" mode="display" />
+		<Parameter name="NodeName" desc="节点名" type="string" range="[0,128]" mode="display" />
+		<Parameter name="NodeType" desc="节点类型" type="enum" range="0,1" vlist="0:MRS_C（控制节点）,1:MRS_D（数据节点)" mode="display" />
+		<Parameter name="NodeAddrIPV4" desc="IPV4地址" type="string" range="[4,15]" c_type="ipv4" mode="display" />
+		<Parameter name="FileId" desc="文件号" type="int" range="[0,65535]" mode="display" />
+		<Parameter name="FilePath" desc="文件路径" type="string" range="[1,250]" mode="display" />
+		<Parameter name="FileBeginTime" desc="开始时间" type="datetime" range="[1,64]" mode="display" />
+		<Parameter name="FileEndTime" desc="结束时间" type="datetime" range="[1,64]" mode="display" />
+		<Parameter name="FileDuration" desc="文件时长或叫呼叫时长" type="int" range="" mode="display" />
+		<Parameter name="PlayUrl" desc="播放地址" type="string" range="[1,512]" mode="display" />
+		<Parameter name="DownloadUrl" desc="下载地址" type="string" range="[1,512]" mode="display" />
+		<Parameter name="CallFlag" desc="会话属性" type="int" range="" mode="display" />
+		<Parameter name="Remark" desc="备注" type="string" range="[0,1024]" mode="display" />
+		<Parameter name="CallerStr" desc="主叫" type="string" range="[1,64]" mode="display" />
+		<Parameter name="CalleeStr" desc="被叫" type="string" range="[1,64]" mode="display" />
+		<Parameter name="fullFileBeginTime" desc="完整开始时间（微秒）" type="double" range="" />
+		<Parameter name="fullFileEndTime" desc="完整结束时间（微秒）" type="double" range="" />
+	</MOC>
+</Moc-Config>

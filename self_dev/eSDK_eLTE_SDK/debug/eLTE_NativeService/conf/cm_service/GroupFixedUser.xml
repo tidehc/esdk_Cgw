@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="GroupFixedUser" MOC_NAME_C="群组有线用户" Module="OMC,MDC,MRS" ACCESS_CONTROL="read" DEST_SVC="" Relation="">
+		<Parameter name="ISDN" desc="用户号码" type="string" range="[1,8]" constrain="PRI" not_begin_with="0" all_num="" mode="display" FK="FK:DCUC:FixedUser:ISDN" />
+		<Parameter name="GroupNumber" desc="群组号码" type="string" range="[1,5]" constrain="PRI" not_begin_with="0" all_num="" mode="display" FK="FK:DCUC:Groups:GroupNumber" />
+		<Parameter name="GroupUserPriority" desc="用户在群组中的优先级" type="int" range="[1,15]" constrain="NOT NULL" mode="update" default="15" />
+	</MOC>
+</Moc-Config>

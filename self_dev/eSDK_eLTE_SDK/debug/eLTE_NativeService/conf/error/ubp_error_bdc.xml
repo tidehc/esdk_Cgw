@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+///////////////////////////////////////////////////////////////////////
+
+// BDC            :-30000 ~ -34999
+// BDC_FRAMEWORK  :-35000 ~ -39999
+// MRS            :-50000 ~ -64999
+// VGW            :-65000 ~ -69999
+//For example : 
+//static const ACE_INT32 ERR_UBP_MQ_XXX1 = -20000;
+///////////////////////////////////////////////////////////////////////
+-->
+
+<Errors xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
+       xsd:noNamespaceSchemaLocation="error_number.xsd">
+
+    
+<!--
+//ZMQ:-20000 ~ -XXXX
+-->    
+  <Error>
+    <code>-65001</code>
+		<detail message="null ptr" suggestion="Check input parameter"/>
+	</Error>
+  <Error>
+    <code>-65002</code>
+		<detail message="init sdk fail" suggestion="check sdk lib correct"/>
+	</Error>
+  <Error>
+    <code>-65003</code>
+		<detail message="close sdk fail" suggestion="check sdk is open"/>
+	</Error>
+   <Error>
+   <code>-65004</code>
+		<detail message="add device fail, the  screen id is existed!" suggestion="remove this device before add it"/>
+	</Error>
+   <Error>
+   <code>-65005</code>
+		<detail message="device do not exist!" suggestion="find the device"/>
+	</Error>
+   <Error>
+   <code>-65006</code>
+		<detail message="device status is not correct!" suggestion="display device status"/>
+	</Error>
+  <Error>
+    <code>-65007</code>
+		<detail message="parameter is oversize" suggestion="input correct parameter"/>
+	</Error>
+  <Error>
+    <code>-65008</code>
+                <detail message="The device is occupied!" suggestion="Please delete or moidfy the added device"/>
+        </Error>
+  
+</Errors>

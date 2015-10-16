@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="DMGPhotoGroupUser" MOC_NAME_C="动态群组快照用户" Module="BCC" ACCESS_CONTROL="read" DEST_SVC="" Relation="">
+		<Parameter name="GroupNumber" desc="动态群组号码" type="string" range="[1,8]" constrain="PRI" not_begin_with="0" all_num="" mode="display" FK="FK:DRUR:DynamicGroupMember:GroupNumber" />
+		<Parameter name="PhotoGroupId" desc="快照组ID" type="string" range="[1,8]" constrain="PRI" not_begin_with="0" all_num="" mode="display" />
+		<Parameter name="ISDN" desc="用户号码" type="string" range="[1,8]" constrain="PRI" not_begin_with="0" all_num="" mode="display" />
+	</MOC>
+</Moc-Config>

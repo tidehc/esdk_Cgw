@@ -1,0 +1,259 @@
+1>------ Rebuild All started: Project: sipsdk, Configuration: Release Win32 ------
+2>------ Rebuild All started: Project: rtpconvertsdk, Configuration: Release Win32 ------
+2>  stdafx.cpp
+1>  stdafx.cpp
+2>  dllmain.cpp
+2>  Es2PsProcessor.cpp
+2>  eSDKTool.cpp
+1>  CConnMgr.cpp
+2>  eSDK_RtpPacket.cpp
+1>  CLockGuard.cpp
+1>  CNVSTimer.cpp
+2>  HstPESParse.cpp
+1>  CSynchronized.cpp
+2>  MediaBlockBuffer.cpp
+1>  digcalc.cpp
+1>  md5.cpp
+1>  MiniSip.cpp
+2>  MediaDataQueue.cpp
+1>  rand.cpp
+2>  PacketProcessMgr.cpp
+1>  randutil.cpp
+1>  vos_adaptor.cpp
+2>  Ps2EsProcessor.cpp
+1>  vos_cond.cpp
+1>  vos_mem.cpp
+1>  vos_mutex.cpp
+1>  vos_sema.cpp
+2>  RtpFrameOrganizer.cpp
+1>  vos_thread.cpp
+1>  vos_time.cpp
+1>  CDcgStack.cpp
+2>  RtpPacket.cpp
+1>  CSipStack.cpp
+2>  eSDKMem.cpp
+2>     Creating library ..\output\release\rtpconvertsdk.lib and object ..\output\release\rtpconvertsdk.exp
+2>  Generating code
+1>  sipstack_agent_client_impl.cpp
+2>  Finished generating code
+2>dllmain.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'dllmain.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>Es2PsProcessor.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'Es2PsProcessor.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>eSDKMem.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'eSDKMem.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>eSDKTool.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'eSDKTool.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>eSDK_RtpPacket.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'eSDK_RtpPacket.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>HstPESParse.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'HstPESParse.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>MediaBlockBuffer.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'MediaBlockBuffer.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>MediaDataQueue.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'MediaDataQueue.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>PacketProcessMgr.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'PacketProcessMgr.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>Ps2EsProcessor.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'Ps2EsProcessor.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>RtpFrameOrganizer.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'RtpFrameOrganizer.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>RtpPacket.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'RtpPacket.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>stdafx.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'stdafx.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>  eSDK_RtpPacket.vcxproj -> D:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\output\release\rtpconvertsdk.dll
+1>  sipstack_agent_mgr_impl.cpp
+1>  Compiling...
+1>  sipstack_agent_msg_impl.cpp
+1>  sipstack_agent_server_impl.cpp
+1>  sipstack_config.cpp
+1>  sipstack_exception.cpp
+1>  sipstack_log.cpp
+1>  sipstack_msg_ctrl.cpp
+1>  sipstack_msg_wrap.cpp
+1>  sipstack_sync_agent_msg_handler_impl.cpp
+1>  sipstack_task.cpp
+1>  eSDKTool.cpp
+1>  minidmp.cpp
+1>  sipsdk.cpp
+1>  UnhandledExceptionFilter.cpp
+1>  dllmain.cpp
+1>tinyxml.lib(tinystr.obj) : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:ICF' specification
+1>     Creating library ..\output\release\sipsdk.lib and object ..\output\release\sipsdk.exp
+1>LINK : warning LNK4098: defaultlib 'LIBCMTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+1>  Generating code
+1>  Finished generating code
+1>tinyxml.lib(tinystr.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'tinyxml.lib(tinystr.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+1>tinyxml.lib(tinyxml.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'tinyxml.lib(tinyxml.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+1>tinyxml.lib(tinyxmlerror.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'tinyxml.lib(tinyxmlerror.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+1>tinyxml.lib(tinyxmlparser.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'tinyxml.lib(tinyxmlparser.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+1>cbb.lib(vpphash.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'cbb.lib(vpphash.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>cbb.lib(vpphashutil.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'cbb.lib(vpphashutil.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>cbb.lib(vppipaddr.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'cbb.lib(vppipaddr.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>cbb.lib(vpplist.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'cbb.lib(vpplist.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>cbb.lib(vppmemcp.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'cbb.lib(vppmemcp.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>cbb.lib(vppmsgcb.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'cbb.lib(vppmsgcb.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>cbb.lib(vppset.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'cbb.lib(vppset.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>cbb.lib(vppstrbuf.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'cbb.lib(vppstrbuf.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>cbb.lib(vppstring.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'cbb.lib(vppstring.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>cbb.lib(vpptoken.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'cbb.lib(vpptoken.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sscodeclevel1.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sscodeclevel1.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sscodeclevel2.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sscodeclevel2.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sscodecutil.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sscodecutil.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(ssdsmhdrs.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(ssdsmhdrs.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(ssdsmmetadata.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(ssdsmmetadata.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(ssdsmmetadataop.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(ssdsmmetadataop.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(ssdsmmsgcloneutil.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(ssdsmmsgcloneutil.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(ssdsmmsgs.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(ssdsmmsgs.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(ssdsmmsgutil.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(ssdsmmsgutil.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(ssdsmunknownhdrs.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(ssdsmunknownhdrs.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(ssdsmutil.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(ssdsmutil.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(ssfrmreg.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(ssfrmreg.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrauthinfo.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrauthinfo.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrauthrzclass.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrauthrzclass.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrcntnttypeclass.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrcntnttypeclass.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrcseq.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrcseq.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrfromclass.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrfromclass.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrnumclass.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrnumclass.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrpxyauthenclass.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrpxyauthenclass.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrserverclass.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrserverclass.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrstringclass.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrstringclass.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrtimestamp.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrtimestamp.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrtokengenparamsclass.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrtokengenparamsclass.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrurihdrclass.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrurihdrclass.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrvia.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrvia.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrwarning.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrwarning.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sslminit.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sslminit.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sslmlog.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sslmlog.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sstptcore.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sstptcore.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sstxncancel.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sstxncancel.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sstxnclientfsm.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sstxnclientfsm.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sstxnhiintf.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sstxnhiintf.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sstxninit.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sstxninit.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sstxnliintf.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sstxnliintf.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sstxnmgmt.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sstxnmgmt.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sstxnserverfsm.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sstxnserverfsm.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sstxntimer.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sstxntimer.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sstxnutil.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sstxnutil.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>  sipsdk.vcxproj -> D:\Github\esdk_Cgw\source\SipSDK\sipsdk\..\output\release\sipsdk.dll
+========== Rebuild All: 2 succeeded, 0 failed, 0 skipped ==========
+
+1>------ Rebuild All started: Project: sipsdk, Configuration: Release Win32 ------
+2>------ Rebuild All started: Project: rtpconvertsdk, Configuration: Release Win32 ------
+2>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppClean.targets(74,5): warning : Access to the path 'D:\Github\esdk_Cgw\source\SipSDK\temp\Release\link.command.1.tlog' is denied.
+1>  stdafx.cpp
+2>  stdafx.cpp
+2>  dllmain.cpp
+2>  Es2PsProcessor.cpp
+2>  eSDKTool.cpp
+1>  CConnMgr.cpp
+2>  eSDK_RtpPacket.cpp
+1>  CLockGuard.cpp
+1>  CNVSTimer.cpp
+2>  HstPESParse.cpp
+1>  CSynchronized.cpp
+2>  MediaBlockBuffer.cpp
+1>  digcalc.cpp
+1>  md5.cpp
+1>  MiniSip.cpp
+2>  MediaDataQueue.cpp
+1>  rand.cpp
+2>  PacketProcessMgr.cpp
+1>  randutil.cpp
+1>  vos_adaptor.cpp
+2>  Ps2EsProcessor.cpp
+1>  vos_cond.cpp
+1>  vos_mem.cpp
+1>  vos_mutex.cpp
+2>  RtpFrameOrganizer.cpp
+1>  vos_sema.cpp
+1>  vos_thread.cpp
+1>  vos_time.cpp
+1>  CDcgStack.cpp
+2>  RtpPacket.cpp
+1>  CSipStack.cpp
+2>  eSDKMem.cpp
+2>     Creating library ..\output\release\rtpconvertsdk.lib and object ..\output\release\rtpconvertsdk.exp
+2>  Generating code
+1>  sipstack_agent_client_impl.cpp
+2>  Finished generating code
+2>dllmain.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'dllmain.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>Es2PsProcessor.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'Es2PsProcessor.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>eSDKMem.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'eSDKMem.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>eSDKTool.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'eSDKTool.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>eSDK_RtpPacket.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'eSDK_RtpPacket.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>HstPESParse.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'HstPESParse.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>MediaBlockBuffer.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'MediaBlockBuffer.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>MediaDataQueue.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'MediaDataQueue.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>PacketProcessMgr.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'PacketProcessMgr.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>Ps2EsProcessor.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'Ps2EsProcessor.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>RtpFrameOrganizer.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'RtpFrameOrganizer.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>RtpPacket.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'RtpPacket.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>stdafx.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'stdafx.obj' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+2>  eSDK_RtpPacket.vcxproj -> D:\Github\esdk_Cgw\source\SipSDK\eSDK_RtpPacket\..\output\release\rtpconvertsdk.dll
+1>  sipstack_agent_mgr_impl.cpp
+1>  Compiling...
+1>  sipstack_agent_msg_impl.cpp
+1>  sipstack_agent_server_impl.cpp
+1>  sipstack_config.cpp
+1>  sipstack_exception.cpp
+1>  sipstack_log.cpp
+1>  sipstack_msg_ctrl.cpp
+1>  sipstack_msg_wrap.cpp
+1>  sipstack_sync_agent_msg_handler_impl.cpp
+1>  sipstack_task.cpp
+1>  eSDKTool.cpp
+1>  minidmp.cpp
+1>  sipsdk.cpp
+1>  UnhandledExceptionFilter.cpp
+1>  dllmain.cpp
+1>tinyxml.lib(tinystr.obj) : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:ICF' specification
+1>     Creating library ..\output\release\sipsdk.lib and object ..\output\release\sipsdk.exp
+1>LINK : warning LNK4098: defaultlib 'LIBCMTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+1>  Generating code
+1>  Finished generating code
+1>tinyxml.lib(tinystr.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'tinyxml.lib(tinystr.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+1>tinyxml.lib(tinyxml.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'tinyxml.lib(tinyxml.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+1>tinyxml.lib(tinyxmlerror.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'tinyxml.lib(tinyxmlerror.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+1>tinyxml.lib(tinyxmlparser.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'tinyxml.lib(tinyxmlparser.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc100.pdb'; linking object as if no debug info
+1>cbb.lib(vpphash.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'cbb.lib(vpphash.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>cbb.lib(vpphashutil.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'cbb.lib(vpphashutil.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>cbb.lib(vppipaddr.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'cbb.lib(vppipaddr.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>cbb.lib(vpplist.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'cbb.lib(vpplist.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>cbb.lib(vppmemcp.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'cbb.lib(vppmemcp.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>cbb.lib(vppmsgcb.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'cbb.lib(vppmsgcb.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>cbb.lib(vppset.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'cbb.lib(vppset.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>cbb.lib(vppstrbuf.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'cbb.lib(vppstrbuf.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>cbb.lib(vppstring.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'cbb.lib(vppstring.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>cbb.lib(vpptoken.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'cbb.lib(vpptoken.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sscodeclevel1.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sscodeclevel1.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sscodeclevel2.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sscodeclevel2.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sscodecutil.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sscodecutil.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(ssdsmhdrs.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(ssdsmhdrs.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(ssdsmmetadata.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(ssdsmmetadata.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(ssdsmmetadataop.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(ssdsmmetadataop.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(ssdsmmsgcloneutil.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(ssdsmmsgcloneutil.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(ssdsmmsgs.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(ssdsmmsgs.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(ssdsmmsgutil.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(ssdsmmsgutil.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(ssdsmunknownhdrs.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(ssdsmunknownhdrs.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(ssdsmutil.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(ssdsmutil.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(ssfrmreg.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(ssfrmreg.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrauthinfo.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrauthinfo.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrauthrzclass.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrauthrzclass.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrcntnttypeclass.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrcntnttypeclass.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrcseq.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrcseq.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrfromclass.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrfromclass.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrnumclass.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrnumclass.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrpxyauthenclass.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrpxyauthenclass.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrserverclass.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrserverclass.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrstringclass.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrstringclass.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrtimestamp.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrtimestamp.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrtokengenparamsclass.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrtokengenparamsclass.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrurihdrclass.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrurihdrclass.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrvia.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrvia.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sshdrwarning.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sshdrwarning.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sslminit.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sslminit.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sslmlog.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sslmlog.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sstptcore.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sstptcore.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sstxncancel.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sstxncancel.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sstxnclientfsm.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sstxnclientfsm.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sstxnhiintf.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sstxnhiintf.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sstxninit.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sstxninit.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sstxnliintf.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sstxnliintf.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sstxnmgmt.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sstxnmgmt.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sstxnserverfsm.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sstxnserverfsm.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sstxntimer.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sstxntimer.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>coresip.lib(sstxnutil.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'coresip.lib(sstxnutil.obj)' or at 'D:\Github\esdk_Cgw\source\SipSDK\output\release\vc90.pdb'; linking object as if no debug info
+1>  sipsdk.vcxproj -> D:\Github\esdk_Cgw\source\SipSDK\sipsdk\..\output\release\sipsdk.dll
+========== Rebuild All: 2 succeeded, 0 failed, 0 skipped ==========
+

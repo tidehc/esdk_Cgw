@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="VgwDec" MOC_NAME_C="解码器" Module="VGW" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="before" Relation="">
+		<Parameter name="DevIndex" desc="Screen ID" type="int" range="[1,128]" constrain="PRI" mode="update" />
+		<Parameter name="NodeId" desc="VGW node ID" type="int" range="" constrain="NOT NULL" FK="FK:DRUR:UBPNode:NodeID" />
+		<Parameter name="ChnNum" desc="Count of split screens" type="enum" range="0,1,2,3,4" vlist="0:1,1:2,2:4,3:9,4:16" constrain="NOT NULL" mode="update" default="0" />
+		<Parameter name="DevAlias" desc="Screen description" type="string" range="[0,31]" mode="update" />
+		<Parameter name="DecUserName" desc="Decoder user name" type="string" range="[1,15]" constrain="NOT NULL" mode="update" />
+		<Parameter name="DecPassword" desc="Decoder password (registration)" type="string" range="[1,15]" constrain="NOT NULL" c_type="password" mode="update" />
+		<Parameter name="DecIp" desc="Decoder IP address (registration)" type="string" range="[4,15]" constrain="NOT NULL" c_type="ipv4" mode="update" default="192.0.0.64" />
+		<Parameter name="DecPort" desc="Decoder port (registration)" type="int" range="[1,65535]" constrain="NOT NULL" mode="update" default="8000" />
+		<Parameter name="DecType" desc="Manufacturer" type="enum" range="0,1" vlist="0: Hikvisio,1: Huawei" constrain="NOT NULL" mode="update" default="0" />
+		<Parameter name="DevStatus" desc="Device status" type="enum" range="0,1" vlist="0: idle,1: activated" constrain="NOT NULL" mode="update" default="0" />
+		<Parameter name="InterfaceType" desc="Video output interface type" type="enum" range="0,1,2,3" vlist="0:VGA,1:BNC,2:HDMI,3:DVI" constrain="NOT NULL" mode="update" default="0" />
+		<Parameter name="InterfaceIndex" desc="Video output interface index" type="enum" range="0,1,2,3,4,5,6,7" vlist="0:INDEX1,1:INDEX2,2:INDEX3,3:INDEX4,4:INDEX5,5:INDEX6,6:INDEX7,7:INDEX8" constrain="NOT NULL" mode="update" default="0" />
+		<Parameter name="DevLinkMode" desc="Device link mode" type="enum" range="0" vlist="0:TCP" constrain="NOT NULL" mode="update" default="0" />
+	</MOC>
+</Moc-Config>

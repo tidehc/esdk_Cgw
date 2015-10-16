@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="BccNeighborNode" MOC_NAME_C="BCC邻节点" Module="BCC" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="custom:ubp_bccngnode:CreateModule:before" Relation="">
+		<Parameter name="BccNodeID" desc="BCC node ID" type="int" range="[0,2147483647]" constrain="PRI" mode="display" />
+		<Parameter name="NeighborNodeID" desc="Neighbor node ID" type="int" range="[0,2147483647]" constrain="PRI" mode="display" />
+		<Parameter name="AddrIPV4" desc="Ipv4 address" type="string" range="[7,15]" constrain="NOT NULL" c_type="ipv4" mode="update" />
+		<Parameter name="SipPort" desc="SIP port" type="int" range="[1024,65535]" constrain="NOT NULL" mode="update" default="5060" />
+		<Parameter name="NeighborBccRole" desc="Neighbor node connected role" type="enum" range="0,1" vlist="0:up,1:down" constrain="NOT NULL" mode="update" default="0" />
+	</MOC>
+</Moc-Config>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="MRSStorageThreshold" MOC_NAME_C="存储门限" Module="MRS" ACCESS_CONTROL="modify,read" DEST_SVC="custom:ubp_mrs_moc:CreateModule:before" Relation="">
+		<Parameter name="ID" desc="ID" type="int" range="" constrain="PRI" />
+		<Parameter name="StorageAlarmRate" desc="alram used rate(%)" type="int" range="[80,100]" mode="update" />
+		<Parameter name="StorageTriggerRmvFreeSpace" desc="Trigger remove free space(G)" type="int" range="[5,1000]" mode="update" />
+		<Parameter name="StorageTriggerRmvRate" desc="Trigger remove used rate(%)" type="int" range="[80,100]" mode="update" />
+		<Parameter name="StorageStopRmvRate" desc="Trigger stop remove used rate(%)" type="int" range="[80,100]" mode="update" />
+	</MOC>
+</Moc-Config>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+///////////////////////////////////////////////////////////////////////
+
+// BDC            :-30000 ~ -34999
+// BDC_FRAMEWORK  :-35000 ~ -39999
+// MRS            :-50000 ~ -64999
+// VGW            :-65000 ~ -69999
+//For example : 
+//static const ACE_INT32 ERR_UBP_MQ_XXX1 = -20000;
+///////////////////////////////////////////////////////////////////////
+-->
+
+<Errors xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
+       xsd:noNamespaceSchemaLocation="error_number.xsd">
+
+    
+<!--
+//ZMQ:-20000 ~ -XXXX
+-->    
+  <Error>
+    <code>-65001</code>
+		<detail message="空指针异常！" suggestion="请核对输入参数！"/>
+	</Error>
+  <Error>
+    <code>-65002</code>
+		<detail message="SDK初始化失败！" suggestion="请核对SDK库是否正确！"/>
+	</Error>
+  <Error>
+    <code>-65003</code>
+		<detail message="关闭SDK失败！" suggestion="请核对SDK状态，并重新关闭！"/>
+	</Error>
+   <Error>
+   <code>-65004</code>
+		<detail message="添加设备失败，大屏ID重复!" suggestion="请检查设备与配置参数！"/>
+	</Error>
+   <Error>
+   <code>-65005</code>
+		<detail message="设备不存在！" suggestion="请检查设备！"/>
+	</Error>
+   <Error>
+   <code>-65006</code>
+		<detail message="设备状态不正确！" suggestion="请检查设备状态！"/>
+	</Error>
+  <Error>
+    <code>-65007</code>
+		<detail message="参数超出范围！" suggestion="请核对输入参数！"/>
+	</Error>
+  <Error>
+    <code>-65008</code>
+                <detail message="该设备已经被占用！" suggestion="请删除或者修改已添加的设备！"/>
+        </Error>
+  
+</Errors>

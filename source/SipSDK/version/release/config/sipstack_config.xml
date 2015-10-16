@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- SIPSTACK -->
+<sipstack>
+  <!-- 协议栈服务特性配置 -->
+  <service>
+    <!-- 协议栈工作的地址和端口 -->
+    <ip version='4'>127.0.0.1</ip>
+    <port>5080</port>
+    <domain>huawei.com</domain>
+	<name>HUAWEI DCG</name>
+	<!-- sip协议栈日志开关，1打开，0关闭 -->
+	<logSwitch>0</logSwitch>
+	<!-- 设备刷新注册时间（单位：秒）,默认1年 -->
+	<expires>3600</expires>
+  </service>
+
+  <!-- 协议栈可靠性配置 -->
+  <deque max='3000' timeout='20'>
+    <!-- 触发器：用于消息达到最大队列多少百分比时，激活消息控制。最多支持配置3个。 -->
+    <triggers>
+      <!-- id:触发器ID值 scale:触发条件即最大列数的百分比 -->
+      <trigger id='1' scale='80' />
+      <trigger id='2' scale='90' />
+    </triggers>
+    <!-- 控制器：用于标示触发器工作时，可以继续服务的信令。 -->
+    <controllers>
+      <!-- method:SIP方法名 trigger:触发器ID -->
+      <controller trigger='1' method='REGISTER' />
+      <controller trigger='2' method='OPTIONS' />
+      <controller trigger='1' method='MESSAGE' >
+        <body format='XML' element='MESSAGE/CV_HEADER' attribute='MsgType' >MSG_VCU_ABILITY_NOTIFY</body>
+      </controller>
+      <controller trigger='1' method='MESSAGE' >
+        <body format='XML' element='Query/CmdType' >DeviceInfo</body>
+      </controller>
+    </controllers>
+  </deque>
+
+</sipstack>

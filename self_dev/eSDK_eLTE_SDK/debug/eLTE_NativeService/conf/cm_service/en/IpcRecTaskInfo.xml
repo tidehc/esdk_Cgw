@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="IpcRecTaskInfo" MOC_NAME_C="录音录像任务信息" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="" Relation="">
+		<Parameter name="SessionId" desc="Task ID" type="string" range="[1,64]" constrain="PRI" mode="display" />
+		<Parameter name="TaskStatus" desc="Task status" type="enum" range="0,1,2,3,4,5" vlist="0: creation success,1: storage failure,2: being stored,3: success,4: waiting to be deleted,5: deletion success" constrain="NOT NULL" mode="update" />
+		<Parameter name="IpcIndex" desc="IPC index" type="int" range="[1,65535]" constrain="NOT NULL" mode="update" />
+		<Parameter name="IpcVpn" desc="IPC VPN" type="int" range="" constrain="NOT NULL" />
+		<Parameter name="OptStatus" desc="Operation status" type="int" range="[1,65535]" constrain="NOT NULL" mode="update" />
+		<Parameter name="ErrType" desc="Error type" type="int" range="[1,65535]" constrain="NOT NULL" mode="update" />
+		<Parameter name="StartTime" desc="Begin time" type="datetime" range="[1,64]" constrain="NOT NULL" mode="update" />
+		<Parameter name="EndTime" desc="End time" type="datetime" range="[1,64]" constrain="NOT NULL" ge="EndTime,BeginTime" mode="update" />
+		<Parameter name="ISDN" desc="User number" type="string" range="[1,8]" mode="update" />
+		<Parameter name="NodeId" desc="MRS NodeID" type="int" range="[0,65535]" mode="update" />
+		<Parameter name="NodeIp" desc="MRS NodeIP" type="string" range="[0,15]" mode="display" />
+	</MOC>
+</Moc-Config>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="SDKGW" MOC_NAME_C="SDK网关" Module="BCC" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="custom:ubp_gateway:CreateModule:before" Relation="">
+		<Parameter name="SDKGWID" desc="SDK Gateway ID" type="int" range="[6000,7999]" constrain="PRI" mode="display" />
+		<Parameter name="NodeName" desc="Node name" type="string" range="[1,31]" constrain="NOT NULL" mode="update" />
+		<Parameter name="AddrIPV4" desc="Ipv4 address" type="string" range="[7,15]" constrain="NOT NULL" c_type="ipv4" mode="update" />
+		<Parameter name="SipPort" desc="SIP port" type="int" range="[1024,65535]" constrain="NOT NULL" mode="update" default="5060" />
+		<Parameter name="ISDN" desc="User number" type="int" range="[99900001,99909999]" constrain="NOT NULL" mode="update" />
+		<Parameter name="SipPass" desc="SIP password" type="string" range="[1,18]" constrain="NOT NULL" c_type="password" mode="update" />
+		<Parameter name="GwOutSwitch" desc="Out switch" type="enum" range="0,1" vlist="0: OFF,1: ON" constrain="NOT NULL" mode="update" default="0" />
+	</MOC>
+</Moc-Config>

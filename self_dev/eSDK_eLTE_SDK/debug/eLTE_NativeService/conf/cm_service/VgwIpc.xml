@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="VgwIpc" MOC_NAME_C="摄像头" Module="VGW" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="before" Relation="">
+		<Parameter name="DevIndex" desc="设备ID" type="int" range="[1,127]" constrain="PRI" />
+		<Parameter name="NodeId" desc="VGW节点ID" type="int" range="" constrain="PRI" FK="FK:DRUR:UBPNode:NodeID" />
+		<Parameter name="ISDN" desc="用户号码" type="string" range="[1,8]" constrain="NOT NULL" mode="update" />
+		<Parameter name="SipUserName" desc="网络注册用户名" type="string" range="[1,15]" constrain="NOT NULL" mode="update" />
+		<Parameter name="SipPassword" desc="网络注册密码" type="string" range="[1,15]" constrain="NOT NULL" c_type="password" mode="update" />
+		<Parameter name="SdkUserName" desc="SDK用户名" type="string" range="[1,15]" constrain="NOT NULL" mode="update" />
+		<Parameter name="SdkPassword" desc="SDK注册密码" type="string" range="[1,15]" constrain="NOT NULL" c_type="password" mode="update" />
+		<Parameter name="SdkIp" desc="SDK注册IP地址" type="string" range="[4,15]" constrain="NOT NULL" c_type="ipv4" mode="update" default="192.0.0.64" />
+		<Parameter name="SdkPort" desc="SDK注册端口" type="int" range="[1,65535]" constrain="NOT NULL" mode="update" default="8000" />
+		<Parameter name="SdkType" desc="厂商类型" type="enum" range="0" vlist="0:海康,,," constrain="NOT NULL" mode="update" default="0" />
+		<Parameter name="DevType" desc="设备类型" type="enum" range="0,1" vlist="0:IPC,1:SIM," constrain="NOT NULL" mode="update" default="0" />
+		<Parameter name="DevStatus" desc="设备状态" type="enum" range="0,1" vlist="0:空闲,1:激活" constrain="NOT NULL" mode="update" default="0" />
+	</MOC>
+</Moc-Config>

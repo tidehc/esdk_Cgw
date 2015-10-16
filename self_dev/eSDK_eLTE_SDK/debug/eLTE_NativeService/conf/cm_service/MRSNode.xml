@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="MRSNode" MOC_NAME_C="MRS节点" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="custom:ubp_mrs_moc:CreateModule:before" Relation="">
+		<Parameter name="NodeID" desc="MRS设备节点ID" type="int" range="[1,65535]" constrain="PRI" mode="display" />
+		<Parameter name="NodeName" desc="节点名" type="string" range="[1,128]" constrain="NOT NULL" mode="update" />
+		<Parameter name="NodeType" desc="节点类型" type="enum" range="0,1" vlist="0:MRS_C（控制节点）,1:MRS_D（数据节点)" constrain="NOT NULL" mode="display" />
+		<Parameter name="AddrIPV4" desc="IPV4地址" type="string" range="[4,15]" constrain="NOT NULL" c_type="ipv4" mode="update" />
+	</MOC>
+</Moc-Config>

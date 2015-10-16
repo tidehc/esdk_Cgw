@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moc-Config>
+	<MOC MOC_NAME="MRSSipRecScheduleTask" MOC_NAME_C="录音录像计划" Module="MRS" ACCESS_CONTROL="add,delete,modify,read" DEST_SVC="custom:ubp_mrs_moc:CreateModule:before" Relation="">
+		<Parameter name="RangeID" desc="Range ID" type="int" range="[1,2147483647]" constrain="PRI" FK="FK:DRUR:MRSRecRangeList:ID" mode="display" />
+		<Parameter name="Name" desc="Schedule description" type="string" range="[0,512]" mode="update" />
+		<Parameter name="ScheduleType" desc="Schedule type" type="enum" range="0,1,2" vlist="0:TimeRange,1:EveryDayFixedTimeRange,2:AllRecord" constrain="NOT NULL" control="0:BeginTime|EndTime,1:BeginTime|EndTime,2:" mode="update" />
+		<Parameter name="BeginTime" desc="Begin time" type="string" range="[1,64]" mode="update" />
+		<Parameter name="EndTime" desc="End time" type="string" range="[1,64]" mode="update" />
+		<Parameter name="RecType" desc="Record type" type="bitset" range="" vlist="1:RecordAudio,2:VideoP2PCallRecordAudio,4:RecordVideo" constrain="NOT NULL" mode="update" default="3" />
+	</MOC>
+</Moc-Config>

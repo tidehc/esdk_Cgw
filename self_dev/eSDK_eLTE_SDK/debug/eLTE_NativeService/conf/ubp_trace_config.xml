@@ -1,0 +1,91 @@
+
+
+# TRACE < DEBUG < INFO < WARN < ERROR < FATAL
+
+log4j.rootLogger=INFO, UBP
+
+########## ca : Console print##########
+log4j.appender.ca=org.apache.log4j.ConsoleAppender
+log4j.appender.ca.layout=org.apache.log4j.PatternLayout
+
+########### UBP : file print##########
+log4j.appender.UBP=org.apache.log4j.rollingFileAppender
+log4j.appender.UBP.MaxFileSize=20000KB
+log4j.appender.UBP.MaxBackupIndex=20
+log4j.appender.UBP.layout=org.apache.log4j.PatternLayout
+log4j.appender.UBP.File=.//logs//${PROCESS_NAME}.log
+log4j.appender.UBP.layout.ConversionPattern=[%-5p]%d (${PROCESS_ID}|%t) [%c{1}]: %m%n
+
+
+
+
+###########  DC  ##############
+log4j.logger.DC=INFO
+
+###########  DC.GUI  use INFO ##############
+log4j.logger.DC.GUI=DEBUG, DC.GUI
+log4j.appender.DC.GUI=org.apache.log4j.rollingFileAppender
+log4j.appender.DC.GUI.File=.//logs//ubp_dc_gui.log
+log4j.appender.DC.GUI.Append=false
+log4j.appender.DC.GUI.MaxFileSize=20000KB
+# Keep one backup file
+log4j.appender.DC.GUI.MaxBackupIndex=5
+log4j.appender.DC.GUI.layout=org.apache.log4j.PatternLayout
+log4j.appender.DC.GUI.layout.ConversionPattern=[%-5p]%d (${PROCESS_ID}|%t) [%c{1}]: %m%n
+
+###########  DC.STS  ##############
+log4j.logger.DC.STS=INFO, DC.STS
+log4j.appender.DC.STS=org.apache.log4j.rollingFileAppender
+log4j.appender.DC.STS.File=.//logs//ubp_dc_sts.log
+log4j.appender.DC.STS.Append=false
+log4j.appender.DC.STS.MaxFileSize=20000KB
+# Keep one backup file
+log4j.appender.DC.STS.MaxBackupIndex=20
+log4j.appender.DC.STS.layout=org.apache.log4j.PatternLayout
+log4j.appender.DC.STS.layout.ConversionPattern=[%-5p]%d (${PROCESS_ID}|%t) [%c{1}]: %m%n
+
+###########  DC.SDK  ##############
+log4j.logger.DC.SDK=DEBUG, DC.SDK
+log4j.appender.DC.SDK=org.apache.log4j.rollingFileAppender
+log4j.appender.DC.SDK.File=.//logs//ubp_dc_sdk.log
+log4j.appender.DC.SDK.Append=false
+log4j.appender.DC.SDK.MaxFileSize=20000KB
+# Keep one backup file
+log4j.appender.DC.SDK.MaxBackupIndex=5
+log4j.appender.DC.SDK.layout=org.apache.log4j.PatternLayout
+log4j.appender.DC.SDK.layout.ConversionPattern=[%-5p]%d (${PROCESS_ID}|%t) [%c{1}]: %m%n
+
+
+###########  DC.APP  ##############
+log4j.logger.DC.APP=DEBUG, DC.APP
+log4j.appender.DC.APP=org.apache.log4j.rollingFileAppender
+log4j.appender.DC.APP.File=.//logs//ubp_dc_app.log
+log4j.appender.DC.APP.Append=false
+log4j.appender.DC.APP.MaxFileSize=20000KB
+# Keep one backup file
+log4j.appender.DC.APP.MaxBackupIndex=5
+log4j.appender.DC.APP.layout=org.apache.log4j.PatternLayout
+log4j.appender.DC.APP.layout.ConversionPattern=[%-5p]%d (${PROCESS_ID}|%t) [%c{1}]: %m%n
+
+###########  DC.PROXY  ##############
+log4j.logger.DC.PROXY=DEBUG, DC.PROXY
+log4j.appender.DC.PROXY=org.apache.log4j.rollingFileAppender
+log4j.appender.DC.PROXY.File=.//logs//ubp_dc_proxy.log
+log4j.appender.DC.PROXY.Append=true
+log4j.appender.DC.PROXY.MaxFileSize=20000KB
+# Keep one backup file
+log4j.appender.DC.PROXY.MaxBackupIndex=5
+log4j.appender.DC.PROXY.layout=org.apache.log4j.PatternLayout
+log4j.appender.DC.PROXY.layout.ConversionPattern=[%-5p]%d (${PROCESS_ID}|%t) [%c{1}]: %m%n
+
+
+########### MEDIA_SDK use WARN ##############
+log4j.logger.MEDIA_SDK=INFO, MEDIA_SDK
+log4j.appender.MEDIA_SDK=org.apache.log4j.rollingFileAppender
+log4j.appender.MEDIA_SDK.File=.//logs//ubp_dc_rtp.log
+log4j.appender.MEDIA_SDK.Append=false
+log4j.appender.MEDIA_SDK.MaxFileSize=20000KB
+# Keep one backup file
+log4j.appender.MEDIA_SDK.MaxBackupIndex=5
+log4j.appender.MEDIA_SDK.layout=org.apache.log4j.PatternLayout
+log4j.appender.MEDIA_SDK.layout.ConversionPattern=[%-5p]%d (${PROCESS_ID}|%t) [%c{1}]: %m%n
